@@ -1,3 +1,33 @@
 // customize bootstrap variables here:
+// @import compass/css3/shared
+
 @import "variables";
 @import "bootstrap";
+
+// Pico Custom 
+
+@import "mixins";
+@import "functions";
+// Base Styles
+@import "base";
+@import "typography";
+@import "overrides";
+@import "button-overrides";
+@import "backgrounds";
+@import "main-nav";
+
+// Page Styles
+@import "home-page";
+@import "about";
+@import "neurology";
+@import "products";
+@import "privacy";
+@import "resources";
+@import "footer";
+@import "misc";
+
+
+
+
+
+

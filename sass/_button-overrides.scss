@@ -1,0 +1,10 @@
+.btn-primary {
+	@include pico-btn($white);	
+}
+
+.btn-secondary {
+ 	@include pico-btn($pico-blue);
+ 	display: block;
+ 	margin: auto;
+ 	// add width to this mixin so you can justify the width and center it as well
+}

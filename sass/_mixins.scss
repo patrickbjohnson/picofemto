@@ -1,0 +1,16 @@
+@mixin pico-btn($color){
+	border: 3px solid $color;
+	border-radius: 0;
+	margin: 50px auto;
+	padding: 5px 30px;
+	font-size: em(18px);
+	font-weight: 400;
+	color: $color;
+	background-color: transparent;
+	text-transform: uppercase;
+	&:hover {
+		color: $color;
+		background-color: transparent;
+		border-color: $color;
+	}
+}

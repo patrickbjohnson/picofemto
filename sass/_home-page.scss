@@ -1,0 +1,32 @@
+.rounded {
+	display: inline-block;
+	width: 175px;
+	background: red;
+	border-radius: 50%;
+}
+
+.team-members {
+	margin-top: 90px;
+}
+
+.team-photo {
+	margin-bottom: 40px;
+}
+
+.mission-statement {margin: 50px 0;}
+
+.product-headline,
+.team-name {
+	@extend .font-24;
+	@extend .reg-400;
+	margin-bottom: 15px;
+	color: $pico-blue;
+
+}
+
+.page-products p,
+.team-position {
+		@extend .reg-400;
+		font-size: $font-size-base;
+}
+

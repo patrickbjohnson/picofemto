@@ -1,0 +1,37 @@
+section[class^=page-] {
+	margin: 50px 0;
+}
+.bl-md {display: block; margin: inherit auto;}
+
+.quote {color: $pico-blue;}
+.pico-logo {
+	display: inline-block;
+	height: 100px;
+}
+
+.mission-headline {
+	@extend .reg-400;
+	color: $pico-orange;
+}
+
+.about {
+	ul {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		font-family: $font-family-sans-serif;
+
+		li {
+			font-weight: 400;
+			list-style: none;
+			margin-bottom: 15px;
+
+		}
+		.ss-icon {
+			font-size: 1.150em;
+			&:hover {text-decoration: none;}
+		}
+	}
+
+	.btn {margin-top: 30px;}
+}

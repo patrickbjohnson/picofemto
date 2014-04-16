@@ -1,0 +1,39 @@
+.jumbotron {
+	background: $white;
+	h1 {
+		color: $white;
+	}
+	margin-bottom: 0;
+	p {
+		font-size: inherit;
+		font-weight: 500;
+	}
+}
+
+hr {
+	position: relative;
+	display: block;
+	margin: 50px auto;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: $pico-orange;
+
+	&:before,
+	&:after {
+		content: "";
+		position:  absolute;
+		display: inline-block;
+		top: 5px;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		background: $gray-dots;
+	}
+
+	&:before {left: -25px;}
+	&:after {right: -25px;}
+}
+
+
+
