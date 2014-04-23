@@ -2,13 +2,12 @@
 <!-- Main Navbar -->
 <?php include("includes/nav.php"); ?>
 
-
-
+  <div id="page-main">
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron pico-home pico-background-bg">
       <div class="container">
         <h1 class="page-title heavy-900">We are Picofemto, on a mission to revolutionize healthcare.</h1>
-        <a class="btn btn-primary" role="button">See How</a>
+        <a class="btn btn-primary" href="#" role="button">See How</a>
       </div>
     </div>
     
@@ -45,7 +44,7 @@
           </div>
         </div>
         <div class="row center">
-          <a class="btn btn-secondary bl-md"href="#" role="button">Learn More</a>
+          <a class="btn btn-secondary bl-md" href="#" role="button">Learn More</a>
         </div>
       </section>
       
@@ -53,7 +52,7 @@
         <div class="row">
           <h1 class="section-header center light-300 font-55">The team that's revolutionizing healthcare through analytics:</h1>
         </div>
-        <div class="row team-members">
+        <div class="row team-members center">
           <div class="col-md-4 center team-member">
             <img class="rounded team-photo" src="#" alt="">
             <h2 class="team-name">Fady A. Rizk</h2>
@@ -69,46 +68,28 @@
             <h2 class="team-name">Andre Khoury, MD</h2>
             <h3 class="team-position">Founder & Chief Medical Officer</h3>
           </div>
+          <a class="btn btn-secondary bl-md" href="#" role="button">Meet the whole team</a>
         </div>
-        <button class="btn btn-secondary bl-md" role="button">Meet the whole team</button>
+        
       </section>
     </div> <!-- /container -->
 
     <hr>
     
-    <section class="page-location">
-      <div class="jumbotron office-location">
-        <div class="googlemap">
-          Google map goes here
-        </div>
-      </div>
+    <section class="page-section address">
+      <div id="map-canvas"></div>
     </section>
     <section class="page-address">
-      <div class="address center">
-        <span>708 3rd Avenue, 6th Floor</span><br>
-        <span>New York, NY 10017</span><br>
-        <span>212-502-3770</span><br>
+      <div class="address center" id="address">
+        <span>708 3rd Avenue, 6th Floor</span>
+        <span>New York, NY 10017</span>
+        <span>212-502-3770</span>
       </div>
     </section>
-
-    
-    
-
-  <?php include("includes/footer.php"); ?>
+  </div>
 
     
     
     
-    
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- Latest compiled and minified JavaScript -->
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  </body>
-</html>
+<?php include("includes/footer.php"); ?>

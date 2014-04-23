@@ -32,7 +32,7 @@
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	  <script src="js/main.js"></script>
+	  <script src="../js/main.js"></script>
 
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

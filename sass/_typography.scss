@@ -9,12 +9,14 @@ h1,h2,h3,h4,h5,h6 {margin: 0;}
 .reg-400 		{font-weight: 400;}
 .bold-700 	{font-weight: 700;}
 .heavy-900 	{font-weight: 900;}
+.font-16 {font-size: $font-size-base !important; line-height: 2;}
 .font-22 {font-size: em($font-size-22) !important; line-height: 2;}
 .font-24 {font-size: em($font-size-24) !important; line-height: 2;}
 .font-30 {font-size: em($font-size-30) !important; line-height: 2;}
 .font-36 {font-size: em($font-size-36) !important; line-height: 2;}
-.font-72 {font-size: em($font-size-72) !important; line-height: 2;}
 .font-55 {font-size: em($font-size-55) !important; line-height: 1.4;}
+.font-72 {font-size: em($font-size-72) !important; line-height: 2;}
+
 .center {text-align: center;}
 .page-title {
 	margin-top: 120px;

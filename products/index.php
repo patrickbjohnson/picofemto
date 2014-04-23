@@ -67,4 +67,4 @@
 	
 
 
-<?php include("../includes/footer.php"); ?>
+<?php include("../includes/page-footer.php"); ?>

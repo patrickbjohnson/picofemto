@@ -1,0 +1,31 @@
+#page-contact {
+	label {
+		font-weight: 300;
+		color: $pico-gray-mid;
+	}
+
+	#contact-message {
+		min-height: 200px;
+		margin-bottom: 50px;
+	}
+
+	.address {
+		margin-bottom: 25px;
+		text-align: center;
+
+		span {
+			display: block;
+			margin-bottom: 20px;
+			font-size: em($font-size-24);
+			font-weight: $font-weight-300;	
+		}
+		
+		p {
+			margin-top: 50px;
+			font-family: $font-family-sans-serif;
+			font-size: em($font-size-base);
+			font-weight: $font-weight-400;
+			color: $pico-blue;
+		}
+	}
+}

@@ -9,3 +9,15 @@ p {
 	font-weight: 300; 
 	margin-bottom: 25px;
 }
+
+div[id^=page-] {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+section[class^=page-] {
+	margin: 50px 0;
+}
+.bl-md {display: block; margin: inherit auto;}
+
+.quote {color: $pico-blue;}

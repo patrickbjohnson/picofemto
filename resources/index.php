@@ -69,9 +69,9 @@
 	</section>
 		
 	<section class="page-section">
-		<div class="row sign-up">
+		<div class="row sign-up center">
 			<p class="center">Interested in learning more?</p>
-			<button class="btn btn-secondary">Contact Us</button>
+			<a class="btn btn-secondary">Contact Us</a>
 		</div>
 	</section>
 		
@@ -83,4 +83,4 @@
 
 
 
-<? include("../includes/footer.php"); ?>
+<? include("../includes/page-footer.php"); ?>

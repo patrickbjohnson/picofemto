@@ -101,4 +101,4 @@
 
 
 
-<? include("../includes/footer.php"); ?>
+<? include("../includes/page-footer.php"); ?>

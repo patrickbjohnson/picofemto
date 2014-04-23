@@ -18,7 +18,9 @@ $black: 										#010101;
 $pico-blue: 								#2668b2;
 $pico-orange: 							#f47525;
 $pico-gray-light: 					#ebebeb;
+$pico-gray-mid: 						#666666;
 $pico-gray-dark: 						#999999;
+
 //$gray-darker:            lighten(#000, 13.5%); // #222
 //$gray-dark:              lighten(#000, 20%);   // #333
 //$gray:                   lighten(#000, 33.5%); // #555
@@ -63,6 +65,15 @@ $font-size-30: 						30px;
 $font-size-36: 						36px;
 $font-size-55: 						55px;
 $font-size-72: 						72px;
+
+// Font Weight
+$font-weight-300:  				300;
+$font-weight-400:  				400;
+$font-weight-700:  				700;
+$font-weight-900:  				900;
+
+
+
 //$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 //$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 

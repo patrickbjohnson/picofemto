@@ -7604,6 +7604,28 @@ p {
   margin-bottom: 25px;
 }
 
+/* line 13, ../sass/_base.scss */
+div[id^=page-] {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* line 18, ../sass/_base.scss */
+section[class^=page-] {
+  margin: 50px 0;
+}
+
+/* line 21, ../sass/_base.scss */
+.bl-md {
+  display: block;
+  margin: inherit auto;
+}
+
+/* line 23, ../sass/_base.scss */
+.quote {
+  color: #2668b2;
+}
+
 /* line 1, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -7625,9 +7647,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 9, ../sass/_typography.scss */
-.reg-400, .product-headline,
-.team-name, .page-products p,
-.team-position, .mission-headline {
+.reg-400, #page-main .product-headline,
+#page-main .team-name, #page-main .page-products p,
+#page-main .team-position, .mission-headline {
   font-weight: 400;
 }
 
@@ -7642,33 +7664,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 12, ../sass/_typography.scss */
+.font-16 {
+  font-size: 16px !important;
+  line-height: 2;
+}
+
+/* line 13, ../sass/_typography.scss */
 .font-22 {
   font-size: 1.375em !important;
   line-height: 2;
 }
 
-/* line 13, ../sass/_typography.scss */
-.font-24, .product-headline,
-.team-name {
+/* line 14, ../sass/_typography.scss */
+.font-24, #page-main .product-headline,
+#page-main .team-name {
   font-size: 1.5em !important;
   line-height: 2;
 }
 
-/* line 14, ../sass/_typography.scss */
+/* line 15, ../sass/_typography.scss */
 .font-30 {
   font-size: 1.875em !important;
   line-height: 2;
 }
 
-/* line 15, ../sass/_typography.scss */
+/* line 16, ../sass/_typography.scss */
 .font-36 {
   font-size: 2.25em !important;
-  line-height: 2;
-}
-
-/* line 16, ../sass/_typography.scss */
-.font-72 {
-  font-size: 4.5em !important;
   line-height: 2;
 }
 
@@ -7679,11 +7701,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 18, ../sass/_typography.scss */
+.font-72 {
+  font-size: 4.5em !important;
+  line-height: 2;
+}
+
+/* line 20, ../sass/_typography.scss */
 .center {
   text-align: center;
 }
 
-/* line 19, ../sass/_typography.scss */
+/* line 21, ../sass/_typography.scss */
 .page-title {
   margin-top: 120px;
   font-size: 3.75em;
@@ -7693,7 +7721,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.01em;
 }
 
-/* line 28, ../sass/_typography.scss */
+/* line 30, ../sass/_typography.scss */
 sup {
   top: -1em;
   font-size: .500em;
@@ -7746,7 +7774,18 @@ hr:after {
 }
 
 /* line 1, ../sass/_button-overrides.scss */
+.btn-primary,
+.btn-secondary {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/* line 6, ../sass/_button-overrides.scss */
 .btn-primary {
+  display: inline-block;
   border: 3px solid #fefefe;
   border-radius: 0;
   margin: 50px auto;
@@ -7757,15 +7796,16 @@ hr:after {
   background-color: transparent;
   text-transform: uppercase;
 }
-/* line 11, ../sass/_mixins.scss */
+/* line 12, ../sass/_mixins.scss */
 .btn-primary:hover {
-  color: #fefefe;
+  color: #e5e5e5;
   background-color: transparent;
-  border-color: #fefefe;
+  border-color: #e5e5e5;
 }
 
-/* line 5, ../sass/_button-overrides.scss */
+/* line 11, ../sass/_button-overrides.scss */
 .btn-secondary {
+  display: inline-block;
   border: 3px solid #2668b2;
   border-radius: 0;
   margin: 50px auto;
@@ -7775,14 +7815,13 @@ hr:after {
   color: #2668b2;
   background-color: transparent;
   text-transform: uppercase;
-  display: block;
-  margin: auto;
+  margin: 20px auto;
 }
-/* line 11, ../sass/_mixins.scss */
+/* line 12, ../sass/_mixins.scss */
 .btn-secondary:hover {
-  color: #2668b2;
+  color: #1d4f88;
   background-color: transparent;
-  border-color: #2668b2;
+  border-color: #1d4f88;
 }
 
 /* line 1, ../sass/_backgrounds.scss */
@@ -7837,7 +7876,6 @@ hr:after {
 /* line 46, ../sass/_backgrounds.scss */
 .pico-resources {
   background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
-  background-size: cover;
 }
 
 /* line 1, ../sass/_main-nav.scss */
@@ -7846,91 +7884,74 @@ hr:after {
   background: #fefefe;
 }
 
-/* line 1, ../sass/_home-page.scss */
-.rounded {
+/* line 2, ../sass/_home-page.scss */
+#page-main .rounded {
   display: inline-block;
   width: 175px;
   background: red;
   border-radius: 50%;
 }
-
-/* line 8, ../sass/_home-page.scss */
-.team-members {
+/* line 9, ../sass/_home-page.scss */
+#page-main .team-members {
   margin-top: 90px;
 }
-
-/* line 12, ../sass/_home-page.scss */
-.team-photo {
+/* line 13, ../sass/_home-page.scss */
+#page-main .team-photo {
   margin-bottom: 40px;
 }
-
-/* line 16, ../sass/_home-page.scss */
-.mission-statement {
+/* line 17, ../sass/_home-page.scss */
+#page-main .mission-statement {
   margin: 50px 0;
 }
-
-/* line 18, ../sass/_home-page.scss */
-.product-headline,
-.team-name {
+/* line 19, ../sass/_home-page.scss */
+#page-main .product-headline,
+#page-main .team-name {
   margin-bottom: 15px;
   color: #2668b2;
 }
-
-/* line 27, ../sass/_home-page.scss */
-.page-products p,
-.team-position {
+/* line 28, ../sass/_home-page.scss */
+#page-main .page-products p,
+#page-main .team-position {
   font-size: 16px;
 }
-
-/* line 1, ../sass/_about.scss */
-section[class^=page-] {
-  margin: 50px 0;
+/* line 34, ../sass/_home-page.scss */
+#page-main .address {
+  margin-bottom: 70px;
 }
 
-/* line 4, ../sass/_about.scss */
-.bl-md {
-  display: block;
-  margin: inherit auto;
-}
-
-/* line 6, ../sass/_about.scss */
-.quote {
-  color: #2668b2;
-}
-
-/* line 7, ../sass/_about.scss */
+/* line 2, ../sass/_about.scss */
 .pico-logo {
   display: inline-block;
   height: 100px;
 }
 
-/* line 12, ../sass/_about.scss */
+/* line 7, ../sass/_about.scss */
 .mission-headline {
   color: #f47525;
 }
 
-/* line 18, ../sass/_about.scss */
+/* line 13, ../sass/_about.scss */
 .about ul {
   display: inline-block;
   padding: 0;
   margin: 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 24, ../sass/_about.scss */
+/* line 19, ../sass/_about.scss */
 .about ul li {
   font-weight: 400;
   list-style: none;
   margin-bottom: 15px;
 }
-/* line 30, ../sass/_about.scss */
+/* line 25, ../sass/_about.scss */
 .about ul .ss-icon {
   font-size: 1.150em;
 }
-/* line 32, ../sass/_about.scss */
+/* line 27, ../sass/_about.scss */
 .about ul .ss-icon:hover {
   text-decoration: none;
 }
-/* line 36, ../sass/_about.scss */
+/* line 31, ../sass/_about.scss */
 .about .btn {
   margin-top: 30px;
 }
@@ -7961,6 +7982,37 @@ section[class^=page-] {
 /* line 4, ../sass/_products.scss */
 #page-products .jumbotron p {
   color: #fefefe;
+}
+
+/* line 2, ../sass/_contact.scss */
+#page-contact label {
+  font-weight: 300;
+  color: #666666;
+}
+/* line 7, ../sass/_contact.scss */
+#page-contact #contact-message {
+  min-height: 200px;
+  margin-bottom: 50px;
+}
+/* line 12, ../sass/_contact.scss */
+#page-contact .address {
+  margin-bottom: 25px;
+  text-align: center;
+}
+/* line 16, ../sass/_contact.scss */
+#page-contact .address span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+/* line 23, ../sass/_contact.scss */
+#page-contact .address p {
+  margin-top: 50px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #2668b2;
 }
 
 /* line 2, ../sass/_resources.scss */
@@ -8017,8 +8069,37 @@ footer.jumbotron {
   line-height: 2;
 }
 
+/* line 1, ../sass/_map.scss */
+#map-canvas {
+  height: 325px;
+  width: 100%;
+  margin-bottom: 85px;
+}
+
 /* line 1, ../sass/_misc.scss */
 img {
   display: block;
   margin: auto;
+}
+
+/* line 3, ../sass/_misc.scss */
+.address {
+  margin-bottom: 50px;
+  text-align: center;
+}
+/* line 7, ../sass/_misc.scss */
+.address span {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+/* line 15, ../sass/_misc.scss */
+.address p {
+  margin-top: 50px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #2668b2;
 }
