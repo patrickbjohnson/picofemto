@@ -1,6 +1,7 @@
-<? include("../includes/page-header.php"); ?>
+<?php include("../includes/page-header.php"); ?>
 
-<? include("../includes/nav.php"); ?>
+<!-- Main Navbar -->
+<?php include("../includes/page-nav.php"); ?>
 
 <div id="team-member">
 	<div class="pico-team-member center">

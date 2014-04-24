@@ -20,3 +20,12 @@ img {display: block; margin: auto;}
 		color: $pico-blue;
 	}
 }
+
+	.rounded {
+		display: inline-block;
+		width: 175px;
+		margin-bottom: 50px;
+		border-radius: 50%;
+	}
+
+	.quote {color: $pico-blue;}

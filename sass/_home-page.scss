@@ -1,13 +1,12 @@
 #page-main {
-	.rounded {
-		display: inline-block;
-		width: 175px;
-		background: red;
-		border-radius: 50%;
+	.page-title {
+		text-align: left;
+		font-weight: 900;
 	}
 
 	.team-members {
 		margin-top: 90px;
+		margin-bottom: 75px
 	}
 
 	.team-photo {
@@ -32,6 +31,11 @@
 	}
 
 	.address {margin-bottom: 70px;}
+
+	.page-products img {
+		height: 175px;
+		margin-bottom: 25px;
+	}
 }
 
 

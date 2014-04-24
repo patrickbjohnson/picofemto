@@ -1,6 +1,9 @@
-<? include("../includes/page-header.php"); ?>
+<?php include("../includes/page-header.php"); ?>
 
-<!-- Nav -->
+
+<!-- Main Navbar -->
+<?php include("../includes/page-nav.php"); ?>
+
 <div id="page-neurology">
 	<div class="jumbotron pico-neurology">
 	  <div class="container">

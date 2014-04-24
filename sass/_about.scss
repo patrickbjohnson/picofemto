@@ -1,32 +1,47 @@
-
-.pico-logo {
-	display: inline-block;
-	height: 100px;
-}
-
-.mission-headline {
-	@extend .reg-400;
-	color: $pico-orange;
-}
-
-.about {
-	ul {
+#page-about {
+	
+	.pico-logo {
 		display: inline-block;
-		padding: 0;
-		margin: 0;
-		font-family: $font-family-sans-serif;
-
-		li {
-			font-weight: 400;
-			list-style: none;
-			margin-bottom: 15px;
-
-		}
-		.ss-icon {
-			font-size: 1.150em;
-			&:hover {text-decoration: none;}
-		}
+		height: 100px;
 	}
 
+	.mission-headline {
+		@extend .reg-400;
+		color: $pico-orange;
+	}
+
+	.page-inspiration {
+		margin-top: 100px;
+		ul {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			font-family: $font-family-sans-serif;
+
+			li {
+				font-weight: 400;
+				list-style: none;
+				margin-bottom: 15px;
+
+			}
+			.ss-icon {
+				font-size: 1.150em;
+				color: $pico-gray-dark;
+				&:hover {
+					@include vendor-prefix(transition, all 300ms ease);
+					color: darken($pico-gray-mid, 10%);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	
+
 	.btn {margin-top: 30px;}
+
+
+	.mission-col {
+		// margin: 50px auto;
+		h2 {margin-bottom: 20px;}
+	}
 }

@@ -1,3 +1,4 @@
+html,body,section{height:100%;}
 body {
 	font-size: $font-size-base;
 	line-height: 1.5;
@@ -11,7 +12,7 @@ p {
 }
 
 div[id^=page-] {
-	margin-top: 100px;
+	margin-top: 120px;
 	margin-bottom: 100px;
 }
 
@@ -20,4 +21,3 @@ section[class^=page-] {
 }
 .bl-md {display: block; margin: inherit auto;}
 
-.quote {color: $pico-blue;}

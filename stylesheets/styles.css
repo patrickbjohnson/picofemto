@@ -7591,39 +7591,39 @@ button.close {
   }
 }
 /* line 1, ../sass/_base.scss */
+html, body, section {
+  height: 100%;
+}
+
+/* line 2, ../sass/_base.scss */
 body {
   font-size: 16px;
   line-height: 1.5;
   font-size: 16px;
 }
 
-/* line 7, ../sass/_base.scss */
+/* line 8, ../sass/_base.scss */
 p {
   line-height: 2;
   font-weight: 300;
   margin-bottom: 25px;
 }
 
-/* line 13, ../sass/_base.scss */
+/* line 14, ../sass/_base.scss */
 div[id^=page-] {
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 100px;
 }
 
-/* line 18, ../sass/_base.scss */
+/* line 19, ../sass/_base.scss */
 section[class^=page-] {
   margin: 50px 0;
 }
 
-/* line 21, ../sass/_base.scss */
+/* line 22, ../sass/_base.scss */
 .bl-md {
   display: block;
   margin: inherit auto;
-}
-
-/* line 23, ../sass/_base.scss */
-.quote {
-  color: #2668b2;
 }
 
 /* line 1, ../sass/_typography.scss */
@@ -7649,7 +7649,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 9, ../sass/_typography.scss */
 .reg-400, #page-main .product-headline,
 #page-main .team-name, #page-main .page-products p,
-#page-main .team-position, .mission-headline {
+#page-main .team-position, #page-about .mission-headline {
   font-weight: 400;
 }
 
@@ -7719,9 +7719,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #fefefe;
   text-shadow: 1px 1px 5px rgba(35, 31, 32, 0.75);
   letter-spacing: 0.01em;
+  text-align: center;
 }
 
 /* line 30, ../sass/_typography.scss */
+.section-header {
+  margin-bottom: 25px;
+  font-size: 3.4375em;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* line 37, ../sass/_typography.scss */
 sup {
   top: -1em;
   font-size: .500em;
@@ -7771,6 +7780,21 @@ hr:before {
 /* line 35, ../sass/_overrides.scss */
 hr:after {
   right: -25px;
+}
+
+/* line 39, ../sass/_overrides.scss */
+.pico-alert {
+  color: #f47525 !important;
+}
+
+/* line 41, ../sass/_overrides.scss */
+ul.navbar-right {
+  padding-top: 20px;
+}
+
+/* line 45, ../sass/_overrides.scss */
+.navbar-toggle {
+  margin-top: 30px;
 }
 
 /* line 1, ../sass/_button-overrides.scss */
@@ -7831,129 +7855,193 @@ hr:after {
 }
 
 /* line 6, ../sass/_backgrounds.scss */
-.pico-product, .pico-genomics, .pico-imaging, .pico-neurology, .pico-resources {
+.pico-background-sm {
   padding: 0;
   margin: 100px 0 95px;
-  height: 325px;
+  min-height: 325px;
 }
 
 /* line 12, ../sass/_backgrounds.scss */
 .pico-home {
-  background: #909090 url("../img/pico-home.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #909090 url("../img/home@2x.jpg") no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 17, ../sass/_backgrounds.scss */
+/* line 19, ../sass/_backgrounds.scss */
 .pico-about {
-  background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #909090 url("../img/about@2x.jpg") no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 22, ../sass/_backgrounds.scss */
+/* line 26, ../sass/_backgrounds.scss */
 .pico-product {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background: #909090 url("../img/pico-home.jpg") no-repeat fixed;
-  background-size: cover;
 }
 
-/* line 28, ../sass/_backgrounds.scss */
+/* line 33, ../sass/_backgrounds.scss */
 .pico-genomics {
-  background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-}
-
-/* line 34, ../sass/_backgrounds.scss */
-.pico-imaging {
   background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
-  background-size: cover;
 }
 
 /* line 40, ../sass/_backgrounds.scss */
-.pico-neurology {
-  background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
+.pico-imaging {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
 }
 
-/* line 46, ../sass/_backgrounds.scss */
+/* line 47, ../sass/_backgrounds.scss */
+.pico-neurology {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #909090 url("../img/pico-about.jpg") no-repeat;
+}
+
+/* line 53, ../sass/_backgrounds.scss */
 .pico-resources {
-  background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #909090 url("../img/pico-about.jpg") no-repeat;
 }
 
 /* line 1, ../sass/_main-nav.scss */
 .main-nav {
-  padding: 45px;
+  padding: 15px;
   background: #fefefe;
 }
 
-/* line 2, ../sass/_home-page.scss */
-#page-main .rounded {
-  display: inline-block;
-  width: 175px;
-  background: red;
-  border-radius: 50%;
+/* line 7, ../sass/_main-nav.scss */
+.navbar-brand {
+  float: left;
+  padding: 14px 15px;
+  font-size: none;
+  line-height: none;
+  height: auto;
+  width: 250px;
 }
-/* line 9, ../sass/_home-page.scss */
+/* line 15, ../sass/_main-nav.scss */
+.navbar-brand img {
+  width: 100%;
+}
+
+/* line 2, ../sass/_home-page.scss */
+#page-main .page-title {
+  text-align: left;
+  font-weight: 900;
+}
+/* line 7, ../sass/_home-page.scss */
 #page-main .team-members {
   margin-top: 90px;
+  margin-bottom: 75px;
 }
-/* line 13, ../sass/_home-page.scss */
+/* line 12, ../sass/_home-page.scss */
 #page-main .team-photo {
   margin-bottom: 40px;
 }
-/* line 17, ../sass/_home-page.scss */
+/* line 16, ../sass/_home-page.scss */
 #page-main .mission-statement {
   margin: 50px 0;
 }
-/* line 19, ../sass/_home-page.scss */
+/* line 18, ../sass/_home-page.scss */
 #page-main .product-headline,
 #page-main .team-name {
   margin-bottom: 15px;
   color: #2668b2;
 }
-/* line 28, ../sass/_home-page.scss */
+/* line 27, ../sass/_home-page.scss */
 #page-main .page-products p,
 #page-main .team-position {
   font-size: 16px;
 }
-/* line 34, ../sass/_home-page.scss */
+/* line 33, ../sass/_home-page.scss */
 #page-main .address {
   margin-bottom: 70px;
 }
+/* line 35, ../sass/_home-page.scss */
+#page-main .page-products img {
+  height: 175px;
+  margin-bottom: 25px;
+}
 
-/* line 2, ../sass/_about.scss */
-.pico-logo {
+/* line 3, ../sass/_about.scss */
+#page-about .pico-logo {
   display: inline-block;
   height: 100px;
 }
-
-/* line 7, ../sass/_about.scss */
-.mission-headline {
+/* line 8, ../sass/_about.scss */
+#page-about .mission-headline {
   color: #f47525;
 }
-
 /* line 13, ../sass/_about.scss */
-.about ul {
+#page-about .page-inspiration {
+  margin-top: 100px;
+}
+/* line 15, ../sass/_about.scss */
+#page-about .page-inspiration ul {
   display: inline-block;
   padding: 0;
   margin: 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 19, ../sass/_about.scss */
-.about ul li {
+/* line 21, ../sass/_about.scss */
+#page-about .page-inspiration ul li {
   font-weight: 400;
   list-style: none;
   margin-bottom: 15px;
 }
-/* line 25, ../sass/_about.scss */
-.about ul .ss-icon {
-  font-size: 1.150em;
-}
 /* line 27, ../sass/_about.scss */
-.about ul .ss-icon:hover {
+#page-about .page-inspiration ul .ss-icon {
+  font-size: 1.150em;
+  color: #999999;
+}
+/* line 30, ../sass/_about.scss */
+#page-about .page-inspiration ul .ss-icon:hover {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  color: #4d4d4d;
   text-decoration: none;
 }
-/* line 31, ../sass/_about.scss */
-.about .btn {
+/* line 40, ../sass/_about.scss */
+#page-about .btn {
   margin-top: 30px;
+}
+/* line 45, ../sass/_about.scss */
+#page-about .mission-col h2 {
+  margin-bottom: 20px;
 }
 
 /* line 2, ../sass/_neurology.scss */
@@ -8101,5 +8189,18 @@ img {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
+  color: #2668b2;
+}
+
+/* line 24, ../sass/_misc.scss */
+.rounded {
+  display: inline-block;
+  width: 175px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+}
+
+/* line 31, ../sass/_misc.scss */
+.quote {
   color: #2668b2;
 }

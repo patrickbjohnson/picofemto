@@ -1,6 +1,8 @@
-<? include("../includes/page-header.php"); ?>
+<?php include("../includes/page-header.php"); ?>
 
-<!-- Include Nav -->
+
+<!-- Main Navbar -->
+<?php include("../includes/page-nav.php"); ?>
 
 <div id="page-genomics">
 	<div class="jumbotron pico-genomics">

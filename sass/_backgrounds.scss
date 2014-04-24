@@ -3,48 +3,55 @@
 	margin-top: 100px;
 }
 
-%pico-background-sm {
+.pico-background-sm {
 	padding: 0;
 	margin: 100px 0 95px;
-	height: 325px;
+	min-height: 325px;
 }
 
 .pico-home {
-	background: #909090 url("../img/pico-home.jpg") no-repeat fixed;
+	@include vendor-prefix(background-size, cover);
+	background: #909090 url("../img/home@2x.jpg") no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 }
 
 .pico-about {
-	background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
+	@include vendor-prefix(background-size, cover);
+	background: #909090 url("../img/about@2x.jpg") no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 }
 
 .pico-product {
-	@extend %pico-background-sm;
+	@include vendor-prefix(background-size, cover);
+	// @extend %pico-background-sm;
 	background: #909090 url("../img/pico-home.jpg") no-repeat fixed;
-	background-size: cover;
+	
 }
 
 .pico-genomics {
-	@extend %pico-background-sm;
+	@include vendor-prefix(background-size, cover);
+	// @extend %pico-background-sm;
 	background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
-	background-size: cover;
+	
 }
 
 .pico-imaging {
-	@extend %pico-background-sm;
+	@include vendor-prefix(background-size, cover);
+	// @extend %pico-background-sm;
 	background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
-	background-size: cover;
+	
 }
 
 .pico-neurology {
-	@extend %pico-background-sm;
-	background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
-	background-size: cover;
+	@include vendor-prefix(background-size, cover);
+	// @extend %pico-background-sm;
+	background: #909090 url("../img/pico-about.jpg") no-repeat;
 }
 
 .pico-resources {
-	@extend %pico-background-sm;
-	background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
-	// background-size: cover;
+	@include vendor-prefix(background-size, cover);
+	// @extend %pico-background-sm;
+	background: #909090 url("../img/pico-about.jpg") no-repeat;
 }
