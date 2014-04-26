@@ -1,9 +1,14 @@
 #page-resources {
-	.reading {
-			padding: 0;
+	.section-header {margin-bottom: 75px;}
+	.pico-reading {
+		padding: 0;
+		li {
+			list-style: none;
+			padding: 20px 0;
+			
+		}
+		
+		li a {font-size: em(24px);}
 	}
-	.reading li {
-		list-style: none;
-		padding: 20px 0;
-	}
+
 }

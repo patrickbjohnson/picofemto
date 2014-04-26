@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Picofemto';
+	src:url('fonts/Picofemto.eot?6k2xs4');
+	src:url('fonts/Picofemto.eot?#iefix6k2xs4') format('embedded-opentype'),
+		url('fonts/Picofemto.woff?6k2xs4') format('woff'),
+		url('fonts/Picofemto.ttf?6k2xs4') format('truetype'),
+		url('fonts/Picofemto.svg?6k2xs4#Picofemto') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	font-family: 'Picofemto';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-growth:before {
+	content: "\e602";
+}
+.icon-person:before {
+	content: "\e600";
+}
+.icon-team:before {
+	content: "\e601";
+}
+.icon-rocket:before {
+	content: "\e603";
+}
+.icon-idea:before {
+	content: "\e604";
+}

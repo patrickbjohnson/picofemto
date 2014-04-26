@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /* line 9, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -7591,36 +7592,37 @@ button.close {
   }
 }
 /* line 1, ../sass/_base.scss */
-html, body, section {
+html,
+body {
   height: 100%;
 }
 
-/* line 2, ../sass/_base.scss */
+/* line 4, ../sass/_base.scss */
 body {
   font-size: 16px;
   line-height: 1.5;
   font-size: 16px;
 }
 
-/* line 8, ../sass/_base.scss */
+/* line 10, ../sass/_base.scss */
 p {
   line-height: 2;
   font-weight: 300;
   margin-bottom: 25px;
 }
 
-/* line 14, ../sass/_base.scss */
+/* line 16, ../sass/_base.scss */
 div[id^=page-] {
   margin-top: 120px;
   margin-bottom: 100px;
 }
 
-/* line 19, ../sass/_base.scss */
+/* line 21, ../sass/_base.scss */
 section[class^=page-] {
   margin: 50px 0;
 }
 
-/* line 22, ../sass/_base.scss */
+/* line 24, ../sass/_base.scss */
 .bl-md {
   display: block;
   margin: inherit auto;
@@ -7796,6 +7798,16 @@ ul.navbar-right {
   margin-top: 30px;
 }
 
+/* line 48, ../sass/_overrides.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 51, ../sass/_overrides.scss */
+ul li {
+  list-style: none;
+}
+
 /* line 1, ../sass/_button-overrides.scss */
 .btn-primary,
 .btn-secondary {
@@ -7854,7 +7866,7 @@ ul.navbar-right {
 }
 
 /* line 6, ../sass/_backgrounds.scss */
-.pico-about, .pico-product, .pico-genomics, .pico-neurology, .pico-resources {
+.pico-about, .pico-product, .pico-genomics, .pico-neurology, .pico-resources, .pico-team {
   padding: 0;
   margin: 100px 0 95px;
   min-height: 325px;
@@ -7884,7 +7896,7 @@ ul.navbar-right {
 
 /* line 25, ../sass/_backgrounds.scss */
 .pico-product {
-  background: #909090 url("../img/pico-home.jpg") no-repeat fixed;
+  background: #909090 url("../img/home.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -7931,6 +7943,30 @@ ul.navbar-right {
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* line 61, ../sass/_backgrounds.scss */
+.pico-team {
+  background-image: url("../img/team@2x.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 70, ../sass/_backgrounds.scss */
+.pico-technology {
+  background-image: url("../img/technology.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 325px;
 }
 
 /* line 1, ../sass/_main-nav.scss */
@@ -8064,12 +8100,7 @@ ul.navbar-right {
   margin-bottom: 20px;
 }
 
-/* line 2, ../sass/_genomics.scss */
-#page-genomics .img-main {
-  margin-bottom: 50px;
-}
-
-/* line 8, ../sass/_genomics.scss */
+/* line 6, ../sass/_genomics.scss */
 #page-neurology .devices {
   margin-top: 120px;
 }
@@ -8174,13 +8205,113 @@ ul.navbar-right {
 }
 
 /* line 2, ../sass/_resources.scss */
-#page-resources .reading {
+#page-resources .section-header {
+  margin-bottom: 75px;
+}
+/* line 3, ../sass/_resources.scss */
+#page-resources .pico-reading {
   padding: 0;
 }
 /* line 5, ../sass/_resources.scss */
-#page-resources .reading li {
+#page-resources .pico-reading li {
   list-style: none;
   padding: 20px 0;
+}
+/* line 11, ../sass/_resources.scss */
+#page-resources .pico-reading li a {
+  font-size: 1.5em;
+}
+
+/* line 1, ../sass/_team.scss */
+.team-members h1,
+.board-members h1 {
+  color: #2668b2;
+}
+
+/* line 4, ../sass/_team.scss */
+.board-members .section-header {
+  color: #010101;
+}
+
+/* line 8, ../sass/_team.scss */
+.team-members {
+  margin-bottom: 0;
+}
+/* line 10, ../sass/_team.scss */
+.team-members .row {
+  margin-bottom: 50px;
+}
+/* line 11, ../sass/_team.scss */
+.team-members .rounded {
+  margin: 10px auto 15px;
+}
+
+/* line 14, ../sass/_team.scss */
+.team-member-name {
+  font-size: 2.25em;
+}
+
+/* line 2, ../sass/_technology.scss */
+#page-technology .pico-benefits {
+  text-align: center;
+}
+/* line 4, ../sass/_technology.scss */
+#page-technology .pico-benefits li {
+  position: relative;
+  margin: 60px 0;
+  font-size: 1.5em;
+  list-style: none;
+}
+/* line 10, ../sass/_technology.scss */
+#page-technology .pico-benefits li:after {
+  content: "•";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -45px;
+  color: #f47525;
+  text-align: center;
+}
+/* line 20, ../sass/_technology.scss */
+#page-technology .pico-benefits li:last-child:after {
+  content: "";
+}
+/* line 26, ../sass/_technology.scss */
+#page-technology .roadmap {
+  height: 100%;
+  position: relative;
+}
+/* line 30, ../sass/_technology.scss */
+#page-technology .roadmap:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px solid #010101;
+}
+/* line 40, ../sass/_technology.scss */
+#page-technology .roadmap-event {
+  display: inline-block;
+}
+/* line 42, ../sass/_technology.scss */
+#page-technology .roadmap-event h1 {
+  font-size: 1.5em;
+  color: #f47525;
+}
+/* line 47, ../sass/_technology.scss */
+#page-technology .roadmap-icon {
+  width: 175px;
+  height: 175px;
+  margin-bottom: 25px;
+  background: #999999;
+  border-radius: 50%;
+  line-height: 175px;
+}
+/* line 54, ../sass/_technology.scss */
+#page-technology .roadmap-icon img {
+  width: 105px;
 }
 
 /* line 1, ../sass/_footer.scss */
@@ -8297,4 +8428,10 @@ img {
 .pico-feature img,
 .pico-component img {
   height: 85px;
+}
+
+/* line 57, ../sass/_misc.scss */
+.img-main {
+  margin-bottom: 50px;
+  width: 390px;
 }

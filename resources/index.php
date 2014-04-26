@@ -13,14 +13,12 @@
 		</div>
 	</section>
 	
-
 	<hr>
-
 
 	<section class="page-section">
 		<div class="container">
 			<div class="row">
-				<h1 class="section-header center font-55 light-300">5 Questions About What We’re Doing</h1>
+				<h1 class="section-header">5 Questions About What We’re Doing</h1>
 			</div>
 			
 			<div class="row">
@@ -34,17 +32,17 @@
 			</div>
 
 			<div class="row">
-				<h2 class="bold-700 font-22">Q: What are the advantages of using CliniScanSM EEG Decision Support?</h2>
-				<p><span class="bold-700 font-22 orange upper">A: </span>Electroencephalograms are a large market in the field of neurology that can provide critical information regarding an individual’s brain.  In addition to epilepsy, a number of other pathologies can be identified.  At Picofemto, we recognize the benefits of having an extremely powerful, cloud-based product to facilitate the interpretation of EEGs.  We are proud to release CliniScanSM EEG Decision Support as the first modality that we're pursuing.</p>
+				<h2 class="bold-700 font-22">Q: What are the advantages of using CliniScan<sup>SM</sup> EEG Decision Support?</h2>
+				<p><span class="bold-700 font-22 orange upper">A: </span>Electroencephalograms are a large market in the field of neurology that can provide critical information regarding an individual’s brain.  In addition to epilepsy, a number of other pathologies can be identified.  At Picofemto, we recognize the benefits of having an extremely powerful, cloud-based product to facilitate the interpretation of EEGs.  We are proud to release CliniScan<sup>SM</sup> EEG Decision Support as the first modality that we're pursuing.</p>
 			</div>
 
 			<div class="row">
-				<h2 class="bold-700 font-22">Q: What are the benefits of using CliniScanSM DTI Decision Support?</h2>
+				<h2 class="bold-700 font-22">Q: What are the benefits of using CliniScan<sup>SM</sup> DTI Decision Support?</h2>
 				<p><span class="bold-700 font-22 orange upper">A: </span>The interpretation of DTI (diffusion tensor imaging) can be a long and onerous process.  Given the power of DTI analysis, we want to help facilitate the process for physicians by providing them with automated tools to simplify the process and assist in the interpretation. </p>
 			</div>
 
 			<div class="row">
-				<h2 class="bold-700 font-22">Q: What is CliniScanSM Genomics and Personalized Medicine?</h2>
+				<h2 class="bold-700 font-22">Q: What is CliniScan<sup>SM</sup> Genomics and Personalized Medicine?</h2>
 				<p><span class="bold-700 font-22 orange upper">A: </span>Personalized medicine is a transformative movement in the medical community that aims to deliver extremely customized medicine to individuals based on their background and characteristics of their disease.  Part of this process involves determining the genetic makeup of the individual and or diseased, that may have ramifications for their response to treatment.  By customizing healthcare through personalized medicine, better outcomes can be achieved.  At Picofemto, we recognize this future and want to be a leader in the analysis of genomic information, from a clinical perspective. </p>
 			</div>
 		</div>
@@ -52,7 +50,7 @@
 
 	<section class="page-section">
 		<div class="row">
-			<img src="#" alt="Placeholder Image">
+			<img class="img-main" src="../img/pico-blob.svg" alt="Placeholder Image">
 		</div>
 	</section>
 	
@@ -60,18 +58,18 @@
 	<section class="page-section">
 		<div class="row">
 			<h1 class="section-header font-55 light-300 center">What We’re Reading</h1>
-			<ul class="reading center">
-				<li><a href="#">Thing 1</a></li>
-				<li><a href="#">Thing 2</a></li>
-				<li><a href="#">Thing 3</a></li>
-				<li><a href="#">Thing 4</a></li>
+			<ul class="pico-reading center">
+				<li><a href="http://techcrunch.com/2012/01/10/doctors-or-algorithms/">Doctors or Algorithms (Techcrunch)</a></li>
+				<li><a href="http://techcrunch.com/2013/09/11/vinod-khosla-in-the-next-10-years-data-science-will-do-more-for-medicine-than-all-biological-sciences-combined/">Vinod Khosla: In The Next 10 Years, Data Science Will Do More For Medicine Than All Biological (Techcrunch)</a></li>
+				<li><a href="http://www.theguardian.com/healthcare-network/healthcare-innovation-partner-zone/how-it-will-shape-future-healthcare">How IT will shape the future of healthcare (The Guardian)</a></li>
+				<li><a href="http://medcitynews.com/2013/07/5-inspirational-ted-talks-every-healthcare-professional-must-watch/">5 Inspirational TED Talks Every Healthcare Professional Must Watch (MedCity News)</a></li>
 			</ul>
 		</div>
 	</section>
 		
 	<section class="page-section">
 		<div class="row sign-up center">
-			<p class="center">Interested in learning more?</p>
+			<h1 class="font-24 center">Interested in learning more?</h1>
 			<a class="btn btn-secondary">Contact Us</a>
 		</div>
 	</section>
@@ -79,9 +77,5 @@
 	<hr>
 
 </div>
-
-
-
-
 
 <? include("../includes/page-footer.php"); ?>

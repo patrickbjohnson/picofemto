@@ -1,0 +1,56 @@
+#page-technology {
+	.pico-benefits {
+		text-align: center;
+		li {
+			position: relative;
+			margin: 60px 0;
+			font-size: em(24px);
+			list-style: none;
+
+			&:after {
+				content: "•";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -45px;
+				color: $pico-orange;
+				text-align: center;
+			}
+
+			&:last-child:after {
+				content: "";
+			}
+		}
+	}
+
+	.roadmap {
+		height: 100%;
+		position:relative;
+
+		&:after {
+			content:"";
+	    position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    bottom: 0;
+	    left: 50%;
+	    border-left: 2px solid $black;
+		}
+	}
+	.roadmap-event {
+		display: inline-block;
+		h1 {
+			font-size: em(24px);
+			color: $pico-orange;
+		}
+	}
+	.roadmap-icon {
+		width: 175px;
+		height: 175px;
+		margin-bottom: 25px;
+		background: $pico-gray-dark;
+		border-radius: 50%;
+		line-height: 175px;
+		img {width: 105px;}
+	}
+}

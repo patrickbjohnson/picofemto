@@ -15,7 +15,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Roboto:400,400italic,500,500italic,700,700italic,900,900italic,100,100italic,300,300italic' rel='stylesheet' type='text/css'>
-    <link href="stylesheets/webfonts/ss-social.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fonts/webfonts/ss-social.css" />
+    <link rel="stylesheet" href="fonts/picofemto/pico-fonts.css" />
     <link rel="stylesheet" href="stylesheets/styles.css">
 
     <!-- Modernizr -->

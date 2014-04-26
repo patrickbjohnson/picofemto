@@ -1,1 +1,14 @@
+.team-members h1,
+.board-members h1 {color: $pico-blue;}
+
+.board-members .section-header {color: $black;}
+
+
+
+.team-members {
+	margin-bottom: 0;
+	.row {margin-bottom: 50px;}
+	.rounded {margin:10px auto 15px;}
+
+}
 .team-member-name {font-size: em($font-size-36);}

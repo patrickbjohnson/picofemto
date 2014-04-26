@@ -44,3 +44,9 @@ ul.navbar-right {
 .navbar-toggle {
 	margin-top: 30px;
 }
+
+ul {
+	padding: 0;
+	margin: 0;
+	li {list-style: none;}
+}
