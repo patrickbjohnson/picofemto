@@ -7725,7 +7725,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 30, ../sass/_typography.scss */
 .section-header {
   margin-bottom: 25px;
-  font-size: 3.4375em;
+  font-size: 3.4375em !important;
   font-weight: 300;
   text-align: center;
 }
@@ -7749,10 +7749,9 @@ sup {
 /* line 7, ../sass/_overrides.scss */
 .jumbotron p {
   font-size: inherit;
-  font-weight: 500;
 }
 
-/* line 13, ../sass/_overrides.scss */
+/* line 12, ../sass/_overrides.scss */
 hr {
   position: relative;
   display: block;
@@ -7762,7 +7761,7 @@ hr {
   border-radius: 50%;
   background: #f47525;
 }
-/* line 22, ../sass/_overrides.scss */
+/* line 21, ../sass/_overrides.scss */
 hr:before, hr:after {
   content: "";
   position: absolute;
@@ -7773,26 +7772,26 @@ hr:before, hr:after {
   border-radius: 50%;
   background: #999999;
 }
-/* line 34, ../sass/_overrides.scss */
+/* line 33, ../sass/_overrides.scss */
 hr:before {
   left: -25px;
 }
-/* line 35, ../sass/_overrides.scss */
+/* line 34, ../sass/_overrides.scss */
 hr:after {
   right: -25px;
 }
 
-/* line 39, ../sass/_overrides.scss */
+/* line 38, ../sass/_overrides.scss */
 .pico-alert {
   color: #f47525 !important;
 }
 
-/* line 41, ../sass/_overrides.scss */
+/* line 40, ../sass/_overrides.scss */
 ul.navbar-right {
   padding-top: 20px;
 }
 
-/* line 45, ../sass/_overrides.scss */
+/* line 44, ../sass/_overrides.scss */
 .navbar-toggle {
   margin-top: 30px;
 }
@@ -7822,9 +7821,9 @@ ul.navbar-right {
 }
 /* line 12, ../sass/_mixins.scss */
 .btn-primary:hover {
-  color: #e5e5e5;
-  background-color: transparent;
-  border-color: #e5e5e5;
+  border: 3px solid #2668b2;
+  background: #2668b2;
+  color: #fefefe;
 }
 
 /* line 11, ../sass/_button-overrides.scss */
@@ -7843,19 +7842,19 @@ ul.navbar-right {
 }
 /* line 12, ../sass/_mixins.scss */
 .btn-secondary:hover {
-  color: #1d4f88;
-  background-color: transparent;
-  border-color: #1d4f88;
+  border: 3px solid #2668b2;
+  background: #2668b2;
+  color: #fefefe;
 }
 
 /* line 1, ../sass/_backgrounds.scss */
 .pico-background-bg {
-  height: 700px;
+  height: 800px;
   margin-top: 100px;
 }
 
 /* line 6, ../sass/_backgrounds.scss */
-.pico-background-sm {
+.pico-about, .pico-product, .pico-genomics, .pico-neurology, .pico-resources {
   padding: 0;
   margin: 100px 0 95px;
   min-height: 325px;
@@ -7875,64 +7874,63 @@ ul.navbar-right {
 
 /* line 19, ../sass/_backgrounds.scss */
 .pico-about {
+  background: #909090 url("../img/about@2x.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #909090 url("../img/about@2x.jpg") no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
-/* line 26, ../sass/_backgrounds.scss */
+/* line 25, ../sass/_backgrounds.scss */
 .pico-product {
+  background: #909090 url("../img/pico-home.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #909090 url("../img/pico-home.jpg") no-repeat fixed;
 }
 
-/* line 33, ../sass/_backgrounds.scss */
+/* line 32, ../sass/_backgrounds.scss */
 .pico-genomics {
+  background: #909090 url("../img/genomics@2x.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
+  height: 400px;
 }
 
 /* line 40, ../sass/_backgrounds.scss */
 .pico-imaging {
+  background: #909090 url("../img/imaging@2x.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #909090 url("../img/pico-about.jpg") no-repeat fixed;
 }
 
 /* line 47, ../sass/_backgrounds.scss */
 .pico-neurology {
+  background: #909090 url("../img/neurology@2x.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #909090 url("../img/pico-about.jpg") no-repeat;
 }
 
 /* line 53, ../sass/_backgrounds.scss */
 .pico-resources {
+  background: #909090 url("../img/resources@2x.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #909090 url("../img/pico-about.jpg") no-repeat;
 }
 
 /* line 1, ../sass/_main-nav.scss */
@@ -7957,41 +7955,58 @@ ul.navbar-right {
 
 /* line 2, ../sass/_home-page.scss */
 #page-main .page-title {
+  margin-top: 250px;
   text-align: left;
   font-weight: 900;
 }
-/* line 7, ../sass/_home-page.scss */
+/* line 8, ../sass/_home-page.scss */
 #page-main .team-members {
   margin-top: 90px;
   margin-bottom: 75px;
 }
-/* line 12, ../sass/_home-page.scss */
+/* line 13, ../sass/_home-page.scss */
 #page-main .team-photo {
   margin-bottom: 40px;
 }
-/* line 16, ../sass/_home-page.scss */
+/* line 17, ../sass/_home-page.scss */
 #page-main .mission-statement {
   margin: 50px 0;
 }
-/* line 18, ../sass/_home-page.scss */
+/* line 19, ../sass/_home-page.scss */
 #page-main .product-headline,
 #page-main .team-name {
   margin-bottom: 15px;
   color: #2668b2;
 }
-/* line 27, ../sass/_home-page.scss */
+/* line 28, ../sass/_home-page.scss */
 #page-main .page-products p,
 #page-main .team-position {
   font-size: 16px;
 }
-/* line 33, ../sass/_home-page.scss */
+/* line 34, ../sass/_home-page.scss */
 #page-main .address {
   margin-bottom: 70px;
 }
-/* line 35, ../sass/_home-page.scss */
+/* line 36, ../sass/_home-page.scss */
 #page-main .page-products img {
   height: 175px;
   margin-bottom: 25px;
+}
+/* line 41, ../sass/_home-page.scss */
+#page-main .google-map {
+  margin-bottom: 0;
+}
+/* line 43, ../sass/_home-page.scss */
+#page-main .page-address {
+  margin: 0 auto;
+}
+/* line 48, ../sass/_home-page.scss */
+#page-main .page-address .address {
+  margin: 0;
+}
+/* line 51, ../sass/_home-page.scss */
+#page-main .page-address .address span:last-child {
+  margin-bottom: 0;
 }
 
 /* line 3, ../sass/_about.scss */
@@ -8006,26 +8021,27 @@ ul.navbar-right {
 /* line 13, ../sass/_about.scss */
 #page-about .page-inspiration {
   margin-top: 100px;
+  margin-bottom: 125px;
 }
-/* line 15, ../sass/_about.scss */
+/* line 16, ../sass/_about.scss */
 #page-about .page-inspiration ul {
   display: inline-block;
   padding: 0;
   margin: 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 21, ../sass/_about.scss */
+/* line 22, ../sass/_about.scss */
 #page-about .page-inspiration ul li {
   font-weight: 400;
   list-style: none;
   margin-bottom: 15px;
 }
-/* line 27, ../sass/_about.scss */
+/* line 28, ../sass/_about.scss */
 #page-about .page-inspiration ul .ss-icon {
   font-size: 1.150em;
   color: #999999;
 }
-/* line 30, ../sass/_about.scss */
+/* line 31, ../sass/_about.scss */
 #page-about .page-inspiration ul .ss-icon:hover {
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -8035,72 +8051,126 @@ ul.navbar-right {
   color: #4d4d4d;
   text-decoration: none;
 }
-/* line 40, ../sass/_about.scss */
+/* line 41, ../sass/_about.scss */
 #page-about .btn {
   margin-top: 30px;
 }
-/* line 45, ../sass/_about.scss */
+/* line 44, ../sass/_about.scss */
+#page-about .mission-col {
+  margin-top: 50px;
+}
+/* line 46, ../sass/_about.scss */
 #page-about .mission-col h2 {
   margin-bottom: 20px;
 }
 
-/* line 2, ../sass/_neurology.scss */
+/* line 2, ../sass/_genomics.scss */
+#page-genomics .img-main {
+  margin-bottom: 50px;
+}
+
+/* line 8, ../sass/_genomics.scss */
+#page-neurology .devices {
+  margin-top: 120px;
+}
+
+/* line 4, ../sass/_neurology.scss */
+#page-neurology .features .pico-feature img {
+  height: 85px;
+}
+/* line 5, ../sass/_neurology.scss */
+#page-neurology .features .pico-feature p {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #fefefe;
+}
+/* line 12, ../sass/_neurology.scss */
 #page-neurology .features p {
   line-height: 1.5;
 }
-/* line 3, ../sass/_neurology.scss */
+/* line 14, ../sass/_neurology.scss */
 #page-neurology .jumbtron-bg {
   background-color: #cecece;
 }
-/* line 4, ../sass/_neurology.scss */
+/* line 15, ../sass/_neurology.scss */
 #page-neurology ul {
   padding: 15px;
   font-size: 1.5em;
   color: #fefefe;
 }
-/* line 9, ../sass/_neurology.scss */
+/* line 20, ../sass/_neurology.scss */
 #page-neurology ul li {
   margin: -5px 0;
 }
 
 /* line 2, ../sass/_products.scss */
+#page-products .page-headline {
+  padding-top: 50px;
+}
+/* line 3, ../sass/_products.scss */
 #page-products .jumbotron {
   background: #999999;
 }
-/* line 4, ../sass/_products.scss */
+/* line 5, ../sass/_products.scss */
 #page-products .jumbotron p {
   color: #fefefe;
 }
+/* line 8, ../sass/_products.scss */
+#page-products .pico-component img {
+  margin: 50px auto 25px;
+}
+/* line 9, ../sass/_products.scss */
+#page-products .pico-component h1 {
+  color: #2668b2;
+  margin-bottom: 20px;
+}
 
 /* line 2, ../sass/_contact.scss */
+#page-contact .page-section {
+  margin: 0;
+}
+/* line 3, ../sass/_contact.scss */
 #page-contact label {
   font-weight: 300;
   color: #666666;
 }
-/* line 7, ../sass/_contact.scss */
+/* line 8, ../sass/_contact.scss */
 #page-contact #contact-message {
   min-height: 200px;
   margin-bottom: 50px;
 }
-/* line 12, ../sass/_contact.scss */
+/* line 13, ../sass/_contact.scss */
 #page-contact .address {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   text-align: center;
 }
-/* line 16, ../sass/_contact.scss */
+/* line 17, ../sass/_contact.scss */
 #page-contact .address span {
   display: block;
   margin-bottom: 20px;
   font-size: 1.5em;
   font-weight: 300;
 }
-/* line 23, ../sass/_contact.scss */
+/* line 24, ../sass/_contact.scss */
 #page-contact .address p {
   margin-top: 50px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
   color: #2668b2;
+}
+
+/* line 2, ../sass/_privacy.scss */
+#page-privacy .pico-gemoics img {
+  width: 175px;
+}
+/* line 3, ../sass/_privacy.scss */
+#page-privacy .jumbotron {
+  padding-bottom: 0;
+}
+/* line 4, ../sass/_privacy.scss */
+#page-privacy .section-header {
+  margin-bottom: 50px;
 }
 
 /* line 2, ../sass/_resources.scss */
@@ -8122,7 +8192,7 @@ footer.jumbotron {
 
 /* line 8, ../sass/_footer.scss */
 .footer {
-  font-family: "Roboto", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* line 11, ../sass/_footer.scss */
 .footer a {
@@ -8153,7 +8223,7 @@ footer.jumbotron {
 /* line 33, ../sass/_footer.scss */
 .footer p {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 2;
 }
 
@@ -8201,6 +8271,30 @@ img {
 }
 
 /* line 31, ../sass/_misc.scss */
+.rounded-lg {
+  display: inline-block;
+  width: 360px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+}
+
+/* line 38, ../sass/_misc.scss */
 .quote {
   color: #2668b2;
+}
+
+/* line 44, ../sass/_misc.scss */
+.txt-l {
+  text-align: left;
+}
+
+/* line 48, ../sass/_misc.scss */
+.txt-r {
+  text-align: right;
+}
+
+/* line 52, ../sass/_misc.scss */
+.pico-feature img,
+.pico-component img {
+  height: 85px;
 }

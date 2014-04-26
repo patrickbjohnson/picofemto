@@ -27,7 +27,7 @@
 		</section>
 		<section class="page-cta">
 			<div class="row center">
-				<h2 class="section-subtitle font-24">Interested in seeing more?</h2>
+				<h2 class="section-subtitle font-24">Interested in learning more?</h2>
 				<a href="<?php echo BASE; ?>/pro" class="btn btn-secondary">See our products</a>
 			</div>
 		</section>

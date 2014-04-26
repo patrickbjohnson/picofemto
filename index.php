@@ -16,15 +16,14 @@
         <div class="row mission-statement">
           <p class="font-24 light">Our focus is on assisting clinicians and research professionals with our easy-to-use web platform that analyzes raw primary medical data at the point of diagnosis or evaluation. Our flagship cloud-based service is CliniscanSM, which enables the clinician and researcher to work in the cloud with a wide range of biomedical modalities.</p>
         </div>
+        <hr>
         <div class="row mission-statement">
           <h1 class="section-header center light-300 font-55">Technology is a physician's best friend—it's available and ready to perform around the clock.</h1>
-          <hr>
+          
           <p>The delivery of healthcare and evidence based outcomes are becoming increasingly personalized, in which specific individual information, from physiological to genomic data, are used both in a diagnostic and therapeutic capacity.  Our first product, CliniscanSM EEG Decision Support  utilizes an open-ended architecture as we expect the number of analytics for each modality to grow by partnering with imaging groups, hospitals, universities, and research centers.  Our subsequent products will address complex biomedical modalities such as MRI, PET and CT.</p>
         </div>
       </section>
     
-      
-
       <section class="page-products">
         <div class="row">
           <div class="col-md-4 center">
@@ -80,7 +79,7 @@
 
     <hr>
     
-    <section class="page-section address">
+    <section class="page-section google-map">
       <div id="map-canvas"></div>
     </section>
     <section class="page-address">

@@ -6,7 +6,8 @@ $(document).ready(function(){
 	  var myLatlng = new google.maps.LatLng(40.752671, -73.973618);
 	  var mapOptions = {
 	    zoom: 15,
-	    center: myLatlng
+	    center: myLatlng,
+	    scrollwheel: false
 	  }
 	  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 

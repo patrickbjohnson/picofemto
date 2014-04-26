@@ -1,5 +1,16 @@
 #page-neurology {
-	.features p {line-height: 1.5;}
+	.features {
+		.pico-feature {
+			img {height: 85px;}
+			p {
+				font-size: em(24px);
+				font-weight: 300;
+				color: $white;
+			}
+
+			}
+		p {line-height: 1.5; }
+	}
 	.jumbtron-bg {background-color: #cecece;}
 	ul {
 		padding: 15px;

@@ -1,7 +1,16 @@
 #page-products {
+	.page-headline {padding-top: 50px;}
 	.jumbotron {
 		background: $pico-gray-dark;
 		p {color: $white;}
+	}
+	.pico-component  {
+		img {margin: 50px auto 25px;}
+		h1 {
+			color: $pico-blue;
+			margin-bottom: 20px;
+		}
+		
 	}
 
 }

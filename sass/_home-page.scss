@@ -1,5 +1,6 @@
 #page-main {
 	.page-title {
+		margin-top: 250px;
 		text-align: left;
 		font-weight: 900;
 	}
@@ -35,6 +36,20 @@
 	.page-products img {
 		height: 175px;
 		margin-bottom: 25px;
+	}
+	
+	.google-map {margin-bottom: 0;}
+
+	.page-address {
+		margin: 0 auto;
+
+
+
+		.address {
+			margin:0;
+
+			span:last-child {margin-bottom: 0;}
+		}
 	}
 }
 

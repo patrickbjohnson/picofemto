@@ -22,20 +22,28 @@
 		</section>
 		<section class="page-section">
 			<div class="row">
-				<img src="#" alt="#">
-				<h1 class="section-header font-55 light-300 center">Unlocking the mysteries of the Human Genome.</h1>
-				<p class="reg-400">The crucial barrier to incorporating genomic information into the clinical setting was acquiring the data through sequencing or other sophisticated techniques.  The time – and therefore cost – for performing the study was prohibitive.  Today, thanks to advances in next-generation-sequencing, we are on the cusp of a revolution in which an individual’s genomic data can be acquired within a matter of hours and at a low cost.  The introduction of genomic data into the clinical setting opens an entirely new dimension of personalized medicine that will help improve outcomes.</p>
+					<img class="col-md-4 col-md-offset-4 img-main" src="../img/pico-blob.svg" alt="#">
+					<h1 class="section-header col-md-8 col-md-offset-2">Unlocking the mysteries of the Human Genome.</h1>
+				<p class="reg-400 col-md-12">The crucial barrier to incorporating genomic information into the clinical setting was acquiring the data through sequencing or other sophisticated techniques.  The time – and therefore cost – for performing the study was prohibitive.  Today, thanks to advances in next-generation-sequencing, we are on the cusp of a revolution in which an individual’s genomic data can be acquired within a matter of hours and at a low cost.  The introduction of genomic data into the clinical setting opens an entirely new dimension of personalized medicine that will help improve outcomes.</p>
 			</div>
 		</section>
 
 		<section class="page-section">
-			<h1 class="section-header font-55 light-300 center">We develop systems to aid with clinical analysis of complex biomedical data. </h1>
-			<p class="reg-400 center">One key functionality is providing an automated, cloud-based parallel scan against a known disease or predisposition database of biomarkers. That's what we're working on.</p>
+			<h1 class="section-header">Where we are today.</h1>
+			<p class="reg-400">Major university hospitals have recently proposed the incorporation of genomic data into electronic health records.  By implementing this, physicians will now have the ability to use that data in an effective way.  This is where our products enter the story. They will help process that data for evaluation by a physician.  Because of the complexity of the data, much of the required behind-the-scenes analytics can only be performed computationally, with sophisticated algorithms.</p>
+		</section>
+
+		<section class="page-section">
+			<h1 class="section-header">We develop systems to aid with clinical analysis of complex biomedical data. </h1>
+			<p class="reg-400 center">The key functionality is providing an automated, cloud-based and parallel processing comparative operation: scanning for biomarkers in known genetic content of known diseases or of predisposition databases.</p>
+			<p class="bold-700 center">That's what we're working on.</p>
 		</section>
 		
 		<section class="page-section">
 			<div class="row sign-up">
-				<p class="center">Sign up to be the first to know when our CliniscanSM Genomics product launches</p>
+				<p class="reg-400 center font-24">Sign up to be the first to know when our CliniscanSM Genomics product launches</p>
+			</div>
+			<div class="row center">
 				<a href="#" class="btn btn-secondary">Sign Me Up</a href="#">
 			</div>
 		</section>

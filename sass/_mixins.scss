@@ -10,9 +10,9 @@
 	background-color: transparent;
 	text-transform: uppercase;
 	&:hover {
-		color: darken($color, 10%);
-		background-color: transparent;
-		border-color: darken($color, 10%);
+		border: 3px solid $pico-blue;
+		background: $pico-blue;
+		color: $white;
 	}
 }
 

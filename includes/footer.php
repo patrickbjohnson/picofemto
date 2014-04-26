@@ -2,10 +2,15 @@
 	  <footer id="footer" class="jumbotron footer">
 	    <div class="container">
 	    	<div class="row">
-	    		<div class="col-md-3">Picofemto Logo</div>
+	    		<div class="col-md-3">
+	    			
+	    			<a class="navbar-brand pic" href="<?php echo BASE; ?>">
+	    			  <img src="img/pico-logo.svg" alt="">
+	    			</a>
+	    		</div>
 	    		<div class="col-md-2 col-md-offset-1">
 	    			<a href="#" class="footer-section-title">About Us</a>
-	    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+	    			<p>We create easy-to-use, cloud-based software that helps medical professionals analyze raw primary medical data at the point of diagnosis or evaluation.</p>
 	    		</div>
 	    		<div class="col-md-1 col-md-offset-1">
 	    			<a href="#" class="footer-section-title">Menu</a>

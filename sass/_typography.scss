@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0;}
 }
 .section-header {
 	margin-bottom: 25px;
-	font-size: em(55px);
+	font-size: em(55px) !important;
 	font-weight: 300;
 	text-align: center;
 }

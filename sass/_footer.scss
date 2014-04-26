@@ -6,7 +6,7 @@ footer.jumbotron {
 }
 
 .footer {
-	font-family: $alt-font-family-sans-serif;
+	font-family: $font-family-sans-serif;
 
 	a {color: $black;}
 	ul {
@@ -32,7 +32,7 @@ footer.jumbotron {
 	}
 	p { 
 		font-size: em(16px); 
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 2;
 	}
 }
