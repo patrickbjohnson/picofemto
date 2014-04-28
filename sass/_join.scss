@@ -1,0 +1,36 @@
+#page-join {
+	.career-block {
+		display: table;
+		width: 100%;
+		margin-bottom: 50px;
+		h1 {
+			margin-bottom: 25px;
+			font-size: em(30px);
+			color: $pico-orange;
+		}
+		// ul {padding-left: 20px;}
+		li {
+			font-size: em(16px);
+			font-weight: 300;
+			&:before {
+				content: "•";
+				color: $pico-orange;
+				margin-right: 10px;
+			}
+		}
+		
+		.career-description,
+		.career-apply {
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+		}
+
+	}
+}
+
+
+
+
+
+

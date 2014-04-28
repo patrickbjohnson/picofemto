@@ -23,7 +23,7 @@
 		}
 	}
 
-	.roadmap {
+	.timeline {
 		height: 100%;
 		position:relative;
 
@@ -36,21 +36,68 @@
 	    left: 50%;
 	    border-left: 2px solid $black;
 		}
+		
+		ul {
+			padding: 75px 0 0;
+			overflow: hidden;
+		}
+
+		.timeline-block-left,
+		.timeline-block-right {
+			clear: both;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 80px;
+				width: 20px;
+				height: 20px;
+				background: $pico-orange;
+				border-radius: 50%;
+				z-index: 1;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				display: inline-block;
+				top: 90px;
+				border-top: 2px solid #010101;
+				width: 95px;
+			}
+		}
+
+
+		.timeline-block-left {
+			float: left;
+			&:before {right: -40px;}
+			&:after  {right: -134px;}
+		}
+		.timeline-block-right {
+			float: right;
+			&:before {left: -40px;}
+			&:after  {left: -134px;}
+		}
 	}
-	.roadmap-event {
+	.timeline-block {
+		position: relative;
 		display: inline-block;
 		h1 {
 			font-size: em(24px);
 			color: $pico-orange;
 		}
 	}
-	.roadmap-icon {
+	.timeline-icon {
+		display: inline-block;
 		width: 175px;
 		height: 175px;
 		margin-bottom: 25px;
 		background: $pico-gray-dark;
 		border-radius: 50%;
 		line-height: 175px;
-		img {width: 105px;}
+
+		.icon {
+			font-size: em(100px);
+			line-height: 175px;
+			color: $white;
+		}
 	}
 }

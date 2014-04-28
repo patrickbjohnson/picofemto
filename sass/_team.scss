@@ -1,3 +1,7 @@
+
+
+
+
 .team-members h1,
 .board-members h1 {color: $pico-blue;}
 
@@ -12,3 +16,27 @@
 
 }
 .team-member-name {font-size: em($font-size-36);}
+
+
+
+#page-team-member {
+	margin-top: 120px;
+	
+	.pico-team-member {
+		margin-bottom: 50px;
+	}
+
+	
+
+	.team-member-name {
+		margin-bottom: 20px;
+		color: $pico-blue;
+	}
+	h2 {font-size: em(24px);}
+	
+	p {font-size: em(24px);}
+}
+
+
+
+

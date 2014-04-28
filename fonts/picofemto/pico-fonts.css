@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Picofemto';
-	src:url('fonts/Picofemto.eot?6k2xs4');
-	src:url('fonts/Picofemto.eot?#iefix6k2xs4') format('embedded-opentype'),
-		url('fonts/Picofemto.woff?6k2xs4') format('woff'),
-		url('fonts/Picofemto.ttf?6k2xs4') format('truetype'),
-		url('fonts/Picofemto.svg?6k2xs4#Picofemto') format('svg');
+	src:url('Picofemto.eot?6k2xs4');
+	src:url('Picofemto.eot?#iefix6k2xs4') format('embedded-opentype'),
+		url('Picofemto.woff?6k2xs4') format('woff'),
+		url('Picofemto.ttf?6k2xs4') format('truetype'),
+		url('Picofemto.svg?6k2xs4#Picofemto') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

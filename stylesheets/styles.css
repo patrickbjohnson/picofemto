@@ -7619,7 +7619,7 @@ div[id^=page-] {
 
 /* line 21, ../sass/_base.scss */
 section[class^=page-] {
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 /* line 24, ../sass/_base.scss */
@@ -7989,6 +7989,44 @@ ul li {
   width: 100%;
 }
 
+/* line 3, ../sass/_modal.scss */
+.modal-content {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+}
+/* line 8, ../sass/_modal.scss */
+.modal-content .modal-header {
+  background: #ebebeb;
+}
+/* line 9, ../sass/_modal.scss */
+.modal-content .modal-title {
+  font-weight: 300;
+}
+/* line 10, ../sass/_modal.scss */
+.modal-content label {
+  font-size: 0.875em;
+  font-weight: 300;
+}
+/* line 17, ../sass/_modal.scss */
+.modal-content .file-upload-group .btn-upload {
+  padding: 7px 20px;
+  font-weight: 300;
+  font-size: 14px;
+  background: #ebebeb;
+}
+/* line 25, ../sass/_modal.scss */
+.modal-content .file-upload-group .btn:hover {
+  border-color: #cccccc;
+}
+/* line 29, ../sass/_modal.scss */
+.modal-content .file-upload-group .upload-icon {
+  top: -1px;
+  margin-right: 10px;
+  font-size: 0.75em;
+  color: #666666;
+}
+
 /* line 2, ../sass/_home-page.scss */
 #page-main .page-title {
   margin-top: 250px;
@@ -8134,10 +8172,6 @@ ul li {
   margin: -5px 0;
 }
 
-/* line 2, ../sass/_products.scss */
-#page-products .page-headline {
-  padding-top: 50px;
-}
 /* line 3, ../sass/_products.scss */
 #page-products .jumbotron {
   background: #999999;
@@ -8222,33 +8256,86 @@ ul li {
   font-size: 1.5em;
 }
 
-/* line 1, ../sass/_team.scss */
+/* line 5, ../sass/_team.scss */
 .team-members h1,
 .board-members h1 {
   color: #2668b2;
 }
 
-/* line 4, ../sass/_team.scss */
+/* line 8, ../sass/_team.scss */
 .board-members .section-header {
   color: #010101;
 }
 
-/* line 8, ../sass/_team.scss */
+/* line 12, ../sass/_team.scss */
 .team-members {
   margin-bottom: 0;
 }
-/* line 10, ../sass/_team.scss */
+/* line 14, ../sass/_team.scss */
 .team-members .row {
   margin-bottom: 50px;
 }
-/* line 11, ../sass/_team.scss */
+/* line 15, ../sass/_team.scss */
 .team-members .rounded {
   margin: 10px auto 15px;
 }
 
-/* line 14, ../sass/_team.scss */
+/* line 18, ../sass/_team.scss */
 .team-member-name {
   font-size: 2.25em;
+}
+
+/* line 22, ../sass/_team.scss */
+#page-team-member {
+  margin-top: 120px;
+}
+/* line 25, ../sass/_team.scss */
+#page-team-member .pico-team-member {
+  margin-bottom: 50px;
+}
+/* line 31, ../sass/_team.scss */
+#page-team-member .team-member-name {
+  margin-bottom: 20px;
+  color: #2668b2;
+}
+/* line 35, ../sass/_team.scss */
+#page-team-member h2 {
+  font-size: 1.5em;
+}
+/* line 37, ../sass/_team.scss */
+#page-team-member p {
+  font-size: 1.5em;
+}
+
+/* line 2, ../sass/_join.scss */
+#page-join .career-block {
+  display: table;
+  width: 100%;
+  margin-bottom: 50px;
+}
+/* line 6, ../sass/_join.scss */
+#page-join .career-block h1 {
+  margin-bottom: 25px;
+  font-size: 1.875em;
+  color: #f47525;
+}
+/* line 12, ../sass/_join.scss */
+#page-join .career-block li {
+  font-size: 1em;
+  font-weight: 300;
+}
+/* line 15, ../sass/_join.scss */
+#page-join .career-block li:before {
+  content: "•";
+  color: #f47525;
+  margin-right: 10px;
+}
+/* line 22, ../sass/_join.scss */
+#page-join .career-block .career-description,
+#page-join .career-block .career-apply {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
 }
 
 /* line 2, ../sass/_technology.scss */
@@ -8277,12 +8364,12 @@ ul li {
   content: "";
 }
 /* line 26, ../sass/_technology.scss */
-#page-technology .roadmap {
+#page-technology .timeline {
   height: 100%;
   position: relative;
 }
 /* line 30, ../sass/_technology.scss */
-#page-technology .roadmap:after {
+#page-technology .timeline:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -8292,16 +8379,74 @@ ul li {
   border-left: 2px solid #010101;
 }
 /* line 40, ../sass/_technology.scss */
-#page-technology .roadmap-event {
+#page-technology .timeline ul {
+  padding: 75px 0 0;
+  overflow: hidden;
+}
+/* line 45, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-left,
+#page-technology .timeline .timeline-block-right {
+  clear: both;
+}
+/* line 48, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-left:before,
+#page-technology .timeline .timeline-block-right:before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  width: 20px;
+  height: 20px;
+  background: #f47525;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* line 58, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-left:after,
+#page-technology .timeline .timeline-block-right:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 90px;
+  border-top: 2px solid #010101;
+  width: 95px;
+}
+/* line 69, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-left {
+  float: left;
+}
+/* line 71, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-left:before {
+  right: -40px;
+}
+/* line 72, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-left:after {
+  right: -134px;
+}
+/* line 74, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-right {
+  float: right;
+}
+/* line 76, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-right:before {
+  left: -40px;
+}
+/* line 77, ../sass/_technology.scss */
+#page-technology .timeline .timeline-block-right:after {
+  left: -134px;
+}
+/* line 80, ../sass/_technology.scss */
+#page-technology .timeline-block {
+  position: relative;
   display: inline-block;
 }
-/* line 42, ../sass/_technology.scss */
-#page-technology .roadmap-event h1 {
+/* line 83, ../sass/_technology.scss */
+#page-technology .timeline-block h1 {
   font-size: 1.5em;
   color: #f47525;
 }
-/* line 47, ../sass/_technology.scss */
-#page-technology .roadmap-icon {
+/* line 88, ../sass/_technology.scss */
+#page-technology .timeline-icon {
+  display: inline-block;
   width: 175px;
   height: 175px;
   margin-bottom: 25px;
@@ -8309,9 +8454,11 @@ ul li {
   border-radius: 50%;
   line-height: 175px;
 }
-/* line 54, ../sass/_technology.scss */
-#page-technology .roadmap-icon img {
-  width: 105px;
+/* line 97, ../sass/_technology.scss */
+#page-technology .timeline-icon .icon {
+  font-size: 6.25em;
+  line-height: 175px;
+  color: #fefefe;
 }
 
 /* line 1, ../sass/_footer.scss */
@@ -8434,4 +8581,9 @@ img {
 .img-main {
   margin-bottom: 50px;
   width: 390px;
+}
+
+/* line 62, ../sass/_misc.scss */
+.page-headline {
+  padding-top: 50px;
 }

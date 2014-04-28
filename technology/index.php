@@ -48,37 +48,67 @@
 				<h1 class="section-header">Road Map</h1>
 			</div>
 			<div class="row">
-				<div class="roadmap">
-					<ul>
-						<li>
-							<div class="roadmap-event center">
-								<div class="roadmap-icon">
-									<span class="icon-person"></span>
+				<div class="timeline col-md-8 col-md-offset-2">
+					<ul >
+						<li class="timeline-block timeline-block-left center">
+							<div class="">
+								<div class="timeline-icon">
+									<span class="icon icon-idea"></span>
 								</div>
 								<h1>March 2011</h1>
 								<p>Idea came into fruition</p>
 							</div>
-							
 						</li>
-
-
-
-
-
-<!-- 						<li>thing 2</li>
-						<li>thing 3</li>
-						<li>thing 4</li>
-						<li>thing 5</li>
-						<li>thing 1</li>
-						<li>thing 2</li>
-						<li>thing 3</li>
-						<li>thing 4</li>
-						<li>thing 5</li> -->
+						<li class="timeline-block timeline-block-right center">
+							<div class="">
+								<div class="timeline-icon">
+									<span class="icon icon-team"></span>
+								</div>
+								<h1>November 2012</h1>
+								<p>Picofemto is created</p>
+							</div>
+						</li>
+						<li class="timeline-block timeline-block-left center">
+							<div class="">
+								<div class="timeline-icon">
+									<span class="icon icon-idea"></span>
+								</div>
+								<h1>March 2011</h1>
+								<p>Idea came into fruition</p>
+							</div>
+						</li>
+						<li class="timeline-block timeline-block-right center">
+							<div class="">
+								<div class="timeline-icon">
+									<span class="icon icon-team"></span>
+								</div>
+								<h1>November 2012</h1>
+								<p>Picofemto is created</p>
+							</div>
+						</li>
+						<li class="timeline-block timeline-block-left center">
+							<div class="">
+								<div class="timeline-icon">
+									<span class="icon icon-idea"></span>
+								</div>
+								<h1>March 2011</h1>
+								<p>Idea came into fruition</p>
+							</div>
+						</li>
+						<li class="timeline-block timeline-block-right center">
+							<div class="">
+								<div class="timeline-icon">
+									<span class="icon icon-team"></span>
+								</div>
+								<h1>November 2012</h1>
+								<p>Picofemto is created</p>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-
+		<hr>
 	</section>
 	
 
