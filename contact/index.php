@@ -32,24 +32,24 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group name-group">
-									<label for="contact-name">Full Name</label>
-									<input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Full Name" tabindex="1" required="required">
+									<label for="name">Full Name</label>
+									<input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" required="required">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group email-group">
-									<label for="contact-email">Email</label>
-									<input type="email" name="contact-email" id="contact-email" class="form-control" placeholder="Email Address" tabindex="2" required="required">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" required="required">
 								</div>
 							</div>
 						</div>
 						<div class="form-group subject-group">
-							<label for="contact-subject">Subject</label>
-							<input type="text" name="contact-subject" id="contact-subject" class="form-control" placeholder="Subject" tabindex="3" required="required">
+							<label for="subject">Subject</label>
+							<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" tabindex="3" required="required">
 						</div>
 						<div class="form-group message-group">
-							<label for="contact-message">Message</label>
-							<textarea name="contact-message" id="contact-message" class="form-control" placeholder="Message" tabindex="4" required="required"></textarea>
+							<label for="message">Message</label>
+							<textarea name="message" id="message" class="form-control" placeholder="Message" tabindex="4" required="required"></textarea>
 						</div>
 						<div class="row center">
 							<button class="btn btn-secondary" name="submit" type="submit" tabindex="4">submit</button>

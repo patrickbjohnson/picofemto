@@ -10,10 +10,10 @@ $(document).ready(function(){
 
   	// get the form data
   	 var formData = {
-  	 	"name": 		$("input[name='contact-name']").val(),
-  	 	"email": 		$("input[name='contact-email']").val(),
-  	 	"subject": 		$("input[name='contact-subject']").val(),
-  	 	"message": 	$("textarea[name='contact-message']").val()
+  	 	"name": 		$("input[name='name']").val(),
+  	 	"email": 		$("input[name='email']").val(),
+  	 	"subject": 		$("input[name='subject']").val(),
+  	 	"message": 	$("textarea[name='message']").val()
   	 };
 
   	 $.ajax({
@@ -29,23 +29,23 @@ $(document).ready(function(){
 
   	 	if(! data.success){
   	 		if (data.errors.name){
-  	 			$("#contact-name").parent().addClass("has-error");
+  	 			$("#name").parent().addClass("has-error");
   	 			$(".name-group").append("<div class='help-block'>" + data.errors.name + "</div>");
-  	 			// $("#contact-name").attr("placeholder", data.errors.name);
+  	 			// $("#name").attr("placeholder", data.errors.name);
   	 		}
 
   	 		if(data.errors.email){
-  	 			$("#contact-email").parent().addClass("has-error");
+  	 			$("#email").parent().addClass("has-error");
   	 			$(".email-group").append("<div class='help-block'>" + data.errors.email + "</div>");
   	 		}
 
   	 		if(data.errors.subject){
-  	 			$("#contact-subject").parent().addClass("has-error");
+  	 			$("#subject").parent().addClass("has-error");
   	 			$(".subject-group").append("<div class='help-block'>" + data.errors.subject + "</div>");
   	 		}
 
   	 		if(data.errors.message){
-  	 			$("#contact-message").parent().addClass("has-error");
+  	 			$("#message").parent().addClass("has-error");
   	 			$(".message-group").append("<div class='help-block'>" + data.errors.message + "</div>");
   	 		}
   	 	} else {
@@ -53,8 +53,7 @@ $(document).ready(function(){
   	 		$("input, textarea").val("");
   	 	}
   	 }).fail(function(data){
-  	 	//show any errors
-  	 	// best to remove from production
+  	 		$("form").prepend("<div class='alert alert-danger'>" + data.errors + "</div>");
   	 	console.log(data);
   	 });
 	});

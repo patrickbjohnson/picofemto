@@ -17,14 +17,14 @@
 }
 
 .pico-about {
-	background: #909090 url("../img/about@2x.jpg") no-repeat fixed;
+	background: #909090 url("../img/about@2x.jpg") no-repeat;
 	@extend %pico-background-sm;
 	@include vendor-prefix(background-size, cover);
 }
 
 .pico-product {
 	@extend %pico-background-sm;
-	background: #909090 url("../img/home.jpg") no-repeat fixed;
+	background: #909090 url("../img/home.jpg") no-repeat;
 	@include vendor-prefix(background-size, cover);
 	
 }
@@ -38,44 +38,31 @@
 }
 
 .pico-imaging {
-	
-	background: #909090 url("../img/imaging@2x.jpg") no-repeat fixed;
-	// @extend %pico-background-sm;
+	background: #909090 url("../img/imaging@2x.jpg") no-repeat;
 	@include vendor-prefix(background-size, cover);
+	@extend %pico-background-sm;
 }
 
 .pico-neurology {
-	@extend %pico-background-sm;
 	background: #909090 url("../img/neurology@2x.jpg") no-repeat;
 	@include vendor-prefix(background-size, cover);
+	@extend %pico-background-sm;
 }
 
 .pico-resources {
-	@extend %pico-background-sm;
 	background: #909090 url("../img/resources@2x.jpg") no-repeat;
 	@include vendor-prefix(background-size, cover);
-
-	// mixin HAS TO COME AFTER image or else it won't work. 
+	@extend %pico-background-sm;
 }
 
 .pico-team {
-	
-	background-image: url("../img/team@2x.jpg");
-	background-repeat: no-repeat;
+	background: #909090 url("../img/team@2x.jpg") no-repeat;
 	@include vendor-prefix(background-size, cover);
 	@extend %pico-background-sm;
-	// mixin HAS TO COME AFTER image or else it won't work. 
 }
 
 .pico-technology {
-	background-image: url("../img/technology.jpg");
-	background-repeat: no-repeat;
-	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-ms-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 325px;
+	background: #909090 url("../img/technology@2x.jpg") no-repeat;
+	@include vendor-prefix(background-size, cover);
+	@extend %pico-background-sm;
 }

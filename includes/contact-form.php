@@ -31,30 +31,35 @@ if (! empty($errors)){
 } else {
 
 	// if there are no errors, process our form, then return a message
-
-	$data["success"] = true;
-	$data["message"] = "Success";
-
-
-	$name = $_POST['contact-name'];
-	$subject = $_POST['contact-subjet'];
-	$message = $_POST['contact-message'];
-
-	$from = 'From: Patrick Johnson'; 
-	$to = 'patrickjohnson9@gmail.com'; 
-	$subject = "Message from " + $name + " about " + $subject;
-
-	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+	$name = 		filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+	$email = 		filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+	$subject = 	filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
+	$message = 	filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
 
-	mail($to, $subject, $body, $from);
-	
+	$to = "im@pbj.me";
+	$subjectLine = "[Contact Form] " . $subject;
+	$headers = "From: " . $email . "\r\n";
+	$headers .= "Reply-To: ". $email . "\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+	$body 	= "From: " . $name . "<br>";
+	$body  .= "Email: " . $email . "<br>";
+	$body  .= "Subject Line: " . $subject . "<br>";
+	$body	 .= "Message: " . $message . "<br>";
+
+
+	if(mail($to, $subjectLine, $body, $headers)){
+		$data["success"] = true;
+		$data["message"] = "Success";
+	} 
+	else {
+		$data["success"] = false;
+		$data["errors"] = $errors;
+	}
 }
 
 echo json_encode($data);
-
-
-
-
 
 ?>

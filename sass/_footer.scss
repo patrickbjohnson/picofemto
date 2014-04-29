@@ -1,11 +1,11 @@
-footer.jumbotron {
-	margin-top: 50px; 
-	padding-bottom: 100px;
+footer {
+	width: 100%;
 	background: $pico-gray-light;
 
 }
 
 .footer {
+	padding: 50px 50px 25px;
 	font-family: $font-family-sans-serif;
 
 	a {color: $black;}
@@ -22,7 +22,18 @@ footer.jumbotron {
 			font-size: (16px);
 		}
 	}
-		
+	
+
+	.footer-brand {
+		float: left;
+		padding: 0 15px 50px;
+		font-size: none;
+		line-height: none;
+		height: auto;
+		width: 250px;
+
+		img {width: 100%;}
+	}
 
 	&-section-title {
 		display: inline-block;
@@ -30,9 +41,58 @@ footer.jumbotron {
 		font-size: em(20px);
 		text-transform: uppercase;
 	}
+
 	p { 
 		font-size: em(16px); 
 		font-weight: 300;
 		line-height: 2;
 	}
+	
+	.footer-menu {
+		.row {margin-left: 0;}
+		ul {
+			float: left;
+
+			&:last-child {margin-right: 0;}
+		}
+
+		.footer-menu-sub-nav {
+			li {font-weight: 300;}
+
+		}
+	}
+
+	.footer-company {
+		margin-top: 50px;
+		font-size: em(12px);
+		font-weight: 300;
+		li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		li a {
+			font-size: 12px; // fix this later
+			font-weight: 300;
+		}
+	}
+
+
+	@media (max-width: $screen-xs-max) { 
+		.col-xs-12 {margin-bottom: 25px;}
+
+		&-section-title {
+			display: block;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		p {text-align: center;}
+
+		.footer-menu .row {
+			margin-left: 45px;
+		}
+	}	
+
+
+
 }
