@@ -11,7 +11,7 @@
 	  </div>
 	</div>
 
-	<hr>
+	<img class="pico-divide" src="../img/divider.svg" alt="">
 
 	<div class="container">
 		<section class="page-section">
@@ -22,7 +22,7 @@
 		</section>
 		<section class="page-section">
 			<div class="row">
-					<img class="col-md-4 col-md-offset-4 img-main" src="../img/pico-blob.svg" alt="#">
+					<img class="col-md-4 col-md-offset-4 img-main" src="../img/genomics.svg" alt="#">
 					<h1 class="section-header col-md-8 col-md-offset-2">Unlocking the mysteries of the Human Genome.</h1>
 				<p class="reg-400 col-md-12">The crucial barrier to incorporating genomic information into the clinical setting was acquiring the data through sequencing or other sophisticated techniques.  The time – and therefore cost – for performing the study was prohibitive.  Today, thanks to advances in next-generation-sequencing, we are on the cusp of a revolution in which an individual’s genomic data can be acquired within a matter of hours and at a low cost.  The introduction of genomic data into the clinical setting opens an entirely new dimension of personalized medicine that will help improve outcomes.</p>
 			</div>
@@ -48,11 +48,11 @@
 			</div>
 		</section>
 
-		<hr>	
+		
 	</div>
 </div>
 
-
+<img class="pico-divide" src="../img/divider.svg" alt="">	
 
 
 

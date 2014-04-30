@@ -5,8 +5,8 @@
 
 %pico-background-sm {
 	padding: 0;
-	margin: 100px 0 95px;
-	min-height: 325px;
+	margin-top: 100px;
+	height: 325px;
 }
 
 .pico-home {
@@ -30,10 +30,9 @@
 }
 
 .pico-genomics {
+	background: #909090 url("../img/genomics@2x.jpg") no-repeat;
 	@extend %pico-background-sm;
-	background: #909090 url("../img/genomics@2x.jpg");
 	@include vendor-prefix(background-size, cover);
-	height: 400px;
 	
 }
 

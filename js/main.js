@@ -1,4 +1,21 @@
 $(document).ready(function(){
+
+  //smooth scroll for internal links
+  // really only on the privacy page
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      var $navHeight = $('nav').outerHeight() + 20;
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - $navHeight
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
 	// Form input files styling plugin
 	$( 'input[type="file"]' ).prettyFile({
 		text : "Choose File"
@@ -58,15 +75,6 @@ $(document).ready(function(){
   	 });
 	});
 
-
-
-
-
-
-
-
-
-
 	// Google Map Integration
 	function googleMap() {
 	  var myLatlng = new google.maps.LatLng(40.752671, -73.973618);
@@ -80,7 +88,6 @@ $(document).ready(function(){
 	   var infowindow = new google.maps.InfoWindow({
       content: "Hey There! Feel free to come by, we'll buy you lunch!"
   });
-
 
 	  var marker = new google.maps.Marker({
 	      position: myLatlng,

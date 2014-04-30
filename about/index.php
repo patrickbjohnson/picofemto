@@ -1,8 +1,11 @@
-<?php include("../includes/page-header.php"); ?>
+<?php 
 
+require_once("../includes/config.php");
+include("../includes/page-header.php");
+include("../includes/page-nav.php");
 
-<!-- Main Navbar -->
-<?php include("../includes/page-nav.php"); ?>
+?>
+
 
 <!-- About Page -->
 <div id="page-about">
@@ -11,7 +14,7 @@
 	    <h1 class="page-title">About</h1>
 	  </div>
 	</div>
-	<hr>
+	<img class="pico-divide" src="../img/divider.svg" alt="">
 	<div class="container about">
 		<section class="page-mission">
 			<div class="row">
@@ -48,27 +51,27 @@
 			<div class="row">
 				<h1 class="section-header center">Our Misson</h1>
 				<div class="col-md-4 center mission-col">
-					<img class="rounded" src="../img/pico-blob.svg" alt="Alt text!">
+					<img class="rounded" src="../img/mission1.svg" alt="Alt text!">
 					<h2 class="section-subtitle font-24 mission-headline">Revolutionize</h2>
 					<p class="reg-400">Revolutionize healthcare with an open-architecture medical analytics platform.</p>
 				</div>
 				<div class="col-md-4 center mission-col">
-					<img class="rounded" src="../img/pico-blob.svg" alt="Alt text!">
+					<img class="rounded" src="../img/mission2.svg" alt="Alt text!">
 					<h2 class="section-subtitle font-24 mission-headline">Enable</h2>
 					<p class="reg-400">Enable physicians to retrieve, process and store biomedical data utilizing algorithmic analysis.</p>
 				</div>
 				<div class="col-md-4 center mission-col">
-					<img class="rounded" src="../img/pico-blob.svg" alt="Alt text!">
+					<img class="rounded" src="../img/mission3.svg" alt="Alt text!">
 					<h2 class="section-subtitle font-24 mission-headline">Change</h2>
 					<p class="reg-400">Change the way physicians view, analyze and process biomedical data.</p>
 				</div>
 			</div>
 		</section>
 		
-		<hr>
+		
 	</div>
 </div>
-
+<img class="pico-divide" src="../img/divider.svg" alt="">
 
 
 

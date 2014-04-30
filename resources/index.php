@@ -50,7 +50,7 @@
 
 	<section class="page-section">
 		<div class="row">
-			<img class="img-main" src="../img/pico-blob.svg" alt="Placeholder Image">
+			<img class="img-main" src="../img/resources.svg" alt="Placeholder Image">
 		</div>
 	</section>
 	

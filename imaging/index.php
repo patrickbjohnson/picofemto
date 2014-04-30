@@ -11,9 +11,10 @@
 	  </div>
 	</div>
 
-	<hr>
+	<img class="pico-divide" src="../img/divider.svg" alt="">
 
 	<div class="container">
+			
 		<section class="page-section">
 			<div class="row">
 				<h1 class="section-header">Cliniscan<sup>SM</sup> Neuro MRI-DTI Analysis</h1>
@@ -44,7 +45,6 @@
 				</div>
 			</div>
 		</section>
-		
 		<section class="page-section">
 			<div class="row">
 				<div class="col-md-6 center">
@@ -63,11 +63,9 @@
 				<button class="btn btn-secondary">Sign Me Up</button>
 			</div>
 		</section>
-
-		<hr>
 	</div>
 </div>
-
+<img class="pico-divide" src="../img/divider.svg" alt="">
 
 
 <? include("../includes/page-footer.php"); ?>

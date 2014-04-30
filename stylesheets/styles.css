@@ -7614,15 +7614,18 @@ p {
 /* line 16, ../sass/_base.scss */
 div[id^=page-] {
   margin-top: 120px;
-  margin-bottom: 100px;
 }
 
 /* line 21, ../sass/_base.scss */
 section[class^=page-] {
   margin-bottom: 50px;
 }
+/* line 23, ../sass/_base.scss */
+section[class^=page-]:last-of-type {
+  margin-bottom: 0;
+}
 
-/* line 24, ../sass/_base.scss */
+/* line 25, ../sass/_base.scss */
 .bl-md {
   display: block;
   margin: inherit auto;
@@ -7715,7 +7718,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 21, ../sass/_typography.scss */
 .page-title {
-  margin-top: 120px;
+  margin-top: 190px;
   font-size: 3.75em;
   line-height: 1;
   color: #fefefe;
@@ -7733,6 +7736,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 37, ../sass/_typography.scss */
+.section-title-bold {
+  font-size: 1.5em !important;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+/* line 44, ../sass/_typography.scss */
 sup {
   top: -1em;
   font-size: .500em;
@@ -7754,56 +7765,33 @@ sup {
 }
 
 /* line 12, ../sass/_overrides.scss */
-hr {
-  position: relative;
-  display: block;
-  margin: 50px auto;
+.pico-divide {
   height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: #f47525;
-}
-/* line 21, ../sass/_overrides.scss */
-hr:before, hr:after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  top: 5px;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background: #999999;
-}
-/* line 33, ../sass/_overrides.scss */
-hr:before {
-  left: -25px;
-}
-/* line 34, ../sass/_overrides.scss */
-hr:after {
-  right: -25px;
+  width: auto;
+  margin: 80px auto;
 }
 
-/* line 38, ../sass/_overrides.scss */
+/* line 19, ../sass/_overrides.scss */
 .pico-alert {
   color: #f47525 !important;
 }
 
-/* line 40, ../sass/_overrides.scss */
+/* line 21, ../sass/_overrides.scss */
 ul.navbar-right {
   padding-top: 20px;
 }
 
-/* line 44, ../sass/_overrides.scss */
+/* line 25, ../sass/_overrides.scss */
 .navbar-toggle {
   margin-top: 30px;
 }
 
-/* line 48, ../sass/_overrides.scss */
+/* line 29, ../sass/_overrides.scss */
 ul {
   padding: 0;
   margin: 0;
 }
-/* line 51, ../sass/_overrides.scss */
+/* line 32, ../sass/_overrides.scss */
 ul li {
   list-style: none;
 }
@@ -7868,8 +7856,8 @@ ul li {
 /* line 6, ../sass/_backgrounds.scss */
 .pico-about, .pico-product, .pico-genomics, .pico-imaging, .pico-neurology, .pico-resources, .pico-team, .pico-technology {
   padding: 0;
-  margin: 100px 0 95px;
-  min-height: 325px;
+  margin-top: 100px;
+  height: 325px;
 }
 
 /* line 12, ../sass/_backgrounds.scss */
@@ -7906,16 +7894,15 @@ ul li {
 
 /* line 32, ../sass/_backgrounds.scss */
 .pico-genomics {
-  background: #909090 url("../img/genomics@2x.jpg");
+  background: #909090 url("../img/genomics@2x.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 400px;
 }
 
-/* line 40, ../sass/_backgrounds.scss */
+/* line 39, ../sass/_backgrounds.scss */
 .pico-imaging {
   background: #909090 url("../img/imaging@2x.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -7925,7 +7912,7 @@ ul li {
   background-size: cover;
 }
 
-/* line 46, ../sass/_backgrounds.scss */
+/* line 45, ../sass/_backgrounds.scss */
 .pico-neurology {
   background: #909090 url("../img/neurology@2x.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -7935,7 +7922,7 @@ ul li {
   background-size: cover;
 }
 
-/* line 52, ../sass/_backgrounds.scss */
+/* line 51, ../sass/_backgrounds.scss */
 .pico-resources {
   background: #909090 url("../img/resources@2x.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -7945,7 +7932,7 @@ ul li {
   background-size: cover;
 }
 
-/* line 58, ../sass/_backgrounds.scss */
+/* line 57, ../sass/_backgrounds.scss */
 .pico-team {
   background: #909090 url("../img/team@2x.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -7955,7 +7942,7 @@ ul li {
   background-size: cover;
 }
 
-/* line 64, ../sass/_backgrounds.scss */
+/* line 63, ../sass/_backgrounds.scss */
 .pico-technology {
   background: #909090 url("../img/technology@2x.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -8166,6 +8153,7 @@ ul li {
 /* line 20, ../sass/_neurology.scss */
 #page-neurology ul li {
   margin: -5px 0;
+  list-style: disc;
 }
 
 /* line 3, ../sass/_products.scss */
@@ -8232,6 +8220,44 @@ ul li {
 /* line 4, ../sass/_privacy.scss */
 #page-privacy .section-header {
   margin-bottom: 50px;
+}
+/* line 8, ../sass/_privacy.scss */
+#page-privacy .policy-terms li {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+/* line 11, ../sass/_privacy.scss */
+#page-privacy .policy-terms li a {
+  color: #010101;
+}
+/* line 13, ../sass/_privacy.scss */
+#page-privacy .policy-terms li p {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* line 17, ../sass/_privacy.scss */
+#page-privacy .policy-terms li ul {
+  padding-left: 50px;
+}
+/* line 20, ../sass/_privacy.scss */
+#page-privacy .policy-terms li ul > li {
+  list-style: disc;
+  font-size: 0.6875em;
+  font-weight: 400;
+  margin: 20px 0;
+}
+/* line 27, ../sass/_privacy.scss */
+#page-privacy .policy-terms li .row {
+  margin: 15px auto 10px;
+}
+/* line 28, ../sass/_privacy.scss */
+#page-privacy .policy-terms li .table-of-contents {
+  padding: 0;
+  text-align: center;
+}
+/* line 32, ../sass/_privacy.scss */
+#page-privacy .policy-terms li .table-of-contents li {
+  list-style: none;
 }
 
 /* line 2, ../sass/_resources.scss */
@@ -8602,49 +8628,57 @@ img {
 }
 
 /* line 24, ../sass/_misc.scss */
-.rounded {
+.rounded,
+.rounded-lg {
   display: inline-block;
-  width: 175px;
   margin-bottom: 50px;
   border-radius: 50%;
 }
 
 /* line 31, ../sass/_misc.scss */
-.rounded-lg {
-  display: inline-block;
-  width: 360px;
-  margin-bottom: 50px;
-  border-radius: 50%;
+.rounded {
+  width: 175px;
 }
 
-/* line 38, ../sass/_misc.scss */
+/* line 32, ../sass/_misc.scss */
+.rounded-lg {
+  width: 360px;
+}
+
+/* line 33, ../sass/_misc.scss */
+.rounded-xl {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* line 35, ../sass/_misc.scss */
 .quote {
   color: #2668b2;
 }
 
-/* line 44, ../sass/_misc.scss */
+/* line 41, ../sass/_misc.scss */
 .txt-l {
   text-align: left;
 }
 
-/* line 48, ../sass/_misc.scss */
+/* line 45, ../sass/_misc.scss */
 .txt-r {
   text-align: right;
 }
 
-/* line 52, ../sass/_misc.scss */
+/* line 49, ../sass/_misc.scss */
 .pico-feature img,
 .pico-component img {
   height: 85px;
 }
 
-/* line 57, ../sass/_misc.scss */
+/* line 54, ../sass/_misc.scss */
 .img-main {
   margin-bottom: 50px;
   width: 390px;
 }
 
-/* line 62, ../sass/_misc.scss */
+/* line 59, ../sass/_misc.scss */
 .page-headline {
-  padding-top: 50px;
+  padding-top: 75px;
 }

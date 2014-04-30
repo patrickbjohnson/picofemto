@@ -1,6 +1,9 @@
-<?php include("includes/header.php"); ?>
-<!-- Main Navbar -->
-<?php include("includes/nav.php"); ?>
+<?php 
+require_once("includes/config.php");
+include("includes/header.php");
+include("includes/nav.php"); 
+?>
+
 
   <div id="page-main">
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -16,10 +19,9 @@
         <div class="row mission-statement">
           <p class="font-24 light">Our focus is on assisting clinicians and research professionals with our easy-to-use web platform that analyzes raw primary medical data at the point of diagnosis or evaluation. Our flagship cloud-based service is Cliniscan<sup>SM</sup>, which enables the clinician and researcher to work in the cloud with a wide range of biomedical modalities.</p>
         </div>
-        <hr>
+        <img class="pico-divide" src="img/divider.svg" alt="">
         <div class="row mission-statement">
           <h1 class="section-header center light-300 font-55">Technology is a physician's best friend—it's available and ready to perform around the clock.</h1>
-          
           <p>The delivery of healthcare and evidence based outcomes are becoming increasingly personalized, in which specific individual information, from physiological to genomic data, are used both in a diagnostic and therapeutic capacity.  Our first product, Cliniscan<sup>SM</sup> EEG Decision Support  utilizes an open-ended architecture as we expect the number of analytics for each modality to grow by partnering with imaging groups, hospitals, universities, and research centers.  Our subsequent products will address complex biomedical modalities such as MRI, PET and CT.</p>
         </div>
       </section>
@@ -77,7 +79,7 @@
       </section>
     </div> <!-- /container -->
 
-    <hr>
+    <img class="pico-divide" src="img/divider.svg" alt="">
     
     <section class="page-section google-map">
       <div id="map-canvas"></div>

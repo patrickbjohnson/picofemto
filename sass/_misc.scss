@@ -21,19 +21,16 @@ img {display: block; margin: auto;}
 	}
 }
 
-	.rounded {
+	.rounded,
+	.rounded-lg {
 		display: inline-block;
-		width: 175px;
 		margin-bottom: 50px;
 		border-radius: 50%;
 	}
 
-	.rounded-lg {
-		display: inline-block;
-		width: 360px;
-		margin-bottom: 50px;
-		border-radius: 50%;
-	}
+	.rounded 		{width: 175px;}
+	.rounded-lg {width: 360px;}
+	.rounded-xl {width: 100%; max-width: 900px;}
 
 	.quote {color: $pico-blue;}
 
@@ -59,4 +56,4 @@ img {display: block; margin: auto;}
 		width: 390px;
 	}
 
-	.page-headline {padding-top: 50px;}
+	.page-headline {padding-top: 75px;}

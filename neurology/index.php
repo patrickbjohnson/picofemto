@@ -11,7 +11,7 @@
 	  </div>
 	</div>
 
-	<hr>
+	<img class="pico-divide" src="../img/divider.svg" alt="">
 
 	<section class="page-section">
 		<div class="container">
@@ -79,7 +79,6 @@
 					<div class="col-md-6">
 						<ul class="light-300">
 							<li>Density Spectral Map Tab</li>
-							<li>Combo Tab</li>
 							<li>Coherence Calculations</li>
 							<li>Independent Component Analysis</li>
 						</ul>
@@ -95,14 +94,12 @@
 		<div class="container">
 			<div class="row sign-up center">
 				<h1 class="font-24 reg-400 ">Want to see it in action?</h1>
-				<button class="btn btn-secondary">Contact Us</button>
+				<button class="btn btn-secondary">Request a demo</button>
 			</div>
 		</div>
 	</section>
-
-	<hr>
 </div>
-
+<img class="pico-divide" src="../img/divider.svg" alt="">
 
 
 

@@ -15,7 +15,7 @@
 		</div>
 	</section>
 
-	<hr>
+	<img class="pico-divide" src="../img/divider.svg" alt="">
 
 	<div class="container">
 		<section class="page-section">
@@ -87,13 +87,10 @@
 					<a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#myModal">Apply</a>
 				</div>
 			</div>
-			
 		</section>
-
-		<hr>	
 	</div>
 </div>
-
+<img class="pico-divide" src="../img/divider.svg" alt="">	
 
 
 

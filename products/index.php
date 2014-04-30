@@ -55,14 +55,15 @@
 		</div>
 	</section>
 
-	<hr>
+	<img class="pico-divide" src="../img/divider.svg" alt="">
 
 	<section class="page-section">
 		<h1 class="sectin-header center font-55 light-300">The Cliniscan<sup>SM</sup> Product Suite</h1>
 		<p class="center">(click an icon below to learn more) </p>
+		<img class="rounded-xl" src="../img/production.svg" alt="">
 	</section>
 
-	<hr>
+	<img class="pico-divide" src="../img/divider.svg" alt="">
 
 </div>
 

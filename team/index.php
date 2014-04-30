@@ -13,7 +13,7 @@
 	<section class="page-section">
 		<div class="container">
 			<div class="row">
-				<hr>
+				<img class="pico-divide" src="../img/divider.svg" alt="">
 				<h1 class="section-header">Developing revolutionary healthcare technology takes a unified team of experts driven by one mission. We are that team.</h1>
 			</div>
 		</div>
@@ -98,14 +98,14 @@
 					<a class="btn btn-secondary" href="#">Bio</a>
 				</div>
 				<div class="col-md-4 center">
-					<img class="rounded" src="../img/pico-blob.svg" alt="">
+					<img class="rounded" src="../img/team.svg" alt="">
 					<h1 class="font-24">You!</h1>
 					<h2 class="reg-400 font-16">Check out our current openings</h2>
 					<a class="btn btn-secondary" href="#">Join</a>
 				</div>
 				<!-- Row 4 -->
 			</div>
-			<hr>
+			<img class="pico-divide" src="../img/divider.svg" alt="">
 		</div>
 	</section>
 	
@@ -131,7 +131,7 @@
 					<a href="#" class="btn btn-secondary">Bio</a>
 				</div>
 			</div>
-			<hr>
+			<img class="pico-divide" src="../img/divider.svg" alt="">
 		</div>
 	</section>
 </div>

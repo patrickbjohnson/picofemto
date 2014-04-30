@@ -1,8 +1,9 @@
-<?php include("../includes/page-header.php"); ?>
+<?php 
+require_once("../includes/config.php");
+include("../includes/page-header.php");
+include("../includes/page-nav.php");
 
-
-<!-- Main Navbar -->
-<?php include("../includes/page-nav.php"); ?>
+?>
 
 <div id="page-contact">
 	

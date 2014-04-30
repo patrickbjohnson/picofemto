@@ -2,4 +2,34 @@
 	.pico-gemoics img {width: 175px;}
 	.jumbotron {padding-bottom: 0;}
 	.section-header {margin-bottom: 50px;}
+	
+	.policy-terms {
+		
+		li {
+			font-size: em(24px);
+			font-weight: 700;
+			a {color: $black;}
+			
+			p {
+				font-size: (16px);
+				font-weight: 400;
+			}
+			ul {
+				padding-left: 50px;
+			}
+			ul > li {
+				list-style: disc;
+				font-size: em(11px); //come up with a better way to do this
+				font-weight: 400;
+				margin: 20px 0;
+			}
+			
+			.row {margin: 15px auto 10px;}
+			.table-of-contents {
+				padding: 0;
+				text-align: center;
+			}
+			.table-of-contents li {list-style: none;}
+		}
+	}
 }

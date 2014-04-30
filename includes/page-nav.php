@@ -22,16 +22,11 @@
             <li ><a href="<?php echo BASE; ?>/about">About Us</a></li>
             <li ><a href="<?php echo BASE; ?>/team">Team</a></li>
             <li ><a href="<?php echo BASE; ?>/join">Join Us!</a></li>
-            <li ><a href="<?php echo BASE; ?>/press">press</a></li>
+            <li ><a href="<?php echo BASE; ?>/press">Press</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li ><a href="<?php echo BASE; ?>/benefits">Benefits</a></li>
-            <li ><a href="<?php echo BASE; ?>/research">Researrch</a></li>
-            <li ><a href="<?php echo BASE; ?>/roadmap">Roadmap</a></li>
-          </ul>
+          <a href="#">Technology</a>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
