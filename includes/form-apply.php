@@ -17,8 +17,8 @@
 	$mail->SMTPSecure = "tls";                 // sets the prefix to the servier
 	$mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
 	$mail->Port       = 587;  
-	$mail->Username 	= "patrick.johnson9@gmail.com";
-	$mail->Password 	= "corner09";
+	$mail->Username 	= pbjtest9@gmail.com";
+	$mail->Password 	= "pbjtest!";
 
 	$mail->SetFrom('name@yourdomain.com', 'First Last');
 	$mail->AddAddress("im@pbj.me","First Last")
