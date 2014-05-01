@@ -7,30 +7,28 @@
         <h4 class="modal-title center" id="myModalLabel">Career Application</h4>
       </div>
       <div class="modal-body">
-        <form role="form">
+        <form id="form-apply" role="form" method="POST" action="../includes/form-apply.php">
           <div class="row">
             <div class="col-md-6">
-              <div class="form-group">
+              <div class="form-group name-group">
                 <label for="name">Full Name</label>
-                <input type="text" name="apply-name" id="apply-name" class="form-control" placeholder="Full Name" tabindex="1" required="required">
+                <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" required="required">
               </div>
             </div>
             <div class="col-md-6">
-              <div class="form-group">
+              <div class="form-group email-group">
                 <label for="name">Email</label>
-                <input type="text" name="apply-email" id="apply-email" class="form-control" placeholder="Email Address" tabindex="2" required="required">
+                <input type="text" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" required="required">
               </div>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group .message-group">
             <label for="name">Summary of Background</label>
-            <textarea name="apply-background" id="apply-background" class="form-control" placeholder="Message" tabindex="3" required="required"></textarea>
+            <textarea name="message" id="message" class="form-control" placeholder="Message" tabindex="3" required="required"></textarea>
           </div>
           <div class="form-group">
             <label for="name">Upload Resume</label>
-
-              <input type="file" name="apply-upload" id="apply-upload" class="form-control" placeholder="No File Chosen" tabindex="4" required="required">
-            
+              <input type="file" name="upload" id="upload" class="form-control" placeholder="No File Chosen" tabindex="4">
           </div>
           <div class="row center">
             <button class="btn btn-secondary" tabindex="4">submit</button>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="shortcut icon" href="<?php echo BASE_URL; ?>assets/ico/favicon.ico">
+  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
 
   <title>Picofemto</title>
 

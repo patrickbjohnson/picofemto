@@ -1,11 +1,8 @@
-<?php include("../includes/page-header.php"); ?>
-
-
-<!-- Main Navbar -->
-<?php include("../includes/page-nav.php"); ?>
-
-<!-- Main Navbar -->
-<?php include("../includes/career-modal.php"); ?>
+<?php 
+	include("../includes/page-header.php");
+	include("../includes/page-nav.php");
+	include("../includes/career-modal.php");
+?>
 
 <div id="page-join">
 	<section class="page-section page-headline">
@@ -93,6 +90,4 @@
 <img class="pico-divide" src="../img/divider.svg" alt="">	
 
 
-
-
-<? include("../includes/page-footer.php"); ?>
+<?php include("../includes/page-footer.php");?>

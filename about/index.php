@@ -1,6 +1,6 @@
 <?php 
 
-require_once("../includes/config.php");
+include("../includes/config.php");
 include("../includes/page-header.php");
 include("../includes/page-nav.php");
 
@@ -31,7 +31,7 @@ include("../includes/page-nav.php");
 		<section class="page-cta">
 			<div class="row center">
 				<h2 class="section-subtitle font-24">Interested in learning more?</h2>
-				<a href="<?php echo BASE; ?>/pro" class="btn btn-secondary">See our products</a>
+				<a href="<?php echo BASE_URL; ?>/pro" class="btn btn-secondary">See our products</a>
 			</div>
 		</section>
 		<section class="page-inspiration">

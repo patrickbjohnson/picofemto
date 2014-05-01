@@ -1,8 +1,7 @@
 <?php 
-require_once("../includes/config.php");
-include("../includes/page-header.php");
-include("../includes/page-nav.php");
-
+	include("../includes/config.php");
+	include("../includes/page-header.php");
+	include("../includes/page-nav.php");
 ?>
 
 <div id="page-contact">
@@ -21,15 +20,11 @@ include("../includes/page-nav.php");
 			</div>
 		</div>
 	</section>
-
-
-
-	
 	<section class="page-section">
 		<div class="container">
 			<div class="row">
 			  <div class=" col-md-8 col-md-offset-2">
-					<form method="post" action="#" role="form">
+					<form id="form-contact" method="POST" action="../includes/form-contact.php" role="form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group name-group">

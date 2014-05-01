@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand pic" href="<?php echo BASE; ?>">
+      <a class="navbar-brand pic" href="/text100">
         <img src="../img/pico-logo.svg" alt="">
       </a>
     </div>
@@ -19,10 +19,10 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li ><a href="<?php echo BASE; ?>/about">About Us</a></li>
-            <li ><a href="<?php echo BASE; ?>/team">Team</a></li>
-            <li ><a href="<?php echo BASE; ?>/join">Join Us!</a></li>
-            <li ><a href="<?php echo BASE; ?>/press">Press</a></li>
+            <li ><a href="/text100/about">About Us</a></li>
+            <li ><a href="/text100/team">Team</a></li>
+            <li ><a href="/text100/join">Join Us!</a></li>
+            <li ><a href="/text100/press">Press</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -31,13 +31,13 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li ><a href="<?php echo BASE; ?>/neurology">Neurology</a></li>
-            <li ><a href="<?php echo BASE; ?>/imaging">Imaging</a></li>
-            <li ><a href="<?php echo BASE; ?>/genomics">Genomics</a></li>
+            <li ><a href="/text100/neurology">Neurology</a></li>
+            <li ><a href="/text100/imaging">Imaging</a></li>
+            <li ><a href="/text100/genomics">Genomics</a></li>
           </ul>
         </li>
-        <li><a href="<?php echo BASE; ?>/resources">Resources</a></li>
-        <li><a class="pico-alert" href="<?php echo BASE; ?>/contact">Contact Us</a></li>
+        <li><a href="/text100/resources">Resources</a></li>
+        <li><a class="pico-alert" href="/contact">Contact Us</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
