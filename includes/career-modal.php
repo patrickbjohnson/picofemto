@@ -1,3 +1,4 @@
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -23,7 +24,7 @@
             </div>
           </div>
           <div class="form-group .message-group">
-            <label for="name">Summary of Background</label>
+            <label for="message">Summary of Background</label>
             <textarea name="message" id="message" class="form-control" placeholder="Message" tabindex="3" required="required"></textarea>
           </div>
           <div class="form-group">
@@ -31,7 +32,7 @@
               <input type="file" name="upload" id="upload" class="form-control" placeholder="No File Chosen" tabindex="4">
           </div>
           <div class="row center">
-            <button class="btn btn-secondary" tabindex="4">submit</button>
+            <button type="submit" class="btn btn-secondary" tabindex="4">submit</button>
           </div>
         </form>
       </div>

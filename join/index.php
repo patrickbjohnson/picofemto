@@ -2,6 +2,10 @@
 	include("../includes/page-header.php");
 	include("../includes/page-nav.php");
 	include("../includes/career-modal.php");
+
+	  ini_set('display_errors', 'On');
+	  error_reporting(E_ALL | E_STRICT);
+
 ?>
 
 <div id="page-join">

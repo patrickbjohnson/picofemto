@@ -3,7 +3,8 @@
 -- Server URL Paths
 -- HTML Templates Finalized
 -- Updated copy on home page
--- Updated page-title  (could do with margin or absolutely positioned)
+XX Updated page-title  (could do with margin or absolutely positioned)
+-- Set up 404 Errors
 
 -- Nav Bar
 XX Set Up Nav Bar Links

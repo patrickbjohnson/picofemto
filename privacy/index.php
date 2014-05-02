@@ -1,7 +1,10 @@
-<?php include("../includes/page-header.php"); ?>
+<?php 
 
-<!-- Main Navbar -->
-<?php include("../includes/page-nav.php"); ?>
+include("../includes/config.php");
+include("../includes/page-header.php");
+include("../includes/page-nav.php");
+
+?>
 
 <div id="page-privacy">
 	<section class="page-section">

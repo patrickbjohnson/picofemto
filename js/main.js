@@ -76,59 +76,60 @@ $(document).ready(function(){
 	});
 
     // Form submission 
-    $("#form-apply").submit(function(e){
-      e.preventDefault();
+    // $("#form-apply").submit(function(e){
+    //   e.preventDefault();
       
-      // get the form data
-       var formData = {
-        "name":     $("input[name='name']").val(),
-        "email":    $("input[name='email']").val(),
-        "message":   $("input[name='message']").val(),
-        // "upload":   $("textarea[name='upload']").val()
-       };
-        console.log(formData);
+    //   // get the form data
+    //    var formData = {
+    //     "name":     $("input[name='name']").val(),
+    //     "email":    $("input[name='email']").val(),
+    //     "message":  $("input[name='message']").val(),
+    //     // "upload":   $("textarea[name='upload']").val()
+    //    };
+    //     console.log(formData);
+    //     console.log(formData.message);
 
-       $.ajax({
-        type: "POST", //define the type of HTTP verb we want to use
-        url: "../includes/form-apply.php",
-        data: formData, //our data object
-        dataType: "json",
-        encode: true
-       }).done(function(data){ //using the done promise callback
+    //    $.ajax({
+    //     type: "POST", //define the type of HTTP verb we want to use
+    //     url: "../includes/form-apply.php",
+    //     data: formData, //our data object
+    //     dataType: "json",
+    //     encode: true
+    //    }).done(function(data){ //using the done promise callback
 
-        // log the data to the console so we can see it
-        console.log(data);
+    //     // log the data to the console so we can see it
+    //     console.log(data);
 
-        if(! data.success){
-          if (data.errors.name){
-            $("#name").parent().addClass("has-error");
-            $(".name-group").append("<div class='help-block'>" + data.errors.name + "</div>");
-            // $("#name").attr("placeholder", data.errors.name);
-          }
+    //     if(! data.success){
+    //       if (data.errors.name){
+    //         $("#name").parent().addClass("has-error");
+    //         $(".name-group").append("<div class='help-block'>" + data.errors.name + "</div>");
+    //         // $("#name").attr("placeholder", data.errors.name);
+    //       }
 
-          if(data.errors.email){
-            $("#email").parent().addClass("has-error");
-            $(".email-group").append("<div class='help-block'>" + data.errors.email + "</div>");
-          }
+    //       if(data.errors.email){
+    //         $("#email").parent().addClass("has-error");
+    //         $(".email-group").append("<div class='help-block'>" + data.errors.email + "</div>");
+    //       }
 
-          if(data.errors.subject){
-            $("#subject").parent().addClass("has-error");
-            $(".subject-group").append("<div class='help-block'>" + data.errors.subject + "</div>");
-          }
+    //       if(data.errors.subject){
+    //         $("#subject").parent().addClass("has-error");
+    //         $(".subject-group").append("<div class='help-block'>" + data.errors.subject + "</div>");
+    //       }
 
-          if(data.errors.message){
-            $("#message").parent().addClass("has-error");
-            $(".message-group").append("<div class='help-block'>" + data.errors.message + "</div>");
-          }
-        } else {
-          $(".form-apply").prepend("<div class='alert alert-success'>" + data.message + "</div>")
-          $("input, textarea").val("");
-        }
-       }).fail(function(data){
-          $("#form-apply").prepend("<div class='alert alert-danger'>" + data.errors + "</div>");
-        console.log(data.errors);
-       });
-    });
+    //       if(data.errors.message){
+    //         $("#message").parent().addClass("has-error");
+    //         $(".message-group").append("<div class='help-block'>" + data.errors.message + "</div>");
+    //       }
+    //     } else {
+    //       $(".form-apply").prepend("<div class='alert alert-success'>" + data.message + "</div>")
+    //       $("input, textarea").val("");
+    //     }
+    //    }).fail(function(data){
+    //       $("#form-apply").prepend("<div class='alert alert-danger'>" + data.errors + "</div>");
+    //     console.log(data.errors);
+    //    });
+    // });
 
 	// Google Map Integration
 	function googleMap() {
