@@ -57,9 +57,6 @@
 	  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 		<script src="../js/bootstrap-prettyfile.js"></script>
 		<script src="../js/scripts.js"></script>
-
-
-	  <script src="../js/main.js"></script>
 		<script type='text/javascript'>
 	(function (d, t) {
 	  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
