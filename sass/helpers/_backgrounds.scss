@@ -1,7 +1,3 @@
-.pico-background-bg {
-	height: 800px;
-	margin-top: 100px;
-}
 
 %pico-background-sm {
 	padding: 0;
@@ -9,59 +5,73 @@
 	height: 325px;
 }
 
-.pico-home {
-	@include vendor-prefix(background-size, cover);
-	background: #909090 url("../img/home@2x.jpg") no-repeat;
-	background-attachment: fixed;
+
+.pico-background-bg {
+	height: 800px;
+	margin-top: 100px;
+	-webkit-background-size: cover;
 	background-size: cover;
 }
 
+
+.pico-home {
+	background-color: red;
+	// @include vendor-prefix(background-size, cover);
+	// background-image: url("../img/home@2x.jpg");
+	// background-repeat: no-repeat;
+	// background-attachment: fixed;
+	// // -webkit-background-size: cover;
+	// // -moz-background-size: cover;
+	// // -ms-background-size: cover;
+	// // -o-background-size: cover;
+	// // background-size: cover;
+}
 .pico-about {
 	background: #909090 url("../img/about@2x.jpg") no-repeat;
 	@extend %pico-background-sm;
-	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(background-size, contain);
 }
 
 .pico-product {
 	@extend %pico-background-sm;
 	background: #909090 url("../img/home.jpg") no-repeat;
-	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(background-size, contain);
 	
 }
 
 .pico-genomics {
 	background: #909090 url("../img/genomics@2x.jpg") no-repeat;
 	@extend %pico-background-sm;
-	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(background-size, contain);
 	
 }
 
 .pico-imaging {
 	background: #909090 url("../img/imaging@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(background-size, contain);
 	@extend %pico-background-sm;
 }
 
 .pico-neurology {
 	background: #909090 url("../img/neurology@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(background-size, contain);
 	@extend %pico-background-sm;
 }
 
 .pico-resources {
 	background: #909090 url("../img/resources@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(background-size, contain);
 	@extend %pico-background-sm;
 }
 
 .pico-team {
 	background: #909090 url("../img/team@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(background-size, contain);
 	@extend %pico-background-sm;
 }
 
 .pico-technology {
 	background: #909090 url("../img/technology@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(background-size, contain);
 	@extend %pico-background-sm;
 }

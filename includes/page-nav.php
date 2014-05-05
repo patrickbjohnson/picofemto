@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top main-nav" role="navigation">
+<nav class="home-nav navbar navbar-default navbar-fixed-top main-nav" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -8,14 +8,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand pic" href="/text100">
+      <a class="navbar-brand pic" href="/">
         <img src="../img/pico-logo.svg" alt="">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right nav-items">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -26,7 +26,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#">Technology</a>
+          <a href="/text100/technology">Technology</a>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
@@ -37,9 +37,8 @@
           </ul>
         </li>
         <li><a href="/text100/resources">Resources</a></li>
-        <li><a class="pico-alert" href="/contact">Contact Us</a></li>
-        
+        <li><a class="pico-alert" href="/text100/contact">Contact Us</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div><!-- /.navbar-collapse
   </div><!-- /.container-fluid -->
 </nav>

@@ -14,7 +14,7 @@
 	    		<div class="col-md-3 col-xs-12 footer-menu">
 	    			<a href="#" class="footer-section-title">Menu</a>
 	    			<div class="row">
-	    				<ul>
+	    				<ul class="footer-menu-nav">
 	    					<li>
 	    						<a href="<?php echo BASE_URL; ?>/about">About Us</a>
 	    						<ul class="footer-menu-sub-nav">
@@ -25,7 +25,7 @@
 	    					<li><a href="<?php echo BASE_URL; ?>/technology">Technology</a></li>
 	    					<li><a href="<?php echo BASE_URL; ?>/resources">Resources</a></li>
 	    				</ul>
-	    				<ul>
+	    				<ul class="footer-menu-nav">
 	    					<li>
 	    						<a href="#">Products</a>
 	    						<ul class="footer-menu-sub-nav">
@@ -53,9 +53,12 @@
 	    </div>
 	  </footer>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	  <script src="../js/bootstrap-prettyfile.js"></script>
+	  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script src="../js/bootstrap-prettyfile.js"></script>
+		<script src="../js/scripts.js"></script>
+
+
 	  <script src="../js/main.js"></script>
 		<script type='text/javascript'>
 	(function (d, t) {

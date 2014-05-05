@@ -1,10 +1,38 @@
+.pico-background-bg {
+	height: 800px;
+	margin-top: 100px;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+.pico-home {
+	@include vendor-prefix(background-size, cover);
+	background-image: url("../img/home@2x.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -ms-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
+}
+
 #page-main {
 	.page-title {
 		margin-top: 250px;
 		text-align: left;
 		font-weight: 900;
-	}
+		
+		
 
+	}
+	@media (max-width: $screen-xs-max) { 
+		.page-title {
+			font-size: em(28px) !important;	
+		}
+	}
+	
 	.team-members {
 		margin-top: 90px;
 		margin-bottom: 75px
@@ -41,7 +69,7 @@
 	.google-map {margin-bottom: 0;}
 
 	.page-address {
-		margin: 0 auto;
+		margin: 0 auto 85px;
 
 
 

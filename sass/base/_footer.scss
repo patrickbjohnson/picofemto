@@ -50,12 +50,11 @@ footer {
 	
 	.footer-menu {
 		.row {margin-left: 0;}
-		ul {
+		.footer-menu-nav {
 			float: left;
-
+			margin-right: 50px;
 			&:last-child {margin-right: 0;}
 		}
-
 		.footer-menu-sub-nav {
 			li {font-weight: 300;}
 
@@ -89,7 +88,7 @@ footer {
 		p {text-align: center;}
 
 		.footer-menu .row {
-			margin-left: 45px;
+			margin-left: 35px;
 		}
 	}	
 

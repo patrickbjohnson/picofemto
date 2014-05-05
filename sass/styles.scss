@@ -1,40 +1,40 @@
 // customize bootstrap variables here:
 // @import compass/css3/shared
 
-@import "variables";
+
+@import "helpers/variables.scss";
 @import "bootstrap";
 
-// Pico Custom 
 
-@import "mixins";
-@import "functions";
-// Base Styles
-@import "base";
-@import "typography";
-@import "overrides";
-@import "button-overrides";
-@import "backgrounds";
-@import "main-nav";
-@import "modal";
+// Pico Helpers
+@import "helpers/mixins.scss";
+@import "helpers/functions.scss";
+// @import "helpers/backgrounds.scss";
+@import "helpers/modal.scss";
 
-// Page Styles
-@import "home-page";
-@import "about";
-@import "genomics";
-@import "neurology";
-@import "products";
-@import "contact";
-@import "privacy";
-@import "resources";
-@import "team";
-@import "join";
-@import "technology";
-@import "footer";
-@import "map";
-@import "misc";
+// Pico Base
+@import "base/base.scss";
+@import "base/typography.scss";
+@import "base/nav.scss";
+@import "base/footer.scss";
 
+// Pico Overrides
+@import "overrides/overrides.scss";
+@import "overrides/button-overrides.scss";
 
+// Pico Pages
+@import "pages/main.scss";
+@import "pages/about.scss";
+@import "pages/contact.scss";
+@import "pages/genomics.scss";
+@import "pages/join.scss";
+@import "pages/neurology.scss";
+@import "pages/privacy.scss";
+@import "pages/products.scss";
+@import "pages/resources.scss";
+@import "pages/team.scss";
+@import "pages/technology.scss";
 
-
-
-
+// Pico Miscellaneous
+@import "misc/map.scss";
+@import "misc/misc.scss";

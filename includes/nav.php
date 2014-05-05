@@ -15,7 +15,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right nav-items">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -39,6 +39,6 @@
         <li><a href="/text100/resources">Resources</a></li>
         <li><a class="pico-alert" href="/text100/contact">Contact Us</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div><!-- /.navbar-collapse
   </div><!-- /.container-fluid -->
 </nav>

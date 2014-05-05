@@ -17,28 +17,28 @@ include("includes/nav.php");
     <div class="container">
       <section class="page-mission mission">
         <div class="row mission-statement">
-          <p class="font-24 light">Our focus is on assisting clinicians and research professionals with our easy-to-use web platform that analyzes raw primary medical data at the point of diagnosis or evaluation. Our flagship cloud-based service is Cliniscan<sup>SM</sup>, which enables the clinician and researcher to work in the cloud with a wide range of biomedical modalities.</p>
+          <p class="font-24 light">Our focus is on assisting clinicians and research professionals with our easy-to-use web-based platform that analyzes primary medical data at the stage of interpretation. Our flagship cloud-based service is Cliniscan<sup>SM</sup>, which enables the clinician and researcher to work in the cloud with a wide range of biomedical modalities.</p>
         </div>
         <img class="pico-divide" src="img/divider.svg" alt="">
         <div class="row mission-statement">
-          <h1 class="section-header center light-300 font-55">Technology is a physician's best friend—it's available and ready to perform around the clock.</h1>
-          <p>The delivery of healthcare and evidence based outcomes are becoming increasingly personalized, in which specific individual information, from physiological to genomic data, are used both in a diagnostic and therapeutic capacity.  Our first product, Cliniscan<sup>SM</sup> EEG Decision Support  utilizes an open-ended architecture as we expect the number of analytics for each modality to grow by partnering with imaging groups, hospitals, universities, and research centers.  Our subsequent products will address complex biomedical modalities such as MRI, PET and CT.</p>
+          <h1 class="section-header">Technology is a physician's best friend—it's available and ready to perform around the clock.</h1>
+          <p>The delivery of healthcare and evidence-based outcomes are becoming increasingly personalized, in which specific individual information, from physiological to genomic data, are used both in a diagnostic and therapeutic capacity.  Our first product, CliniscanSM EEG Decision Support  utilizes an open-ended architecture as we expect the number of analytics for each modality to grow by partnering with imaging groups, hospitals, universities, and research centers.  Our subsequent products will address complex biomedical modalities such as MRI, PET and CT.</p>
         </div>
       </section>
     
       <section class="page-products">
         <div class="row">
-          <div class="col-md-4 center">
+          <div class="col-md-4 col-sm-4 center">
             <img src="img/pico-neurology.svg" alt="#">
             <h2 class="product-headline">Neurology</h2>
             <p>We provide cloud-based neurological analysis software to assist in the visualization of EEG data, and to present a mixed-modality view of neural data acquired from different studies.</p>
           </div>
-          <div class="col-md-4 center">
+          <div class="col-md-4 col-sm-4 center">
             <img src="img/pico-imaging.svg" alt="#">
             <h2 class="product-headline">Imaging</h2>
             <p>Our cloud based visualization and analysis tools will help physicians become more efficient, reduce false negative and positive rates, and reduce cost of healthcare delivery.</p>
          </div>
-          <div class="col-md-4 center">
+          <div class="col-md-4 col-sm-4 center">
             <img src="img/pico-genomics.svg" alt="#">
             <h2 class="product-headline">Genomics</h2>
             <p>The quantity of data that can be generated from a single patient is astonishing. The time is now to develop powerful tools to aid practicing physicians in analyzing patient genomic data.</p>
@@ -51,7 +51,7 @@ include("includes/nav.php");
       
       <section class="page-team">
         <div class="row">
-          <h1 class="section-header center light-300 font-55">The team that's revolutionizing healthcare through analytics:</h1>
+          <h1 class="section-header">The team that's revolutionizing healthcare through analytics:</h1>
         </div>
         <div class="row team-members center">
           <div class="col-md-4 center team-member">
@@ -73,8 +73,8 @@ include("includes/nav.php");
           
         </div>
         <div class="row center">
-            <a class="btn btn-secondary bl-md" href="#" role="button">Meet the whole team</a>  
-          </div>
+          <a class="btn btn-secondary bl-md" href="#" role="button">Meet the whole team</a>  
+        </div>
         
       </section>
     </div> <!-- /container -->

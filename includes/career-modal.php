@@ -8,8 +8,8 @@
         <h4 class="modal-title center" id="myModalLabel">Career Application</h4>
       </div>
       <div class="modal-body">
-        <form id="form-apply" role="form" method="POST" action="../includes/form-apply.php">
-          <div class="row">
+        <form id="form-apply" role="form" method="POST" enctype="multipart/form-data" data-url="/path/to/upload/handler.json">
+          <!-- <div class="row">
             <div class="col-md-6">
               <div class="form-group name-group">
                 <label for="name">Full Name</label>
@@ -19,17 +19,18 @@
             <div class="col-md-6">
               <div class="form-group email-group">
                 <label for="name">Email</label>
-                <input type="text" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" required="required">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" required="required">
               </div>
             </div>
           </div>
-          <div class="form-group .message-group">
+          <div class="form-group message-group">
             <label for="message">Summary of Background</label>
             <textarea name="message" id="message" class="form-control" placeholder="Message" tabindex="3" required="required"></textarea>
-          </div>
+          </div> -->
           <div class="form-group">
             <label for="name">Upload Resume</label>
-              <input type="file" name="upload" id="upload" class="form-control" placeholder="No File Chosen" tabindex="4">
+              <input type="hidden" name="MAX_FILE_SIZE" value="1000000">  
+              <input id="fileupload" type="file" name="fileupload" class="form-control" data-url="../server/php/" placeholder="No File Chosen" tabindex="4">
           </div>
           <div class="row center">
             <button type="submit" class="btn btn-secondary" tabindex="4">submit</button>
@@ -39,3 +40,4 @@
     </div>
   </div>
 </div>
+<!-- action="../includes/form-apply.php" -->

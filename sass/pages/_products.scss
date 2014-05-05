@@ -34,9 +34,9 @@
 		&:hover {@include vendor-prefix(transform, scale(1.25));}
 		&:hover ~ path {opacity: 0.2 !important;}
 		&:hover > path { 
-			fill:#ff9900 !important; 
+			fill: $pico-orange !important; 
 			opacity: 1 !important; 
-			stroke:#ff8800 ; 
+			stroke: darken($pico-orange, 10%) ; 
 		}
 		&:hover > g, 
 		&:hover > g > path { pointer-events:none; } //otherwise hovers get interfered with
