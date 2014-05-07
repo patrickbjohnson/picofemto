@@ -1,8 +1,8 @@
 <?php 
 
 include("../includes/config.php");
-include("../includes/page-header.php");
-include("../includes/page-nav.php");
+include("../includes/header.php");
+include("../includes/nav.php");
 
 ?>
 
@@ -139,6 +139,4 @@ include("../includes/page-nav.php");
 	</section>
 </div>
 
-
-
-<? include("../includes/page-footer.php"); ?>
+<?php include("../includes/footer.php");?>

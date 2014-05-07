@@ -1,11 +1,8 @@
 <?php 
-	include("../includes/page-header.php");
-	include("../includes/page-nav.php");
-	include("../includes/career-modal.php");
-
-	  ini_set('display_errors', 'On');
-	  error_reporting(E_ALL | E_STRICT);
-
+	include("../includes/config.php");
+	include("../includes/header.php");
+	include("../includes/nav.php");
+	include("career-modal.php");
 ?>
 
 <div id="page-join">
@@ -94,4 +91,4 @@
 <img class="pico-divide" src="../img/divider.svg" alt="">	
 
 
-<?php include("../includes/page-footer.php");?>
+<?php include("../includes/footer.php");?>

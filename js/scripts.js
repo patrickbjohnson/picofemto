@@ -36,19 +36,6 @@ $(document).ready(function(){
     return window.pageYOffset;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   //smooth scroll for internal links on privacy page
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -64,31 +51,132 @@ $(document).ready(function(){
     }
   });
 
+
+  // mailchimp sign up 
+  
+
+  // $('#mc-embedded-subscribe').on('click', function(event) {
+  //   event.preventDefault();
+  //  
+  // });
+    
+  $("#mc-embedded-subscribe-form").on('submit', function(e){
+    e.preventDefault();
+    var $form = $('#mc-embedded-subscribe-form');
+
+    $("input").each(function(){
+      var $this = $(this);
+      $required= $('input[required]');
+      $inputField = $this.val();
+      if ($required && $inputField == "") {
+        $this.parent('div').removeClass('has-success');
+        $this.parent('div').addClass('has-error');
+      } else {
+        $this.parent('div').removeClass('has-error');
+        $this.parent('div').addClass('has-success');
+      }
+    });
+
+
+    $.ajax({
+          type: $form.attr('method'),
+          url: $form.attr('action'),
+          data: $form.serialize(),
+          cache       : false,
+          dataType    : 'json',
+          contentType: "application/json; charset=utf-8",
+          error       : function(err) { $('#mce-response').html('<span class="alert">Could not connect to server. Please try again later.</span>'); },
+          success     : function(data) {
+           
+            if (data.result != "success") {
+              console.log(data);
+              var message = data.msg.substring(4);
+              $('#mce-response').html('<span class="alert">'+message+'</span>');
+            } 
+
+            else {
+              console.log(data);
+              var message = data.msg;
+              $('#mce-response').html('<span class="success">'+message+'</span>');
+              console.log(data);
+            }
+          }
+        });
+  })
+
+
+
+
+  // apply form ajax test
+  // var $form = $("#form-apply");
+  // var $msg  = $(".message");
+
+
+
+  // $form.on('submit', function(e){
+  //   e.preventDefault();
+  //   var $formData = $form.serialize();
+  //   console.log($formData);
+
+  //   $.ajax({
+  //     type: 'POST',
+  //     url: $form.attr('action'),
+  //     data: $formData
+  //   }).done(function(response){
+  //     $msg.removeClass('error').addClass('success');
+
+  //     // set the message text
+  //     $msg.text(response);
+
+  //     //clear the form
+  //     $("#name").val();
+  //     $("#email").val();
+  //     $("#message").val();
+  //   }).fail(function(data){
+  //     // form message has error class
+  //     $msg.removeClass('success').addClass('error');
+
+  //     // set the message text
+  //     if (data.ressponseText !== ''){
+  //       $msg.text(data.ressponseText);
+  //     } else {
+  //       $msg.text('Opps! An erro occured and your message is not being sent');
+  //     }
+  //   });
+
+  // });
+
+
+
+
+
+
+
+
 	// Form input files styling plugin
 	// $( 'input[type="file"]' ).prettyFile({text:"Choose File"});
 	
 	// contact Form submission 
-	// $("#form-contact").submit(function(e){
+	// $("#form-apply").submit(function(e){
  //  	e.preventDefault();
 
  //  	// get the form data
  //  	 var formData = {
  //  	 	"name": 		$("input[name='name']").val(),
  //  	 	"email": 		$("input[name='email']").val(),
- //  	 	"subject": 	$("input[name='subject']").val(),
  //  	 	"message": 	$("textarea[name='message']").val()
  //  	 };
 
  //  	 $.ajax({
  //  	 	type: "POST", //define the type of HTTP verb we want to use
- //  	 	url: "../includes/form-contact.php",
+ //  	 	url: "../includes/form-apply.php",
  //  	 	data: formData, //our data object
  //  	 	dataType: "json",
  //  	 	encode: true
  //  	 }).done(function(data){ //using the done promise callback
 
  //  	 	// log the data to the console so we can see it
- //  	 	console.log(data.errors);
+ //  	 	 console.log(data);
 
  //  	 	if(! data.success){
  //  	 		if (data.errors.name){
@@ -117,7 +205,7 @@ $(document).ready(function(){
  //  	 	}
  //  	 }).fail(function(data){
  //  	 		$("#form-contact").prepend("<div class='alert alert-danger'>" + data.errors + "</div>");
- //  	 	console.log(data);
+ //  	 	 console.log(data.error);
  //  	 });
 	// });
   
@@ -172,7 +260,6 @@ $(document).ready(function(){
 
     //    $.ajax({
     //     type: "POST", 
-        
     //     data: formData, 
     //     dataType: "json",
     //     encode: true
@@ -244,32 +331,32 @@ $(document).ready(function(){
 
 
 	// Google Map Integration
-	function googleMap() {
-	  var myLatlng = new google.maps.LatLng(40.752671, -73.973618);
-	  var mapOptions = {
-	    zoom: 15,
-	    center: myLatlng,
-	    scrollwheel: false
-	  }
-	  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	// function googleMap() {
+	//   var myLatlng = new google.maps.LatLng(40.752671, -73.973618);
+	//   var mapOptions = {
+	//     zoom: 15,
+	//     center: myLatlng,
+	//     scrollwheel: false
+	//   }
+	//   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-	   var infowindow = new google.maps.InfoWindow({
-      content: "Hey There! Feel free to come by, we'll buy you lunch!"
-  });
+	//    var infowindow = new google.maps.InfoWindow({
+ //      content: "Hey There! Feel free to come by, we'll buy you lunch!"
+ //  });
 
-	  var marker = new google.maps.Marker({
-	      position: myLatlng,
-	      animation: google.maps.Animation.DROP,
-	      map: map,
-	      title: "Picofemto"
-	  });
+	//   var marker = new google.maps.Marker({
+	//       position: myLatlng,
+	//       animation: google.maps.Animation.DROP,
+	//       map: map,
+	//       title: "Picofemto"
+	//   });
 
-	  google.maps.event.addListener(marker, 'click', function() {
-	      infowindow.open(map,marker);
-	    });
-	}
+	//   google.maps.event.addListener(marker, 'click', function() {
+	//       infowindow.open(map,marker);
+	//     });
+	// }
 
-	// Call the Google Map to display on the site
-	google.maps.event.addDomListener(window, 'load', googleMap);
+	// // Call the Google Map to display on the site
+	// google.maps.event.addDomListener(window, 'load', googleMap);
 
 });

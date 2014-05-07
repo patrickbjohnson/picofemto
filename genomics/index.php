@@ -1,8 +1,8 @@
 <?php 
 
 include("../includes/config.php");
-include("../includes/page-header.php");
-include("../includes/page-nav.php");
+include("../includes/header.php");
+include("../includes/nav.php");
 
 ?>
 
@@ -43,10 +43,10 @@ include("../includes/page-nav.php");
 		
 		<section class="page-section">
 			<div class="row sign-up">
-				<p class="reg-400 center font-24">Sign up to be the first to know when our CliniscanSM Genomics product launches</p>
+				<p class="reg-400 center font-24">Sign up to be the first to know when our Cliniscan<sup>SM</sup> Genomics product launches</p>
 			</div>
 			<div class="row center">
-				<a href="#" class="btn btn-secondary">Sign Me Up</a href="#">
+				<button class="btn btn-secondary" data-toggle="modal" data-target="#pico-genomics-email">Sign Me Up</button>
 			</div>
 		</section>
 
@@ -57,5 +57,5 @@ include("../includes/page-nav.php");
 <img class="pico-divide" src="../img/divider.svg" alt="">	
 
 
-
-<? include("../includes/page-footer.php"); ?>
+<? include("../includes/genomics-email.php"); ?>
+<? include("../includes/footer.php"); ?>

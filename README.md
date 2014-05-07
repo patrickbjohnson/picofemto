@@ -1,13 +1,14 @@
 // TODO
 
--- Server URL Paths
+XX Server URL Paths
 XX HTML Templates Finalized
 XX Updated copy on home page
 XX Updated page-title  (could do with margin or absolutely positioned)
 
--- Nav Bar
+XX Nav Bar
 XX Set Up Nav Bar Links
 XX nav bar animation
+-- Fix nav bar for mobile
 
 -- Footer
 XX Adjust for mobile

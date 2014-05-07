@@ -35,9 +35,6 @@ img {display: block; margin: auto;}
 	.quote {color: $pico-blue;}
 
 
-
-
-
 	.txt-l {
 		text-align: left;
 	}
@@ -57,3 +54,8 @@ img {display: block; margin: auto;}
 	}
 
 	.page-headline {padding-top: 75px;}
+
+	#mce-response {
+	margin-top: 10px;
+	font-size: em(16px);
+}

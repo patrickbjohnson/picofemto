@@ -1,8 +1,8 @@
 <?php 
 
 include("../includes/config.php");
-include("../includes/page-header.php");
-include("../includes/page-nav.php");
+include("../includes/header.php");
+include("../includes/nav.php");
 
 ?>
 
@@ -62,7 +62,8 @@ include("../includes/page-nav.php");
 		<section class="page-section">
 			<div class="row sign-up center">
 				<p class="bold-700 font-24">Sign up to be the first to know when Cliniscan<sup>SM</sup> Neuro MRI-DTI launches</p>
-				<button class="btn btn-secondary">Sign Me Up</button>
+				<button class="btn btn-secondary" data-toggle="modal" data-target="#pico-imaging-email">Sign Me Up</button>
+
 			</div>
 		</section>
 	</div>
@@ -70,4 +71,5 @@ include("../includes/page-nav.php");
 <img class="pico-divide" src="../img/divider.svg" alt="">
 
 
-<? include("../includes/page-footer.php"); ?>
+<? include("../includes/imaging-email.php"); ?>
+<? include("../includes/footer.php"); ?>

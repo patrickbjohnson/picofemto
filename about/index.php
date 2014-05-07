@@ -1,8 +1,8 @@
 <?php 
 
 include("../includes/config.php");
-include("../includes/page-header.php");
-include("../includes/page-nav.php");
+include("../includes/header.php");
+include("../includes/nav.php");
 
 ?>
 
@@ -31,12 +31,12 @@ include("../includes/page-nav.php");
 		<section class="page-cta">
 			<div class="row center">
 				<h2 class="section-subtitle font-24">Interested in learning more?</h2>
-				<a href="<?php echo BASE_URL; ?>/pro" class="btn btn-secondary">See our products</a>
+				<a href="<?php echo BASE_URL; ?>/products" class="btn btn-secondary">See our products</a>
 			</div>
 		</section>
 		<section class="page-inspiration">
 			<div class="row center">
-				<img class="rounded" src="../img/einstein@2x.jpg" alt="Albert Einstein">
+				<img class="rounded" src="<?php echo BASE_URL; ?>img/einstein@2x.jpg" alt="Albert Einstein">
 				<h1 class="section-header">Our Inspiration</h1>
 				<p class="quote font-24 reg-400">“To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science.”</p>
 				<!-- Could be a UL For attribution and social icon -->
@@ -76,4 +76,4 @@ include("../includes/page-nav.php");
 
 
 
-<?php include("../includes/page-footer.php"); ?>
+<?php include("../includes/footer.php"); ?>

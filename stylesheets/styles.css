@@ -8677,29 +8677,35 @@ img {
   color: #2668b2;
 }
 
-/* line 41, ../sass/misc/_misc.scss */
+/* line 38, ../sass/misc/_misc.scss */
 .txt-l {
   text-align: left;
 }
 
-/* line 45, ../sass/misc/_misc.scss */
+/* line 42, ../sass/misc/_misc.scss */
 .txt-r {
   text-align: right;
 }
 
-/* line 49, ../sass/misc/_misc.scss */
+/* line 46, ../sass/misc/_misc.scss */
 .pico-feature img,
 .pico-component img {
   height: 85px;
 }
 
-/* line 54, ../sass/misc/_misc.scss */
+/* line 51, ../sass/misc/_misc.scss */
 .img-main {
   margin-bottom: 50px;
   width: 390px;
 }
 
-/* line 59, ../sass/misc/_misc.scss */
+/* line 56, ../sass/misc/_misc.scss */
 .page-headline {
   padding-top: 75px;
+}
+
+/* line 58, ../sass/misc/_misc.scss */
+#mce-response {
+  margin-top: 10px;
+  font-size: 1em;
 }

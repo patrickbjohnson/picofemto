@@ -1,7 +1,7 @@
 <?php 
 	include("../includes/config.php");
-	include("../includes/page-header.php");
-	include("../includes/page-nav.php");
+	include("../includes/header.php");
+	include("../includes/nav.php");
 ?>
 
 <div id="page-contact">
@@ -59,4 +59,4 @@
 </div>
 
 
-<? include("../includes/page-footer.php"); ?>
+<? include("../includes/footer.php"); ?>
