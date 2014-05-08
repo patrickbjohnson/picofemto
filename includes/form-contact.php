@@ -1,35 +1,37 @@
 <?php 
+	echo $_POST['name'];
+	echo json_encode($data);
 // header('Content-Type: application/json');
 // date_default_timezone_set('Etc/UTC');
 // require '../includes/phpmailer/PHPMailerAutoload.php';
 
-$data = array();
-$errors = array();
+// $data = array();
+// $errors = array();
 
 
-if (empty($_POST["name"])) {
-	$errors["name"] = "Name is required";
-}
+// if (empty($_POST["name"])) {
+// 	$errors["name"] = "Name is required";
+// }
 
-if (empty($_POST["email"])){
-	$errors["email"] = "Email is required";
-}
+// if (empty($_POST["email"])){
+// 	$errors["email"] = "Email is required";
+// }
 
-if (empty($_POST["message"])){
-	$errors["message"] = "Message is required";
-}
+// if (empty($_POST["message"])){
+// 	$errors["message"] = "Message is required";
+// }
 
 
 // Return a response 
 	// if there are any errors in our errors array, 
 
-if (!(empty($errors))){
-	$data["success"] = false;
-	$data["errors"] = $errors;
-} else {
-	var_dump($data);
-}
-	echo json_encode($data, JSON_PRETTY_PRINT);
+// if (!(empty($errors))){
+// 	$data["success"] = false;
+// 	$data["errors"] = $errors;
+// } else {
+// 	var_dump($data);
+// }
+
 
 
 // echo $errors;
@@ -52,7 +54,6 @@ if (!(empty($errors))){
 // 	$message .= '<p>Subject: ' 	. $subject 			.'</p>';
 // 	$message .= '<p>Email: ' 		. $email 				.'</p>';
 // 	$message .= '<p>Message: ' 	. $formMessage 	.'</p>';
-
 
 
 
