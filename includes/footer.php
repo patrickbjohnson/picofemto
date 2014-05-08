@@ -54,6 +54,7 @@
 	  </footer>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="<?php echo BASE_URL; ?>js/bootstrap-prettyfile.js"></script>
 		<script src="<?php echo BASE_URL; ?>js/scripts.js"></script>
 	  

@@ -9,7 +9,7 @@
       </div>
       <div class="modal-body">
 
-        <form id="form-apply" role="form" method="POST" action="mail.php" enctype="multipart/form-data">
+        <form id="form-apply" role="form" method="POST" action="../includes/mail.php" enctype="multipart/form-data">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group name-group">

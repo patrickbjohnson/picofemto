@@ -2,7 +2,7 @@
 	include("../includes/config.php");
 	include("../includes/header.php");
 	include("../includes/nav.php");
-	include("career-modal.php");
+	include("../includes/career-modal.php");
 ?>
 
 <div id="page-join">
