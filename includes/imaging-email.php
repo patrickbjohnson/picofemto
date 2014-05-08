@@ -34,7 +34,7 @@
             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;"><input type="text" name="b_bf366a1304b7dcf8272837b47_d2bf62d0db" tabindex="-1" value=""></div>
               <div class="clear">
-                <input type="hidden" name="SOURCE" id="SOURCE" value="pico-imaging" />
+                <input type="hidden" name="SOURCE" id="SOURCE" value="Cliniscan Imaging Interest" />
                 <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary button">Sign Up</button>
               </div>
           </div>

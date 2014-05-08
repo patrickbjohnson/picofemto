@@ -29,23 +29,23 @@
 							<div class="col-md-6">
 								<div class="form-group name-group">
 									<label for="name">Full Name</label>
-									<input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" required="required">
+									<input type="text" name="name" id="name" class="form-control" placeholder="Full Name" tabindex="1" >
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group email-group">
 									<label for="email">Email</label>
-									<input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" required="required">
+									<input type="email" name="email" id="email" class="form-control" placeholder="Email Address" tabindex="2" >
 								</div>
 							</div>
 						</div>
 						<div class="form-group subject-group">
 							<label for="subject">Subject</label>
-							<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" tabindex="3" required="required">
+							<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" tabindex="3" >
 						</div>
 						<div class="form-group message-group">
 							<label for="message">Message</label>
-							<textarea name="message" id="message" class="form-control" placeholder="Message" tabindex="4" required="required"></textarea>
+							<textarea name="message" id="message" class="form-control" placeholder="Message" tabindex="4" ></textarea>
 						</div>
 						<div class="row center">
 							<button class="btn btn-secondary" name="submit" type="submit" tabindex="4">submit</button>

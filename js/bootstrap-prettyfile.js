@@ -20,11 +20,11 @@
 
 				$el.hide();
 				$el.after( '\
-				<div class="input-append input-group"">\
+				<div class="input-append input-group file-upload-group">\
+					<input class="input-large form-control file_upload" type="text" placeholder="No File Chosen">\
 					<span class="input-group-btn">\
-						<button class="btn btn-default" type="button">' + text + '</button>\
+						<button class="btn btn-default btn-upload" type="button"><span class="glyphicon glyphicon-folder-open upload-icon"></span>' + text + '</button>\
 					</span>\
-					<input class="input-large form-control" type="text">\
 				</div>\
 				' );
 

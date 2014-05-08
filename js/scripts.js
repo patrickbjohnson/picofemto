@@ -1,24 +1,7 @@
 $(document).ready(function(){
 
-  // header shrink
-  // console.log($(".main-nav").scrollTop());
-  // var $shrink = 300
-  // $(window).scroll(function(){
-  //   var $nav = $(".main-nav");
-  //   var $scroll = $(".main-nav").offset().top;
-  //   console.log($scroll);
-  //   if ($scroll < $shrink){
-  //     $nav.addClass('tiny');
-  //   } else {
-  //     console.log('more!');
-  //     $nav.removeClass('tiny').addClass('huge');
-
-
-  //   }
-  // });
-
-
-
+  //
+  // Nav resize on scroll
   var shrinkHeader = 300;
   $(window).scroll(function() {
     var scroll = getScroll();
@@ -31,12 +14,82 @@ $(document).ready(function(){
             $('.navbar-right').removeClass('shrink');
         }
   });
-
   function getScroll() {
     return window.pageYOffset;
   }
 
-  //smooth scroll for internal links on privacy page
+  //
+  // Form input files styling plugin
+  $( 'input[type="file"]' ).prettyFile({text:"Choose File"});
+  // Job Application
+  $("#form-apply").submit(function(e){
+    e.preventDefault();
+    $("input, textarea").each(function(){
+      var $this = $(this);
+      $required = $('input[required]');
+      $textarea = $('textarea');
+      $inputField = $this.val();
+      if ($required && $inputField == "") {
+        $this.parent('div').removeClass('has-success');
+        $this.parent('div').addClass('has-error');
+      } else {
+        $this.parent('div').removeClass('has-error');
+        $this.parent('div').addClass('has-success');
+      }
+    });
+
+    var fd = new FormData();
+    var file_data = $('input[type="file"]')[0].files; // for multiple files
+    for(var i = 0;i<file_data.length;i++){
+       fd.append("file_"+i, file_data[i]);
+    }
+    var other_data = $('#form-apply').serializeArray();
+    $.each(other_data,function(key,input){
+       fd.append(input.name,input.value);
+    });
+    $.ajax({
+       url: '../includes/form-apply.php',
+       data: fd,
+       contentType: false,
+       processData: false,
+       type: 'POST',
+       success: function(data){
+          if (!(data.success)){
+            if (data.errors.name){
+              $("#name").parent().addClass('has-error');
+              $("#name").attr("placeholder", data.errors.name);
+            }
+
+            if (data.errors.email){
+              $("#email").parent().addClass('has-error');
+              $("#email").attr("placeholder", data.errors.email);
+            }
+
+            if (data.errors.message){
+              $("#message").parent().addClass('has-error');
+              $("#message").attr("placeholder", data.errors.message);
+            }
+
+            if (data.errors.file) {
+              $("#file_upload").parent().addClass('has-error');
+              $("#file_upload, .file_upload").attr("placeholder", data.errors.file);
+            }
+          } else {
+            // else, the form is good to go and send it
+            // NOTE this isn't firing. Why? 
+            console.log("success!");
+          }
+       }, 
+       error: function(data){
+        // This only fires when the application/json headers are in the file....
+        console.log(data);
+       }
+    });
+  });  
+
+  
+
+  // Privacy Page Smooth Scroll
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -52,14 +105,7 @@ $(document).ready(function(){
   });
 
 
-  // mailchimp sign up 
-  
-
-  // $('#mc-embedded-subscribe').on('click', function(event) {
-  //   event.preventDefault();
-  //  
-  // });
-    
+  // Mailchimp Signup
   $("#mc-embedded-subscribe-form").on('submit', function(e){
     e.preventDefault();
     var $form = $('#mc-embedded-subscribe-form');
@@ -98,63 +144,62 @@ $(document).ready(function(){
               console.log(data);
               var message = data.msg;
               $('#mce-response').html('<span class="success">'+message+'</span>');
-              console.log(data);
             }
           }
         });
   })
 
 
+  $("#form-contact").submit(function(e){
+    e.preventDefault();
+    var $this = $(this);
+    // $("input, textarea").each(function(){
+    //   var $this = $(this);
+    //   $required = $('input[required]');
+    //   $textarea = $('textarea');
+    //   $inputField = $this.val();
+    //   if ($required && $inputField == "") {
+    //     $this.parent('div').removeClass('has-success');
+    //     $this.parent('div').addClass('has-error');
+    //   } else {
+    //     $this.parent('div').removeClass('has-error');
+    //     $this.parent('div').addClass('has-success');
+    //   }
+    // });
+    var formData = {
+         "name":     $("input[name='name']").val(),
+         "email":    $("input[name='email']").val(),
+         "message":  $("textarea[name='message']").val()
+        };
+    $.ajax({
+      type: $this.attr('method'),
+      url: $this.attr('action'),
+      data: formData,
+      cache: false,
+      dataType: 'jsonp',
+      contentType: "application/json; charset=utf-8",
+      error: function(err) {
+        console.log(err);
+      },
+      success: function(data){
+        console.log(data);
+      }
+    });
 
+    // $("input").each(function(){
+    //   var $this = $(this);
+    //   $required= $('input[required]');
+    //   $inputField = $this.val();
+    //   if ($required && $inputField == "") {
+    //     $this.parent('div').removeClass('has-success');
+    //     $this.parent('div').addClass('has-error');
+    //   } else {
+    //     $this.parent('div').removeClass('has-error');
+    //     $this.parent('div').addClass('has-success');
+    //   }
+    // });
+  });
 
-  // apply form ajax test
-  // var $form = $("#form-apply");
-  // var $msg  = $(".message");
-
-
-
-  // $form.on('submit', function(e){
-  //   e.preventDefault();
-  //   var $formData = $form.serialize();
-  //   console.log($formData);
-
-  //   $.ajax({
-  //     type: 'POST',
-  //     url: $form.attr('action'),
-  //     data: $formData
-  //   }).done(function(response){
-  //     $msg.removeClass('error').addClass('success');
-
-  //     // set the message text
-  //     $msg.text(response);
-
-  //     //clear the form
-  //     $("#name").val();
-  //     $("#email").val();
-  //     $("#message").val();
-  //   }).fail(function(data){
-  //     // form message has error class
-  //     $msg.removeClass('success').addClass('error');
-
-  //     // set the message text
-  //     if (data.ressponseText !== ''){
-  //       $msg.text(data.ressponseText);
-  //     } else {
-  //       $msg.text('Opps! An erro occured and your message is not being sent');
-  //     }
-  //   });
-
-  // });
-
-
-
-
-
-
-
-
-	// Form input files styling plugin
-	// $( 'input[type="file"]' ).prettyFile({text:"Choose File"});
 	
 	// contact Form submission 
 	// $("#form-apply").submit(function(e){
@@ -314,20 +359,6 @@ $(document).ready(function(){
     //    //  console.log('shit failed');
     //    // });
     // });
-
-
-
-    // // File Upload plugin test
-    // $('#form-apply').fileupload({
-    //        dataType: 'json',
-    //        url: 'server/php/UploadHandler.php',
-    //        done: function (e, data) {
-    //            $.each(data.result.files, function (index, file) {
-    //                $('<p/>').text(file.name).appendTo(document.body);
-    //            });
-    //        }
-    //    });
-
 
 
 	// Google Map Integration
