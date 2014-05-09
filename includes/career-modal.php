@@ -1,6 +1,6 @@
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="career-application" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,7 +9,7 @@
       </div>
       <div class="modal-body">
 
-        <form id="form-apply" role="form" method="POST" action="../includes/mail.php" enctype="multipart/form-data">
+        <form id="form-apply" role="form" method="POST" action="../includes/form-apply.php" enctype="multipart/form-data">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group name-group">
@@ -26,6 +26,7 @@
           </div>
           <div class="form-group message-group">
             <label for="message">Summary of Background</label>
+            <input type="hidden" name="position">  
             <textarea name="message" id="message" class="form-control" placeholder="Message" tabindex="3" ></textarea>
           </div>
           <div class="form-group">

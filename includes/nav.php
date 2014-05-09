@@ -22,7 +22,6 @@
             <li ><a href="<?php echo BASE_URL; ?>about">About Us</a></li>
             <li ><a href="<?php echo BASE_URL; ?>team">Team</a></li>
             <li ><a href="<?php echo BASE_URL; ?>join">Join Us!</a></li>
-            <li ><a href="<?php echo BASE_URL; ?>press">Press</a></li>
           </ul>
         </li>
         <li class="dropdown">

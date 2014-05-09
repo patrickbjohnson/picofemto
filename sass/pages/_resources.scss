@@ -1,5 +1,23 @@
+.pico-resources {
+	background: #909090 url("../img/resources@2x.jpg") no-repeat;
+	@include vendor-prefix(background-size, cover);
+	@extend %pico-background-sm;
+}
+
 #page-resources {
 	.section-header {margin-bottom: 75px;}
+	.questions {
+		h2 {
+			font-weight: 700;
+			font-size: em(22px);
+		}
+		span {
+			font-size: em(22px);
+			font-weight: 700;
+			color: $pico-orange;
+			text-transform: uppercase;
+		}
+	}
 	.pico-reading {
 		padding: 0;
 		li {
@@ -9,6 +27,13 @@
 		}
 		
 		li a {font-size: em(24px);}
+	}
+
+	img {
+		margin: 0 10px;
+		max-width: 300px;
+		display: block;
+		margin: auto;
 	}
 
 }

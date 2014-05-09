@@ -10,12 +10,12 @@ include("includes/nav.php");
     <div class="jumbotron pico-home pico-background-bg">
       <div class="container">
         <h1 class="page-title">We are Picofemto, on a mission to revolutionize healthcare.</h1>
-        <a class="btn btn-primary" href="#" role="button">See How</a>
+        <a class="btn btn-primary" href="<?php echo BASE_URL; ?>products" role="button">See How</a>
       </div>
     </div>
     
     <div class="container">
-      <section class="page-mission mission">
+      <section class="page-mission mission container">
         <div class="row mission-statement">
           <p class="font-24 light">Our focus is on assisting clinicians and research professionals with our easy-to-use web-based platform that analyzes primary medical data at the stage of interpretation. Our flagship cloud-based service is Cliniscan<sup>SM</sup>, which enables the clinician and researcher to work in the cloud with a wide range of biomedical modalities.</p>
         </div>
@@ -26,7 +26,7 @@ include("includes/nav.php");
         </div>
       </section>
     
-      <section class="page-products">
+      <section class="page-products container">
         <div class="row">
           <div class="col-md-4 col-sm-4 center">
             <img src="img/pico-neurology.svg" alt="#">
@@ -45,37 +45,34 @@ include("includes/nav.php");
           </div>
         </div>
         <div class="row center">
-          <a class="btn btn-secondary bl-md" href="#" role="button">Learn More</a>
+          <a class="btn btn-secondary bl-md" href="<?php echo BASE_URL; ?>product" role="button">Learn More</a>
         </div>
       </section>
       
-      <section class="page-team">
-        <div class="row">
-          <h1 class="section-header">The team that's revolutionizing healthcare through analytics:</h1>
-        </div>
-        <div class="row team-members center">
-          <div class="col-md-4 center team-member">
-            <img class="rounded team-photo" src="img/bio/fady_bio@2x.jpg" alt="">
-            <h2 class="team-name">Fady A. Rizk</h2>
-            <h3 class="team-position">Founder, President &amp; Executive Chairman</h3>
+      <section class="page-team container">
+          <div class="row">
+            <h1 class="section-header">The team that's revolutionizing healthcare through analytics:</h1>
           </div>
-          <div class="col-md-4 center team-member">
-            <img class="rounded team-photo" src="img/bio/shri_bio@2x.jpg" alt="">
-            <h2 class="team-name">Srikant Krishna</h2>
-            <h3 class="team-position">Founder & CEO</h3>
+          <div class="row team-members center">
+            <div class="col-md-4 col-sm-4 center team-member">
+              <img class="rounded team-photo" src="img/bio/fady_bio@2x.jpg" alt="">
+              <h2 class="team-name">Fady A. Rizk</h2>
+              <h3 class="team-position">Founder, President &amp; Executive Chairman</h3>
+            </div>
+            <div class="col-md-4 col-sm-4 center team-member">
+              <img class="rounded team-photo" src="img/bio/shri_bio@2x.jpg" alt="">
+              <h2 class="team-name">Srikant Krishna</h2>
+              <h3 class="team-position">Founder & CEO</h3>
+            </div>
+            <div class="col-md-4 col-sm-4 center team-member">
+              <img class="rounded team-photo" src="img/bio/andrew_bio@2x.jpg" alt="">
+              <h2 class="team-name">Andre Khoury, MD</h2>
+              <h3 class="team-position">Founder & Chief Medical Officer</h3>
+            </div>
           </div>
-          <div class="col-md-4 center team-member">
-            <img class="rounded team-photo" src="img/bio/andrew_bio@2x.jpg" alt="">
-            <h2 class="team-name">Andre Khoury, MD</h2>
-            <h3 class="team-position">Founder & Chief Medical Officer</h3>
+          <div class="row center">
+            <a class="btn btn-secondary bl-md" href="<?php echo BASE_URL; ?>team" role="button">Meet the whole team</a>  
           </div>
-          
-          
-        </div>
-        <div class="row center">
-          <a class="btn btn-secondary bl-md" href="#" role="button">Meet the whole team</a>  
-        </div>
-        
       </section>
     </div> <!-- /container -->
 

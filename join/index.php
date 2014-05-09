@@ -22,8 +22,8 @@
 			</div>
 		</section>
 		<section class="page-section">
-			<div class="row career-block">
-				<div class="col-md-9 career-description">
+			<div class="row career-block col-md-12 col-xs-12">
+				<div class="col-md-9 col-xs-12 career-description">
 					<h1>Junior Software Engineer</h1>
 					<ul>
 						<li>1-3 years of software development experience</li>
@@ -32,11 +32,11 @@
 						<li>Willing to spend time learning new concepts</li>
 					</ul>
 				</div>
-				<div class="col-md-3 career-apply center">
-					<a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#myModal">Apply</a>
+				<div class="col-md-3 col-xs-12 career-apply center">
+					<a class="btn btn-secondary" href="#" data-position="Junior Software Engineer" data-toggle="modal" data-target="#career-application">Apply</a>
 				</div>
 			</div>
-			<div class="row career-block">
+			<div class="row career-block col-md-12 col-xs-12">
 				<div class="col-md-9 career-description">
 					<h1>Software Engineer</h1>
 					<ul>
@@ -49,10 +49,10 @@
 					</ul>
 				</div>
 				<div class="col-md-3 career-apply center">
-					<a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#myModal">Apply</a>
+					<a class="btn btn-secondary" href="#" data-position="Software Engineer" data-toggle="modal" data-target="#career-application">Apply</a>
 				</div>
 			</div>
-			<div class="row career-block">
+			<div class="row career-block col-md-12 col-xs-12">
 				<div class="col-md-9 career-description">
 					<h1>Senior Software Engineer</h1>
 					<ul>
@@ -65,11 +65,11 @@
 					</ul>
 				</div>
 				<div class="col-md-3 career-apply center">
-					<a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#myModal">Apply</a>
+					<a class="btn btn-secondary" href="#" data-position="Senior Software Engineer" data-toggle="modal" data-target="#career-application">Apply</a>
 				</div>
 			</div>
 
-			<div class="row career-block">
+			<div class="row career-block col-md-12 col-xs-12">
 				<div class="col-md-9 career-description">
 					<h1>Digital/Image Signal Processing Engineer</h1>
 					<ul>
@@ -82,7 +82,7 @@
 					</ul>
 				</div>
 				<div class="col-md-3 career-apply center">
-					<a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#myModal">Apply</a>
+					<a class="btn btn-secondary" href="#" data-position="Digital/Image Signal Processing Engineer" data-toggle="modal" data-target="#career-application">Apply</a>
 				</div>
 			</div>
 		</section>

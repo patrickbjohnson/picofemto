@@ -11,11 +11,6 @@
 	background-image: url("../img/home@2x.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	// -webkit-background-size: cover;
-	// -moz-background-size: cover;
-	// -ms-background-size: cover;
-	// -o-background-size: cover;
-	// background-size: cover;
 }
 
 #page-main {
@@ -23,20 +18,21 @@
 		margin-top: 250px;
 		text-align: left;
 		font-weight: 900;
-		
-		
+	}
 
-	}
-	@media (max-width: $screen-xs-max) { 
-		.page-title {
-			font-size: em(28px) !important;	
-		}
-	}
+
+	// @media (max-width: $screen-xs-max) { 
+	// 	.page-team .section-header {
+	// 		font-size: em(38px) !important;	
+	// 	}
+	// }
 	
 	.team-members {
 		margin-top: 90px;
 		margin-bottom: 75px
 	}
+
+
 
 	.team-photo {
 		margin-bottom: 40px;
@@ -79,6 +75,19 @@
 			span:last-child {margin-bottom: 0;}
 		}
 	}
+
+
+
+	@media (max-width: $screen-xs-max) { 
+		.page-title {
+			font-size: em(36px) !important;	
+		}
+	 	.team-member {margin-bottom: 30px;}
+	 	.team-photo {margin-bottom: 10px;}
+	}
+
+
+
 }
 
 

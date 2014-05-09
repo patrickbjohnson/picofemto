@@ -38,27 +38,26 @@
   if(!empty($errors)){
     $data['success'] = false;
     $data['errors']  = $errors;
+    $data['message'] = "Woops. Missing a few things. All fields required.";
     
   }
 
   // else, send email, then upload to ../includes/job_applicants
   else {
-    $data['success'] = true;
-    $data['message'] = "Success! If we feel you're a fit we'll reach out shortly.";
-    $data['errors'] = false;
-    $data['file'] = $_FILES;
     $fileUpload = $_FILES[file_0]['tmp_name'];
     $fileName = $_FILES[file_0]['name'];
 
     // php mailer
     $file = $_FILES["upload"]["tmp_name"];
-      $name =     filter_var($_POST["name"], FILTER_SANITIZE_STRING);
-      $email =    filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-      $formMessage =  filter_var($_POST["message"], FILTER_SANITIZE_STRING);
-      $message = '<p>The following request was sent from: </p>';
-      $message .= '<p>Name: ' . $name . '</p>';
-      $message .= '<p>Email: ' . $email . '</p>';
-      $message .= '<p>Message: ' . $formMessage .'</p>';
+    $name =     filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    $email =    filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $position =    filter_var($_POST["position"], FILTER_SANITIZE_STRING);
+    $formMessage =  filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+    $message = '<p>The following request was sent from: </p>';
+    $message .= '<p>Name: ' . $name . '</p>';
+    $message .= '<p>Position: ' . $position . '</p>';
+    $message .= '<p>Email: ' . $email . '</p>';
+    $message .= '<p>Message: ' . $formMessage .'</p>';
 
 
       //Create a new PHPMailer instance
@@ -114,10 +113,9 @@
 
       //send the message, check for errors
       if (!$mail->send()) {
-          echo "Mailer Error: " . $mail->ErrorInfo;
-      } else {
-          echo json_encode($data, JSON_PRETTY_PRINT);
-      }
+          $data['error']['title'] = 'Message could not be sent.';
+          exit;
+      } 
 
       $uploaddir = '../job_applicants/';
         foreach($_FILES as $file){
@@ -129,6 +127,12 @@
           }
         }
       $data = ($error) ? array('error' => 'There was an error uploading your files') : array('files' => $files);
+
+      $data['success'] = true;
+      $data['name'] = $name;
+      $data['message'] = "Success! If we feel you're a fit we'll reach out shortly.";
+      $data['errors'] = false;
+      $data['file'] = $_FILES;
       
   }
 

@@ -39,39 +39,12 @@
 	
 }
 
-.pico-genomics {
-	background: #909090 url("../img/genomics@2x.jpg") no-repeat;
-	@extend %pico-background-sm;
-	@include vendor-prefix(background-size, contain);
-	
-}
 
-.pico-imaging {
-	background: #909090 url("../img/imaging@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, contain);
-	@extend %pico-background-sm;
-}
 
-.pico-neurology {
-	background: #909090 url("../img/neurology@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, contain);
-	@extend %pico-background-sm;
-}
 
-.pico-resources {
-	background: #909090 url("../img/resources@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, contain);
-	@extend %pico-background-sm;
-}
 
-.pico-team {
-	background: #909090 url("../img/team@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, contain);
-	@extend %pico-background-sm;
-}
 
-.pico-technology {
-	background: #909090 url("../img/technology@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, contain);
-	@extend %pico-background-sm;
-}
+
+
+
+

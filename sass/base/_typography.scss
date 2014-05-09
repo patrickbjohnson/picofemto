@@ -32,8 +32,8 @@ h1,h2,h3,h4,h5,h6 {margin: 0;}
 	font-size: em(55px) !important;
 	font-weight: 300;
 	text-align: center;
-}
 
+}
 .section-title-bold {
 	font-size: em(24px) !important;
 	font-weight: 700;
@@ -48,4 +48,12 @@ sup {
 
 }
 
-// Type color
+.txt-l {text-align: left;}
+.txt-r {text-align: right;}
+
+@media (max-width: $screen-xs-max) { 
+	.page-title {font-size: em(40px) !important;}
+	.section-header {font-size: em(36px) !important;}
+	.txt-l {text-align: left;}
+	.txt-r {text-align: left !important;}
+}

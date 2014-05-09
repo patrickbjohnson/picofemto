@@ -9,7 +9,7 @@
 // Pico Helpers
 @import "helpers/mixins.scss";
 @import "helpers/functions.scss";
-// @import "helpers/backgrounds.scss";
+@import "helpers/backgrounds.scss";
 @import "helpers/modal.scss";
 
 // Pico Base
@@ -29,6 +29,7 @@
 @import "pages/genomics.scss";
 @import "pages/join.scss";
 @import "pages/neurology.scss";
+@import "pages/imaging.scss";
 @import "pages/privacy.scss";
 @import "pages/products.scss";
 @import "pages/resources.scss";

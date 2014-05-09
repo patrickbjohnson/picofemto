@@ -1,5 +1,12 @@
-#page-genomics {
+.pico-genomics {
+	background: #909090 url("../img/genomics@2x.jpg") no-repeat;
+	@extend %pico-background-sm;
+	@include vendor-prefix(background-size, cover);
 	
+}
+
+#page-genomics {
+	.unlock img {margin-bottom: 50px;}
 }
 
 #page-neurology {

@@ -7591,6 +7591,46 @@ button.close {
     display: none !important;
   }
 }
+/* line 2, ../sass/helpers/_backgrounds.scss */
+.pico-about, .pico-product, .pico-genomics, .pico-neurology, .pico-imaging, .pico-resources, .pico-team, .pico-technology {
+  padding: 0;
+  margin-top: 100px;
+  height: 325px;
+}
+
+/* line 9, ../sass/helpers/_backgrounds.scss */
+.pico-background-bg {
+  height: 800px;
+  margin-top: 100px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 17, ../sass/helpers/_backgrounds.scss */
+.pico-home {
+  background-color: red;
+}
+
+/* line 29, ../sass/helpers/_backgrounds.scss */
+.pico-about {
+  background: #909090 url("../img/about@2x.jpg") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+/* line 35, ../sass/helpers/_backgrounds.scss */
+.pico-product {
+  background: #909090 url("../img/home.jpg") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
 /* line 3, ../sass/helpers/_modal.scss */
 .modal-content {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7788,6 +7828,37 @@ sup {
   font-style: italic;
 }
 
+/* line 51, ../sass/base/_typography.scss */
+.txt-l {
+  text-align: left;
+}
+
+/* line 52, ../sass/base/_typography.scss */
+.txt-r {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  /* line 55, ../sass/base/_typography.scss */
+  .page-title {
+    font-size: 2.5em !important;
+  }
+
+  /* line 56, ../sass/base/_typography.scss */
+  .section-header {
+    font-size: 2.25em !important;
+  }
+
+  /* line 57, ../sass/base/_typography.scss */
+  .txt-l {
+    text-align: left;
+  }
+
+  /* line 58, ../sass/base/_typography.scss */
+  .txt-r {
+    text-align: left !important;
+  }
+}
 /* line 1, ../sass/base/_nav.scss */
 nav.main-nav {
   -webkit-transition: all 300ms ease;
@@ -7856,6 +7927,28 @@ nav.main-nav.shrink .nav-items > li > a {
   line-height: 50px;
 }
 
+@media (max-width: 768px) {
+  /* line 44, ../sass/base/_nav.scss */
+  nav.main-nav .nav-items li > a {
+    line-height: 20px !important;
+  }
+
+  /* line 48, ../sass/base/_nav.scss */
+  nav.main-nav.shrink {
+    padding: 10px 15px;
+  }
+  /* line 50, ../sass/base/_nav.scss */
+  nav.main-nav.shrink .navbar-brand {
+    padding: 0;
+    font-size: none;
+    line-height: none;
+    height: auto;
+  }
+  /* line 57, ../sass/base/_nav.scss */
+  nav.main-nav.shrink .nav-items li > a {
+    line-height: 20px !important;
+  }
+}
 /* line 1, ../sass/base/_footer.scss */
 footer {
   width: 100%;
@@ -7919,7 +8012,7 @@ footer {
 /* line 53, ../sass/base/_footer.scss */
 .footer .footer-menu .footer-menu-nav {
   float: left;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 /* line 56, ../sass/base/_footer.scss */
 .footer .footer-menu .footer-menu-nav:last-child {
@@ -7945,27 +8038,31 @@ footer {
   font-size: 12px;
   font-weight: 300;
 }
+
 @media (max-width: 768px) {
-  /* line 80, ../sass/base/_footer.scss */
+  /* line 81, ../sass/base/_footer.scss */
+  .footer {
+    padding: 25px 10px;
+  }
+  /* line 83, ../sass/base/_footer.scss */
   .footer .col-xs-12 {
     margin-bottom: 25px;
   }
-  /* line 82, ../sass/base/_footer.scss */
+  /* line 84, ../sass/base/_footer.scss */
   .footer-section-title {
     display: block;
     margin-bottom: 20px;
     text-align: center;
   }
-  /* line 88, ../sass/base/_footer.scss */
+  /* line 90, ../sass/base/_footer.scss */
   .footer p {
     text-align: center;
   }
-  /* line 90, ../sass/base/_footer.scss */
+  /* line 92, ../sass/base/_footer.scss */
   .footer .footer-menu .row {
     margin-left: 35px;
   }
 }
-
 /* line 1, ../sass/overrides/_overrides.scss */
 .jumbotron {
   background: #fefefe;
@@ -7984,7 +8081,7 @@ footer {
 .pico-divide {
   height: 20px;
   width: auto;
-  margin: 80px auto;
+  margin: 80px auto !important;
 }
 
 /* line 19, ../sass/overrides/_overrides.scss */
@@ -8073,101 +8170,119 @@ ul li {
   background-attachment: fixed;
 }
 
-/* line 22, ../sass/pages/_main.scss */
+/* line 17, ../sass/pages/_main.scss */
 #page-main .page-title {
   margin-top: 250px;
   text-align: left;
   font-weight: 900;
 }
-@media (max-width: 768px) {
-  /* line 31, ../sass/pages/_main.scss */
-  #page-main .page-title {
-    font-size: 1.75em !important;
-  }
-}
-/* line 36, ../sass/pages/_main.scss */
+/* line 30, ../sass/pages/_main.scss */
 #page-main .team-members {
   margin-top: 90px;
   margin-bottom: 75px;
 }
-/* line 41, ../sass/pages/_main.scss */
+/* line 37, ../sass/pages/_main.scss */
 #page-main .team-photo {
   margin-bottom: 40px;
 }
-/* line 45, ../sass/pages/_main.scss */
+/* line 41, ../sass/pages/_main.scss */
 #page-main .mission-statement {
   margin: 50px 0;
 }
-/* line 47, ../sass/pages/_main.scss */
+/* line 43, ../sass/pages/_main.scss */
 #page-main .product-headline,
 #page-main .team-name {
   margin-bottom: 15px;
   color: #2668b2;
 }
-/* line 56, ../sass/pages/_main.scss */
+/* line 52, ../sass/pages/_main.scss */
 #page-main .page-products p,
 #page-main .team-position {
   font-size: 16px;
 }
-/* line 62, ../sass/pages/_main.scss */
+/* line 58, ../sass/pages/_main.scss */
 #page-main .address {
   margin-bottom: 70px;
 }
-/* line 64, ../sass/pages/_main.scss */
+/* line 60, ../sass/pages/_main.scss */
 #page-main .page-products img {
   height: 175px;
   margin-bottom: 25px;
 }
-/* line 69, ../sass/pages/_main.scss */
+/* line 65, ../sass/pages/_main.scss */
 #page-main .google-map {
   margin-bottom: 0;
 }
-/* line 71, ../sass/pages/_main.scss */
+/* line 67, ../sass/pages/_main.scss */
 #page-main .page-address {
   margin: 0 auto 85px;
 }
-/* line 76, ../sass/pages/_main.scss */
+/* line 72, ../sass/pages/_main.scss */
 #page-main .page-address .address {
   margin: 0;
 }
-/* line 79, ../sass/pages/_main.scss */
+/* line 75, ../sass/pages/_main.scss */
 #page-main .page-address .address span:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  /* line 82, ../sass/pages/_main.scss */
+  #page-main .page-title {
+    font-size: 2.25em !important;
+  }
+  /* line 85, ../sass/pages/_main.scss */
+  #page-main .team-member {
+    margin-bottom: 30px;
+  }
+  /* line 86, ../sass/pages/_main.scss */
+  #page-main .team-photo {
+    margin-bottom: 10px;
+  }
+}
 
-/* line 3, ../sass/pages/_about.scss */
+/* line 1, ../sass/pages/_about.scss */
+.pico-about {
+  background: #909090 url("../img/about@2x.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 10, ../sass/pages/_about.scss */
 #page-about .pico-logo {
   display: inline-block;
   height: 100px;
 }
-/* line 8, ../sass/pages/_about.scss */
+/* line 15, ../sass/pages/_about.scss */
 #page-about .mission-headline {
   color: #f47525;
 }
-/* line 13, ../sass/pages/_about.scss */
+/* line 20, ../sass/pages/_about.scss */
 #page-about .page-inspiration {
   margin-top: 100px;
   margin-bottom: 125px;
 }
-/* line 16, ../sass/pages/_about.scss */
+/* line 23, ../sass/pages/_about.scss */
 #page-about .page-inspiration ul {
   display: inline-block;
   padding: 0;
   margin: 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 22, ../sass/pages/_about.scss */
+/* line 29, ../sass/pages/_about.scss */
 #page-about .page-inspiration ul li {
   font-weight: 400;
   list-style: none;
   margin-bottom: 15px;
 }
-/* line 28, ../sass/pages/_about.scss */
+/* line 35, ../sass/pages/_about.scss */
 #page-about .page-inspiration ul .ss-icon {
   font-size: 1.150em;
   color: #999999;
 }
-/* line 31, ../sass/pages/_about.scss */
+/* line 38, ../sass/pages/_about.scss */
 #page-about .page-inspiration ul .ss-icon:hover {
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -8177,15 +8292,15 @@ ul li {
   color: #4d4d4d;
   text-decoration: none;
 }
-/* line 41, ../sass/pages/_about.scss */
+/* line 48, ../sass/pages/_about.scss */
 #page-about .btn {
   margin-top: 30px;
 }
-/* line 44, ../sass/pages/_about.scss */
+/* line 51, ../sass/pages/_about.scss */
 #page-about .mission-col {
   margin-top: 50px;
 }
-/* line 46, ../sass/pages/_about.scss */
+/* line 53, ../sass/pages/_about.scss */
 #page-about .mission-col h2 {
   margin-bottom: 20px;
 }
@@ -8225,7 +8340,22 @@ ul li {
   color: #2668b2;
 }
 
-/* line 6, ../sass/pages/_genomics.scss */
+/* line 1, ../sass/pages/_genomics.scss */
+.pico-genomics {
+  background: #909090 url("../img/genomics@2x.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../sass/pages/_genomics.scss */
+#page-genomics .unlock img {
+  margin-bottom: 50px;
+}
+
+/* line 13, ../sass/pages/_genomics.scss */
 #page-neurology .devices {
   margin-top: 120px;
 }
@@ -8260,37 +8390,99 @@ ul li {
   vertical-align: middle;
   float: none;
 }
+@media (max-width: 768px) {
+  /* line 32, ../sass/pages/_join.scss */
+  #page-join .career-block {
+    display: block;
+    margin: 0 auto 50px;
+  }
+  /* line 33, ../sass/pages/_join.scss */
+  #page-join .career-description,
+  #page-join .career-apply {
+    display: block !important;
+    vertical-align: none !important;
+    float: float !important;
+  }
+}
 
-/* line 4, ../sass/pages/_neurology.scss */
+/* line 1, ../sass/pages/_neurology.scss */
+.pico-neurology {
+  background: #909090 url("../img/neurology@2x.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 10, ../sass/pages/_neurology.scss */
 #page-neurology .features .pico-feature img {
   height: 85px;
 }
-/* line 5, ../sass/pages/_neurology.scss */
+/* line 11, ../sass/pages/_neurology.scss */
 #page-neurology .features .pico-feature p {
   font-size: 1.5em;
   font-weight: 300;
   color: #fefefe;
 }
-/* line 12, ../sass/pages/_neurology.scss */
+/* line 18, ../sass/pages/_neurology.scss */
 #page-neurology .features p {
   line-height: 1.5;
 }
-/* line 14, ../sass/pages/_neurology.scss */
+/* line 20, ../sass/pages/_neurology.scss */
 #page-neurology .jumbtron-bg {
   background-color: #cecece;
 }
-/* line 15, ../sass/pages/_neurology.scss */
+/* line 21, ../sass/pages/_neurology.scss */
 #page-neurology ul {
+  font-weight: 300;
   padding: 15px;
   font-size: 1.5em;
   color: #fefefe;
 }
-/* line 20, ../sass/pages/_neurology.scss */
+/* line 27, ../sass/pages/_neurology.scss */
 #page-neurology ul li {
   margin: -5px 0;
   list-style: disc;
 }
+@media (max-width: 768px) {
+  /* line 34, ../sass/pages/_neurology.scss */
+  #page-neurology .pico-feature {
+    margin-bottom: 50px;
+  }
+  /* line 35, ../sass/pages/_neurology.scss */
+  #page-neurology ul {
+    font-size: 1.125em;
+  }
+}
 
+/* line 1, ../sass/pages/_imaging.scss */
+.pico-imaging {
+  background: #909090 url("../img/imaging@2x.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  /* line 17, ../sass/pages/_imaging.scss */
+  .rounded-lg {
+    width: 260px !important;
+    text-align: center;
+  }
+
+  /* line 21, ../sass/pages/_imaging.scss */
+  .section-header.txt-l {
+    text-align: center !important;
+  }
+
+  /* line 22, ../sass/pages/_imaging.scss */
+  .section-header.txt-r {
+    text-align: center !important;
+  }
+}
 /* line 2, ../sass/pages/_privacy.scss */
 #page-privacy .pico-gemoics img {
   width: 175px;
@@ -8343,23 +8535,34 @@ ul li {
 }
 
 /* line 3, ../sass/pages/_products.scss */
+#page-products .motivation p, #page-products .sdk p {
+  font-weight: 400;
+}
+/* line 5, ../sass/pages/_products.scss */
 #page-products .jumbotron {
   background: #999999;
 }
-/* line 5, ../sass/pages/_products.scss */
+/* line 7, ../sass/pages/_products.scss */
 #page-products .jumbotron p {
   color: #fefefe;
 }
-/* line 8, ../sass/pages/_products.scss */
+/* line 10, ../sass/pages/_products.scss */
 #page-products .pico-component img {
   margin: 50px auto 25px;
 }
-/* line 9, ../sass/pages/_products.scss */
+/* line 11, ../sass/pages/_products.scss */
 #page-products .pico-component h1 {
-  color: #2668b2;
   margin-bottom: 20px;
+  font-size: 1.875em;
+  font-weight: 300;
+  color: #2668b2;
 }
 /* line 17, ../sass/pages/_products.scss */
+#page-products .pico-component p {
+  font-weight: 300;
+  text-align: left;
+}
+/* line 22, ../sass/pages/_products.scss */
 #page-products .icon,
 #page-products path {
   -webkit-transition: all 300ms ease;
@@ -8368,7 +8571,7 @@ ul li {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-/* line 20, ../sass/pages/_products.scss */
+/* line 25, ../sass/pages/_products.scss */
 #page-products .icon {
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -8388,13 +8591,13 @@ ul li {
   position: relative;
   z-index: 10;
 }
-/* line 28, ../sass/pages/_products.scss */
+/* line 33, ../sass/pages/_products.scss */
 #page-products .icon > path {
   fill: #5e5e5e;
   stroke-width: 5px;
   stroke: #5e5e5e;
 }
-/* line 34, ../sass/pages/_products.scss */
+/* line 39, ../sass/pages/_products.scss */
 #page-products .icon:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -8402,106 +8605,166 @@ ul li {
   -o-transform: scale(1.25);
   transform: scale(1.25);
 }
-/* line 35, ../sass/pages/_products.scss */
+/* line 40, ../sass/pages/_products.scss */
 #page-products .icon:hover ~ path {
   opacity: 0.2 !important;
 }
-/* line 36, ../sass/pages/_products.scss */
+/* line 41, ../sass/pages/_products.scss */
 #page-products .icon:hover > path {
   fill: #f47525 !important;
   opacity: 1 !important;
   stroke: #db5b0b;
 }
-/* line 41, ../sass/pages/_products.scss */
+/* line 46, ../sass/pages/_products.scss */
 #page-products .icon:hover > g, #page-products .icon:hover > g > path {
   pointer-events: none;
 }
-/* line 43, ../sass/pages/_products.scss */
+/* line 48, ../sass/pages/_products.scss */
 #page-products .icon:hover > g > path {
   fill: #fff !important;
 }
 
-/* line 2, ../sass/pages/_resources.scss */
+/* line 1, ../sass/pages/_resources.scss */
+.pico-resources {
+  background: #909090 url("../img/resources@2x.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 8, ../sass/pages/_resources.scss */
 #page-resources .section-header {
   margin-bottom: 75px;
 }
-/* line 3, ../sass/pages/_resources.scss */
+/* line 10, ../sass/pages/_resources.scss */
+#page-resources .questions h2 {
+  font-weight: 700;
+  font-size: 1.375em;
+}
+/* line 14, ../sass/pages/_resources.scss */
+#page-resources .questions span {
+  font-size: 1.375em;
+  font-weight: 700;
+  color: #f47525;
+  text-transform: uppercase;
+}
+/* line 21, ../sass/pages/_resources.scss */
 #page-resources .pico-reading {
   padding: 0;
 }
-/* line 5, ../sass/pages/_resources.scss */
+/* line 23, ../sass/pages/_resources.scss */
 #page-resources .pico-reading li {
   list-style: none;
   padding: 20px 0;
 }
-/* line 11, ../sass/pages/_resources.scss */
+/* line 29, ../sass/pages/_resources.scss */
 #page-resources .pico-reading li a {
   font-size: 1.5em;
 }
+/* line 32, ../sass/pages/_resources.scss */
+#page-resources img {
+  margin: 0 10px;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
 
 /* line 1, ../sass/pages/_team.scss */
+.pico-team {
+  background: #909090 url("../img/team@2x.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 7, ../sass/pages/_team.scss */
 .team-members h1,
 .board-members h1 {
   color: #2668b2;
 }
 
-/* line 4, ../sass/pages/_team.scss */
+/* line 10, ../sass/pages/_team.scss */
 .board-members .section-header {
   color: #010101;
 }
 
-/* line 8, ../sass/pages/_team.scss */
+/* line 14, ../sass/pages/_team.scss */
 .team-members {
   margin-bottom: 0;
 }
-/* line 10, ../sass/pages/_team.scss */
+/* line 16, ../sass/pages/_team.scss */
 .team-members .row {
   margin-bottom: 50px;
 }
-/* line 11, ../sass/pages/_team.scss */
+/* line 17, ../sass/pages/_team.scss */
 .team-members .rounded {
   margin: 10px auto 15px;
 }
 
-/* line 14, ../sass/pages/_team.scss */
+/* line 19, ../sass/pages/_team.scss */
 .team-member-name {
   font-size: 2.25em;
 }
 
-/* line 18, ../sass/pages/_team.scss */
+/* line 23, ../sass/pages/_team.scss */
 #page-team-member {
   margin-top: 120px;
 }
-/* line 21, ../sass/pages/_team.scss */
+/* line 26, ../sass/pages/_team.scss */
 #page-team-member .pico-team-member {
   margin-bottom: 50px;
 }
-/* line 27, ../sass/pages/_team.scss */
+/* line 32, ../sass/pages/_team.scss */
 #page-team-member .team-member-name {
   margin-bottom: 20px;
   color: #2668b2;
 }
-/* line 31, ../sass/pages/_team.scss */
+/* line 36, ../sass/pages/_team.scss */
 #page-team-member h2 {
   font-size: 1.5em;
 }
-/* line 33, ../sass/pages/_team.scss */
+/* line 38, ../sass/pages/_team.scss */
 #page-team-member p {
   font-size: 1.5em;
 }
 
-/* line 2, ../sass/pages/_technology.scss */
+@media (max-width: 768px) {
+  /* line 43, ../sass/pages/_team.scss */
+  .team-members .col-md-4 {
+    margin-bottom: 40px;
+  }
+
+  /* line 44, ../sass/pages/_team.scss */
+  .board-members .col-md-4 {
+    margin-bottom: 40px;
+  }
+}
+/* line 1, ../sass/pages/_technology.scss */
+.pico-technology {
+  background: #909090 url("../img/technology.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 8, ../sass/pages/_technology.scss */
 #page-technology .pico-benefits {
   text-align: center;
 }
-/* line 4, ../sass/pages/_technology.scss */
+/* line 10, ../sass/pages/_technology.scss */
 #page-technology .pico-benefits li {
   position: relative;
   margin: 60px 0;
   font-size: 1.5em;
   list-style: none;
 }
-/* line 10, ../sass/pages/_technology.scss */
+/* line 16, ../sass/pages/_technology.scss */
 #page-technology .pico-benefits li:after {
   content: "•";
   position: absolute;
@@ -8511,16 +8774,16 @@ ul li {
   color: #f47525;
   text-align: center;
 }
-/* line 20, ../sass/pages/_technology.scss */
+/* line 26, ../sass/pages/_technology.scss */
 #page-technology .pico-benefits li:last-child:after {
   content: "";
 }
-/* line 26, ../sass/pages/_technology.scss */
+/* line 32, ../sass/pages/_technology.scss */
 #page-technology .timeline {
   height: 100%;
   position: relative;
 }
-/* line 30, ../sass/pages/_technology.scss */
+/* line 36, ../sass/pages/_technology.scss */
 #page-technology .timeline:after {
   content: "";
   position: absolute;
@@ -8530,17 +8793,17 @@ ul li {
   left: 50%;
   border-left: 2px solid #010101;
 }
-/* line 40, ../sass/pages/_technology.scss */
+/* line 46, ../sass/pages/_technology.scss */
 #page-technology .timeline ul {
   padding: 75px 0 0;
   overflow: hidden;
 }
-/* line 45, ../sass/pages/_technology.scss */
+/* line 51, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-left,
 #page-technology .timeline .timeline-block-right {
   clear: both;
 }
-/* line 48, ../sass/pages/_technology.scss */
+/* line 54, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-left:before,
 #page-technology .timeline .timeline-block-right:before {
   content: "";
@@ -8552,7 +8815,7 @@ ul li {
   border-radius: 50%;
   z-index: 1;
 }
-/* line 58, ../sass/pages/_technology.scss */
+/* line 64, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-left:after,
 #page-technology .timeline .timeline-block-right:after {
   content: "";
@@ -8562,41 +8825,41 @@ ul li {
   border-top: 2px solid #010101;
   width: 95px;
 }
-/* line 69, ../sass/pages/_technology.scss */
+/* line 75, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-left {
   float: left;
 }
-/* line 71, ../sass/pages/_technology.scss */
+/* line 77, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-left:before {
   right: -40px;
 }
-/* line 72, ../sass/pages/_technology.scss */
+/* line 78, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-left:after {
   right: -134px;
 }
-/* line 74, ../sass/pages/_technology.scss */
+/* line 80, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-right {
   float: right;
 }
-/* line 76, ../sass/pages/_technology.scss */
+/* line 82, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-right:before {
   left: -40px;
 }
-/* line 77, ../sass/pages/_technology.scss */
+/* line 83, ../sass/pages/_technology.scss */
 #page-technology .timeline .timeline-block-right:after {
   left: -134px;
 }
-/* line 80, ../sass/pages/_technology.scss */
+/* line 86, ../sass/pages/_technology.scss */
 #page-technology .timeline-block {
   position: relative;
   display: inline-block;
 }
-/* line 83, ../sass/pages/_technology.scss */
+/* line 89, ../sass/pages/_technology.scss */
 #page-technology .timeline-block h1 {
   font-size: 1.5em;
   color: #f47525;
 }
-/* line 88, ../sass/pages/_technology.scss */
+/* line 94, ../sass/pages/_technology.scss */
 #page-technology .timeline-icon {
   display: inline-block;
   width: 175px;
@@ -8606,11 +8869,17 @@ ul li {
   border-radius: 50%;
   line-height: 175px;
 }
-/* line 97, ../sass/pages/_technology.scss */
+/* line 103, ../sass/pages/_technology.scss */
 #page-technology .timeline-icon .icon {
   font-size: 6.25em;
   line-height: 175px;
   color: #fefefe;
+}
+@media (max-width: 768px) {
+  /* line 113, ../sass/pages/_technology.scss */
+  #page-technology .pico-benefits li {
+    font-size: 1.25em;
+  }
 }
 
 /* line 1, ../sass/misc/_map.scss */
@@ -8678,33 +8947,23 @@ img {
 }
 
 /* line 38, ../sass/misc/_misc.scss */
-.txt-l {
-  text-align: left;
-}
-
-/* line 42, ../sass/misc/_misc.scss */
-.txt-r {
-  text-align: right;
-}
-
-/* line 46, ../sass/misc/_misc.scss */
 .pico-feature img,
 .pico-component img {
   height: 85px;
 }
 
-/* line 51, ../sass/misc/_misc.scss */
+/* line 43, ../sass/misc/_misc.scss */
 .img-main {
   margin-bottom: 50px;
   width: 390px;
 }
 
-/* line 56, ../sass/misc/_misc.scss */
+/* line 48, ../sass/misc/_misc.scss */
 .page-headline {
   padding-top: 75px;
 }
 
-/* line 58, ../sass/misc/_misc.scss */
+/* line 50, ../sass/misc/_misc.scss */
 #mce-response {
   margin-top: 10px;
   font-size: 1em;

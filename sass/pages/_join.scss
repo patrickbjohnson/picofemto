@@ -27,6 +27,20 @@
 		}
 
 	}
+
+@media (max-width: $screen-xs-max) { 
+		.career-block {display: block; margin: 0 auto 50px;}
+		.career-description,
+		.career-apply {
+			display: block !important;
+			vertical-align: none !important;
+			float: float !important;
+		}
+	}
+
+
+
+
 }
 
 

@@ -5,12 +5,13 @@ include("../includes/nav.php");
 ?>
 
 <div id="page-technology">
+
 	<div class="jumbotron pico-technology">
 	  <div class="container">
 	    <h1 class="page-title center">Technology</h1>
 	  </div>
 	</div>
-
+	<div class="container">
 	<section class="page-section">
 		<div class="container">
 			<div class="row">
@@ -27,19 +28,21 @@ include("../includes/nav.php");
 				<h1 class="section-header">Benefits of our technology approach include:</h1>
 			</div>
 		</div>
-		<div class="row">
-			<ul class="pico-benefits">
-				<li>A visual aid to Physicians.</li>
-				<li>Ability to pinpoint with accuracy the area of concern.</li>
-				<li>Reduce false positive and false negative rate.</li>
-				<li>Reduce the time for an analysis.</li>
-				<li>No need to duplicate procedures.</li>
-				<li>Analysis performed over the cloud.</li>
-				<li>Reduce overall healthcare cost.</li>
-				<li>Improve outcomes.</li>
-				<li>Algorithms provide on demand processing 24/7, 365 days a year</li>
-				<li>Algorithms can process large and complex data sets.</li>
-			</ul>
+		<div class="container">
+			<div class="row">
+				<ul class="pico-benefits">
+					<li>A visual aid to Physicians.</li>
+					<li>Ability to pinpoint with accuracy the area of concern.</li>
+					<li>Reduce false positive and false negative rate.</li>
+					<li>Reduce the time for an analysis.</li>
+					<li>No need to duplicate procedures.</li>
+					<li>Analysis performed over the cloud.</li>
+					<li>Reduce overall healthcare cost.</li>
+					<li>Improve outcomes.</li>
+					<li>Algorithms provide on demand processing 24/7, 365 days a year</li>
+					<li>Algorithms can process large and complex data sets.</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
@@ -111,6 +114,8 @@ include("../includes/nav.php");
 		</div>
 		<img class="pico-divide" src="../img/divider.svg" alt="">
 	</section>
+	</div>
+	
 	
 
 </div>

@@ -1,0 +1,23 @@
+.pico-imaging {
+	background: #909090 url("../img/imaging@2x.jpg") no-repeat;
+	@include vendor-prefix(background-size, cover);
+	@extend %pico-background-sm;
+}
+
+
+#pico-imaging {
+
+
+	
+
+}
+
+@media (max-width: $screen-xs-max) { 
+
+	.rounded-lg {
+		width: 260px !important;
+		text-align: center;
+	}
+	.section-header.txt-l {text-align: center !important;}
+	.section-header.txt-r {text-align: center !important;}
+}

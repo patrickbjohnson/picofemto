@@ -104,7 +104,7 @@ include("../includes/nav.php");
 					<img class="rounded" src="../img/team.svg" alt="">
 					<h1 class="font-24">You!</h1>
 					<h2 class="reg-400 font-16">Check out our current openings</h2>
-					<a class="btn btn-secondary" href="#">Join</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>join">Join</a>
 				</div>
 				<!-- Row 4 -->
 			</div>
