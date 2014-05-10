@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand pic" href="/">
-        <img src="<?php echo BASE_URL; ?>img/pico-logo.svg" alt="">
+        <img src="<?php echo BASE_URL; ?>img/picofemto.svg" alt="">
       </a>
     </div>
 

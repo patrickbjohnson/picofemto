@@ -13,7 +13,7 @@
 		</div>
 	</section>
 
-	<img class="pico-divide" src="../img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 
 	<div class="container">
 		<section class="page-section">
@@ -86,9 +86,10 @@
 				</div>
 			</div>
 		</section>
+		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">	
 	</div>
 </div>
-<img class="pico-divide" src="../img/divider.svg" alt="">	
+
 
 
 <?php include("../includes/footer.php");?>

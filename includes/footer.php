@@ -4,7 +4,7 @@
 	    	<div class="row">
 	    		<div class="col-md-3 col-xs-12">
 						<a class="footer-brand pic" href="<?php echo BASE_URL; ?>">
-						  <img src="<?php echo BASE_URL; ?>img/pico-logo.svg" alt="">
+						  <img src="<?php echo BASE_URL; ?>img/picofemto.svg" alt="">
 						</a>
 	    		</div>
 	    		<div class="col-md-3 col-xs-12 col-md-offset-1">

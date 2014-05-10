@@ -15,7 +15,7 @@ include("../includes/nav.php");
 	<section class="page-section">
 		<div class="container">
 			<div class="row">
-				<img class="pico-divide" src="../img/divider.svg" alt="">
+				<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 				<h1 class="section-header">Technology is a Physician's best friend—it's available and ready to perform around the clock.</h1>
 				<p class="font-24">Our focus is on assisting clinicians and research professionals with our easy-to-use web platform that analyzes raw primary medical data at the point of diagnosis or evaluation. Our flagship cloud-based service is Cliniscan<sup>SM</sup>. This product enables the clinician and researcher to work in the cloud with a wide range of biomedical modalities.</p>
 			</div>
@@ -112,7 +112,7 @@ include("../includes/nav.php");
 				</div>
 			</div>
 		</div>
-		<img class="pico-divide" src="../img/divider.svg" alt="">
+		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 	</section>
 	</div>
 	

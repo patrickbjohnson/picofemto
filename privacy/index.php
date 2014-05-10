@@ -10,12 +10,12 @@ include("../includes/nav.php");
 	<section class="page-section">
 		<div class="jumbotron pico-gemoics">
 		  <div class="container">
-		    <img src="../img/pico-privacy.svg" alt="#">
+		    <img src="<?php echo BASE_URL;?>img/pico-privacy.svg" alt="#">
 		  </div>
 		</div>
 	</section>
 	
-	<img class="pico-divide" src="../img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 
 	<section class="page-section privacy-policy">
 		<div class="container">
@@ -103,7 +103,7 @@ include("../includes/nav.php");
 	</section>
 	
 	
-	<img class="pico-divide" src="../img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 </div>
 
 

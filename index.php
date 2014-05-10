@@ -11,6 +11,7 @@ include("includes/nav.php");
       <div class="container">
         <h1 class="page-title">We are Picofemto, on a mission to revolutionize healthcare.</h1>
         <a class="btn btn-primary" href="<?php echo BASE_URL; ?>products" role="button">See How</a>
+
       </div>
     </div>
     
@@ -29,17 +30,17 @@ include("includes/nav.php");
       <section class="page-products container">
         <div class="row">
           <div class="col-md-4 col-sm-4 center">
-            <img src="img/pico-neurology.svg" alt="#">
+            <img src="<?php echo BASE_URL; ?>img/pico-neurology.svg" alt="#">
             <h2 class="product-headline">Neurology</h2>
             <p>We provide cloud-based neurological analysis software to assist in the visualization of EEG data, and to present a mixed-modality view of neural data acquired from different studies.</p>
           </div>
           <div class="col-md-4 col-sm-4 center">
-            <img src="img/pico-imaging.svg" alt="#">
+            <img src="<?php echo BASE_URL; ?>img/pico-imaging.svg" alt="#">
             <h2 class="product-headline">Imaging</h2>
             <p>Our cloud based visualization and analysis tools will help physicians become more efficient, reduce false negative and positive rates, and reduce cost of healthcare delivery.</p>
          </div>
           <div class="col-md-4 col-sm-4 center">
-            <img src="img/pico-genomics.svg" alt="#">
+            <img src="<?php echo BASE_URL; ?>img/pico-genomics.svg" alt="#">
             <h2 class="product-headline">Genomics</h2>
             <p>The quantity of data that can be generated from a single patient is astonishing. The time is now to develop powerful tools to aid practicing physicians in analyzing patient genomic data.</p>
           </div>
@@ -55,17 +56,17 @@ include("includes/nav.php");
           </div>
           <div class="row team-members center">
             <div class="col-md-4 col-sm-4 center team-member">
-              <img class="rounded team-photo" src="img/bio/fady_bio@2x.jpg" alt="">
+              <img class="rounded team-photo" src="<?php echo BASE_URL; ?>img/bio/fady_bio@2x.jpg" alt="">
               <h2 class="team-name">Fady A. Rizk</h2>
               <h3 class="team-position">Founder, President &amp; Executive Chairman</h3>
             </div>
             <div class="col-md-4 col-sm-4 center team-member">
-              <img class="rounded team-photo" src="img/bio/shri_bio@2x.jpg" alt="">
+              <img class="rounded team-photo" src="<?php echo BASE_URL; ?>img/bio/shri_bio@2x.jpg" alt="">
               <h2 class="team-name">Srikant Krishna</h2>
               <h3 class="team-position">Founder & CEO</h3>
             </div>
             <div class="col-md-4 col-sm-4 center team-member">
-              <img class="rounded team-photo" src="img/bio/andrew_bio@2x.jpg" alt="">
+              <img class="rounded team-photo" src="<?php echo BASE_URL; ?>img/bio/andrew_bio@2x.jpg" alt="">
               <h2 class="team-name">Andre Khoury, MD</h2>
               <h3 class="team-position">Founder & Chief Medical Officer</h3>
             </div>
@@ -73,10 +74,11 @@ include("includes/nav.php");
           <div class="row center">
             <a class="btn btn-secondary bl-md" href="<?php echo BASE_URL; ?>team" role="button">Meet the whole team</a>  
           </div>
+          <img class="row pico-divide" src="<?php echo BASE_URL; ?>img/divider.svg" alt="">
       </section>
     </div> <!-- /container -->
 
-    <img class="pico-divide" src="img/divider.svg" alt="">
+    
     
     <section class="page-section google-map">
       <div id="map-canvas"></div>
@@ -90,8 +92,5 @@ include("includes/nav.php");
     </section>
   </div>
 
-    
-    
-    
 
 <?php include("includes/footer.php"); ?>

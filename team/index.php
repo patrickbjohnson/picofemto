@@ -16,7 +16,7 @@ include("../includes/nav.php");
 	<section class="page-section">
 		<div class="container">
 			<div class="row">
-				<img class="pico-divide" src="../img/divider.svg" alt="">
+				<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 				<h1 class="section-header">Developing revolutionary healthcare technology takes a unified team of experts driven by one mission. We are that team.</h1>
 			</div>
 		</div>
@@ -25,90 +25,90 @@ include("../includes/nav.php");
 	<section class="page-section team-members">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/fady@2x.jpg" alt="#">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/fady@2x.jpg" alt="#">
 					<h1 class="font-24">Fady A. Rizk</h1>
 					<h2 class="reg-400 font-16">Founder & President</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/fady-rizk">Bio</a>
 				</div>
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/shri_bio@2x.jpg" alt="#">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/shri_bio@2x.jpg" alt="#">
 					<h1 class="font-24">Srikant Krishna</h1>
 					<h2 class="font-16">Founder & CEO</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/srikant-krishna">Bio</a>
 				</div>
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/andrew_bio@2x.jpg" alt="">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/andrew_bio@2x.jpg" alt="">
 					<h1 class="font-24">Andre Khoury, MD</h1>
 					<h2 class="reg-400 font-16">Founder & Chief Medical Officer</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/andre-khoury">Bio</a>
 				</div>
 				<!-- Row 1 -->
 			</div>
 			<div class="row">
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/brian@2x.jpg" alt="#">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/brian@2x.jpg" alt="#">
 					<h1 class="font-24">Brian Kennedy</h1>
 					<h2 class="reg-400 font-16">Lead Developer</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/brian-kennedy">Bio</a>
 				</div>
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/fatih@2x.jpg" alt="#">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/fatih@2x.jpg" alt="#">
 					<h1 class="font-24">Fatih Sirin, PhD</h1>
 					<h2 class="font-16">Head of Analytics</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/fatih-sirin">Bio</a>
 				</div>
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/dhinakaran@2x.jpg" alt="">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/dhinakaran@2x.jpg" alt="">
 					<h1 class="font-24">Dhinakaran Chinappen</h1>
 					<h2 class="reg-400 font-16">Biomedical Engineer</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/dhinakaran-chinappen">Bio</a>
 				</div>
 				<!-- Row 2 -->
 			</div>
 			<div class="row">
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/william_b@2x.jpg" alt="#">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/william_b@2x.jpg" alt="#">
 					<h1 class="font-24">William Bubel</h1>
 					<h2 class="reg-400 font-16">Senior Software Engineer</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/william-bubel">Bio</a>
 				</div>
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/william_c@2x.jpg" alt="#">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/william_c@2x.jpg" alt="#">
 					<h1 class="font-24">William Cheung</h1>
 					<h2 class="font-16">Senior Software Engineer</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/william-cheung">Bio</a>
 				</div>
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/rob@2x.jpg" alt="">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/rob@2x.jpg" alt="">
 					<h1 class="font-24">Rob Callan</h1>
 					<h2 class="reg-400 font-16">Quantitative Developer</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/rob-callan">Bio</a>
 				</div>
 				<!-- Row 3 -->
 			</div>
 			<div class="row">
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/eric@2x.jpg" alt="#">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/eric@2x.jpg" alt="#">
 					<h1 class="font-24">Eric Sacks</h1>
 					<h2 class="reg-400 font-16">Quantitative Developer</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/eric-sacks">Bio</a>
 				</div>
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team/jose@2x.jpg" alt="#">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team/jose@2x.jpg" alt="#">
 					<h1 class="font-24">Jose M. Perez Sanchez, PhD</h1>
 					<h2 class="font-16">Scientific Advisor</h2>
-					<a class="btn btn-secondary" href="#">Bio</a>
+					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/jose-sanchez">Bio</a>
 				</div>
-				<div class="col-md-4 center">
-					<img class="rounded" src="../img/team.svg" alt="">
+				<div class="col-md-4 col-sm-4 center">
+					<img class="rounded" src="<?php echo BASE_URL;?>img/team.svg" alt="">
 					<h1 class="font-24">You!</h1>
 					<h2 class="reg-400 font-16">Check out our current openings</h2>
 					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>join">Join</a>
 				</div>
 				<!-- Row 4 -->
 			</div>
-			<img class="pico-divide" src="../img/divider.svg" alt="">
+			<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 		</div>
 	</section>
 	
@@ -118,23 +118,23 @@ include("../includes/nav.php");
 				<h1 class="section-header">Board of Directors</h1>
 			</div>
 			<div class="row center">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<h1 class="font-24">Pierre T. Khuri-Yacub</h1>
 					<h2 class="reg-400 font-16">Chairman of the Board</h2>
-					<a href="#" class="btn btn-secondary">Bio</a>
+					<a href="<?php echo BASE_URL; ?>team/pierre-khuri" class="btn btn-secondary">Bio</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<h1 class="font-24">Dr. K I Varaprasad Reddy</h1>
 					<h2 class="reg-400 font-16">Board Member</h2>
-					<a href="#" class="btn btn-secondary">Bio</a>
+					<a href="<?php echo BASE_URL; ?>team/k-reddy" class="btn btn-secondary">Bio</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<h1 class="font-24">Rudy A. Mazzocchi </h1>
 					<h2 class="reg-400 font-16">Board Member</h2>
-					<a href="#" class="btn btn-secondary">Bio</a>
+					<a href="<?php echo BASE_URL; ?>team/rudy-mazzocchi" class="btn btn-secondary">Bio</a>
 				</div>
 			</div>
-			<img class="pico-divide" src="../img/divider.svg" alt="">
+			<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 		</div>
 	</section>
 </div>

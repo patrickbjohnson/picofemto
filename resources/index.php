@@ -14,7 +14,7 @@ include("../includes/nav.php");
 		  </div>
 		</div>
 	</section>
-	<img class="pico-divide" src="../img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 	<section class="page-section questions">
 		<div class="container">
 			<div class="row">
@@ -57,7 +57,7 @@ include("../includes/nav.php");
 	<section class="page-section">
 		<div class="container">
 			<div class="row">
-				<img src="../img/resources.svg" alt="Placeholder Image">
+				<img src="<?php echo BASE_URL;?>img/resources.svg" alt="Placeholder Image">
 			</div>
 		</div>
 	</section>
@@ -84,7 +84,7 @@ include("../includes/nav.php");
 			</div>
 		</div>
 	</section>
-	<img class="pico-divide" src="../img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 </div>
 
 <?php include("../includes/footer.php");?>

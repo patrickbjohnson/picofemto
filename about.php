@@ -73,11 +73,13 @@ include("../includes/nav.php");
 					</div>
 				</div>
 			</div>
+			
 		</section>
-		<img class="row pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
+		
+		
 	</div>
 </div>
-
+<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 
 
 

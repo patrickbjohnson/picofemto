@@ -31,17 +31,17 @@ include("../includes/nav.php");
 			</div>
 			<div class="row">
 				<div class="col-md-4 pico-component center">
-					<img src="../img/cloud-storage-dark.svg" alt="Alt Test">
+					<img src="<?php echo BASE_URL;?>img/cloud-storage-dark.svg" alt="Alt Test">
 					<h1>Cliniscan<sup>SM</sup> Cloud Service</h1>
 					<p>A cloud service designed to run on the Microsoft Azure cloud platform. It provides scalable processing, scheduling, fault tolerance, load balancing, caching, and data access to algorithmic processing. The cloud service also provides a web interface, file management, visualizations, security, and notifications to the user.</p>
 				</div>
 				<div class="col-md-4 pico-component center">
-					<img src="../img/data-analysis-dark.svg" alt="Alt Test">
+					<img src="<?php echo BASE_URL;?>img/data-analysis-dark.svg" alt="Alt Test">
 					<h1>Cliniscan<sup>SM</sup> Plug-In SDK</h1>
 					<p>The Cliniscan<sup>SM</sup> Plug-In SDK (software development kit) provides a toolkit to aid in developing quantitative algorithms. Using this toolkit developers can create plugins that can be loaded dynamically into the cloud service.</p>
 				</div>
 				<div class="col-md-4 pico-component center">
-					<img src="../img/pico-sdk.svg" alt="Alt Test">
+					<img src="<?php echo BASE_URL;?>img/pico-sdk.svg" alt="Alt Test">
 					<h1>Cliniscan<sup>SM</sup> Data Storage</h1>
 					<p>Quantitative code using the Cliniscan<sup>SM</sup> Plug-In API can query and retrieve medical data with a flexible query system that provides schema support and arbitrary meta data storage. Algorithmic code can examine data sets to determine whether they can work with the data and can extend the results of other algorithms. The data storage system is optimized for streaming access to data structures and aiding in functional programming.</p>
 				</div>
@@ -58,19 +58,19 @@ include("../includes/nav.php");
 		</div>
 	</section>
 
-	<img class="pico-divide" src="../img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 
 	<section class="page-section">
 		<div class="container">
 			<h1 class="section-header">The Cliniscan<sup>SM</sup> Product Suite</h1>
 			<p class="center">(click an icon below to learn more) </p>
 			<div class="svg-container">
-				<!-- <img class="rounded-xl" src="../img/production.svg" alt=""> -->
+				<!-- <img class="rounded-xl" src="<?php echo BASE_URL;?>img/production.svg" alt=""> -->
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 853.5 859.6" enable-background="new 0 0 853.5 859.6" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace">
 				   
 
 
-				  <a class="icon" id="pico-page-imaging" xlink:href="/text100/imaging">
+				  <a class="icon" id="pico-page-imaging" xlink:href="<?php echo BASE_URL; ?>products/imaging">
 				    <path d="M197.3,416.8c36-17.6,50.9-61,33.3-97c-17.6-35.9-61-50.9-97-33.2c-36,17.6-50.9,61-33.3,97  C117.9,419.5,161.4,434.3,197.3,416.8z" class="linked-circle"/>
 				    <g class="icon-group">
 				    <rect x="107.7" y="361.2" fill="#FFFFFF" width="69.2" height="6.5"/>
@@ -84,14 +84,14 @@ include("../includes/nav.php");
 				  </a>
 
 
-				<a class="icon" id="pico-page-genomics" xlink:href="/text100/genomics">
+				<a class="icon" id="pico-page-genomics" xlink:href="<?php echo BASE_URL; ?>products/genomics">
 				  <path class="linked-path" d="M655.1,248.3c29.8-14.6,42.1-50.5,27.5-80.3c-14.6-29.8-50.5-42.1-80.3-27.5c-29.8,14.6-42.1,50.5-27.5,80.3  C589.4,250.6,625.3,262.9,655.1,248.3z"/>
 				    <g class="icon-group">
 				    <path fill="#FFFFFF" d="M620.4,205.7H637c-1.4,2-3.1,3.6-4.6,4.8c-2.6,2-4.8,2.8-4.9,2.9c-0.2,0.1-1.2,0.5-2.7,1.3c0,0,0,0,0,0    c-1.7,0.9-3.9,2.3-6.1,4.4c-4.4,4-8.7,10.4-8.7,20h7.1c0-0.6,0-1.2,0.1-1.8h23.2c0,0.6,0.1,1.2,0.1,1.8h7.1c0-9.6-4.3-16-8.7-20    c-1.7,1.3-3.3,2.3-4.5,2.9l-0.2,0.1c-0.7,0.4-1.3,0.7-1.8,0.9c1.6,1.2,3.2,2.8,4.7,4.9h-16.7c1.4-2.1,3.1-3.7,4.7-4.9    c2.5-1.9,4.7-2.8,4.9-2.9c0.2-0.1,1.2-0.5,2.7-1.3c0,0,0,0,0,0c1.7-0.9,3.9-2.3,6.2-4.4c4.4-4,8.7-10.4,8.7-20    c0-9.6-4.3-16-8.7-20c-2.7,2-5.1,3.3-6.5,3.9c1.6,1.2,3.2,2.8,4.7,4.9h-16.7c1.6-2.4,3.6-4.2,5.4-5.4c0.9-0.6,1.8-1.1,2.4-1.5    l2.4-1.1c1.2-0.5,4-1.9,6.9-4.3c4.8-3.9,10-10.6,10-21.2h-7.1c0,0.7-0.1,1.3-0.1,1.9h-23.1c-0.1-0.6-0.1-1.2-0.1-1.9h-7.1    c0,9.6,4.3,16,8.7,20c2.7-2,5.1-3.3,6.5-3.9c-1.5-1.2-3.2-2.8-4.6-4.8H637c-3.7,5.4-9.1,7.5-9.5,7.7c-0.7,0.3-17.6,6.7-17.6,25.7    c0,9.6,4.3,16,8.7,20c1.4-1.1,2.9-2.1,4.5-2.9c0.8-0.4,1.5-0.8,2-1C623.5,209.4,621.9,207.8,620.4,205.7z M639.9,154.5    c-0.3,1.3-0.7,2.6-1.3,3.7h-19.8c-0.5-1.1-0.9-2.4-1.3-3.7H639.9z M617.6,234.4c0.3-1.3,0.7-2.6,1.2-3.7h19.8    c0.5,1.1,0.9,2.4,1.2,3.7H617.6z M640.3,196.3h-23.1c-0.1-0.6-0.1-1.2-0.1-1.9c0-0.6,0-1.2,0.1-1.8h23.2c0,0.6,0.1,1.2,0.1,1.8    C640.4,195.1,640.3,195.7,640.3,196.3z M638.6,186c0.5,1.1,0.9,2.4,1.2,3.7h-22.3c0.3-1.3,0.7-2.6,1.2-3.7H638.6z M618.8,202.9    c-0.5-1.1-0.9-2.4-1.2-3.7h22.3c-0.3,1.3-0.7,2.6-1.3,3.7H618.8z"/>
 				  </g>
 				</a>
 
-				<a class="icon" id="pico-page-neurology" xlink:href="/text100/neurology">
+				<a class="icon" id="pico-page-neurology" xlink:href="<?php echo BASE_URL; ?>products/neurology">
 				  <path class="linked-path" d="M753.4,401.2c16.7,34,2.5,75.1-31.5,91.8c-34,16.6-75.1,2.5-91.8-31.5c-16.7-34-2.6-75.1,31.5-91.8  C695.7,353.1,736.8,367.1,753.4,401.2z"/>
 
 				  <g class="icon-group">
@@ -190,7 +190,7 @@ include("../includes/nav.php");
 		
 	</section>
 
-	<img class="pico-divide" src="../img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
 
 </div>
 
