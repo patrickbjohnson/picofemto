@@ -22,12 +22,12 @@
 	    							<li><a href="<?php echo BASE_URL; ?>join">Join</a></li>
 	    						</ul>
 	    					</li>
-	    					<li><a href="#">Technology</a></li>
-	    					<li><a href="#">Resources</a></li>
+	    					<li><a href="<?php echo BASE_URL; ?>technology">Technology</a></li>
+	    					<li><a href="<?php echo BASE_URL; ?>resources">Resources</a></li>
 	    				</ul>
 	    				<ul class="footer-menu-nav">
 	    					<li>
-	    						<a href="#">Products</a>
+	    						<a href="<?php echo BASE_URL; ?>products">Products</a>
 	    						<ul class="footer-menu-sub-nav">
 	    							<li><a href="<?php echo BASE_URL; ?>neurology">Neurology</a></li>
 	    							<li><a href="<?php echo BASE_URL; ?>imaging">Imaging</a></li>

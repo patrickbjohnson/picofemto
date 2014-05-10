@@ -43,5 +43,3 @@
     </div>
   </div>
 </div>
-
-<!-- action="../includes/form-apply.php" -->

@@ -97,7 +97,7 @@ include("../includes/nav.php");
 		</ol>
 			<div class="row sign-up center">
 				<h1 class="font-24">Questions?</h1>
-				<a class="btn btn-secondary" href="#">Contact Us</a>
+				<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>contact">Contact Us</a>
 			</div>
 		</div>
 	</section>
