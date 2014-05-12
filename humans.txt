@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	
+    Patrick Johnson -- Web Developer @ Freelance -- http://www.twitter.com/patrickbjohnson
+    Nick Rovisa -- Digital Producer @ Text100  -- http://www.twitter.com/nr
+    Picofemto —- Cloud-based software for helps medical professionals —- http://www.picofemto.com
+    Text100 —- Full-service agency specializing in the technology industry —- http://www.text100.com
+
+
+# THANKS
+
+    Everyone involved. 
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr, PHP
