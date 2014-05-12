@@ -15,9 +15,9 @@ include("../includes/nav.php");
 		</div>
 	</section>
 	
-	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">
 
-	<section class="page-section privacy-policy">
+	<section class="page-section privacy-policy container">
 		<div class="container">
 		<ol class="policy-terms">
 			<li>
@@ -103,7 +103,7 @@ include("../includes/nav.php");
 	</section>
 	
 	
-	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
+	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">
 </div>
 
 

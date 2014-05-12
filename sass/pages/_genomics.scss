@@ -1,10 +1,12 @@
-.pico-genomics {
-	background: #909090 url("../img/genomics@2x.jpg") no-repeat;
-	@extend %pico-background-sm;
-	@include vendor-prefix(background-size, cover);
-	
-}
 
+.pico-genomics {
+	background: #909090 url("../img/genomics.jpg") no-repeat;
+	background-position: center;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/genomics.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/genomics.jpg', sizingMethod='scale')";
+	@include vendor-prefix(background-size, cover);
+	@include bg(100%, 325px);
+}
 #page-genomics {
 	.unlock img {margin-bottom: 50px;}
 }

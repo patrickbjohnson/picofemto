@@ -8,7 +8,6 @@
 			font-size: em(30px);
 			color: $pico-orange;
 		}
-		// ul {padding-left: 20px;}
 		li {
 			font-size: em(16px);
 			font-weight: 300;
@@ -25,19 +24,32 @@
 			vertical-align: middle;
 			float: none;
 		}
-
 	}
 
-@media (max-width: $screen-xs-max) { 
+// @media (max-width: $screen-xs-max) { 
+	@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 		.career-block {display: block; margin: 0 auto 50px;}
 		.career-description,
 		.career-apply {
 			display: block !important;
 			vertical-align: none !important;
-			float: float !important;
+			float: none !important;
 		}
 	}
 
+
+
+	// @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+	// 	.pico-home {
+	// 		height: 200px;
+	// 		.page-title {
+	// 			font-size: em(24px) !important; 
+	// 			margin-top: 0;
+	// 			line-height: 1.5;
+	// 		}
+	// 		a {display: none;}
+	// 	}
+	// }
 
 
 

@@ -1,21 +1,8 @@
 <?php 
-  
-  // TODO
-  // - set up proper colon formatting for dates
-  // - set up proper time zone - bluehost?
-  // - mail all contents to proper address
 
-
-  // the header is making the success throw an error
-  // but the email still sends. why?
   date_default_timezone_set('America/New_York');
-  header ("content-type: application/json; charset=utf-8");
+  header ("content-type: application/json; charset=utf-8");  
   require '../includes/phpmailer/PHPMailerAutoload.php';
-
-
-  $data = array();
-  $errors = array();
-
 
   if (empty($_POST['name'])){
     $errors['name'] = "Name is required";
@@ -34,11 +21,13 @@
   }
 
 
+  
+
   // if the errors array has things in it, set the message to false and display the errors
   if(!empty($errors)){
     $data['success'] = false;
     $data['errors']  = $errors;
-    $data['message'] = "Woops. Missing a few things. All fields required.";
+    $data['message'] = "All fields required.";
     
   }
 
@@ -53,11 +42,11 @@
     $email =    filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $position =    filter_var($_POST["position"], FILTER_SANITIZE_STRING);
     $formMessage =  filter_var($_POST["message"], FILTER_SANITIZE_STRING);
-    $message = '<p>The following request was sent from: </p>';
-    $message .= '<p>Name: ' . $name . '</p>';
-    $message .= '<p>Position: ' . $position . '</p>';
-    $message .= '<p>Email: ' . $email . '</p>';
-    $message .= '<p>Message: ' . $formMessage .'</p>';
+    $message = '<p>' . $name . ' is applying for ' . $position . '</p>';
+    $message .= '<p><strong>Name:</strong> ' . $name . '</p>';
+    $message .= '<p><strong>Position:</strong> ' . $position . '</p>';
+    $message .= '<p><strong>Email:</strong> ' . $email . '</p>';
+    $message .= '<p><strong>Message:</strong> ' . $formMessage .'</p>';
 
 
       //Create a new PHPMailer instance
@@ -78,7 +67,7 @@
       $mail->Debugoutput = 'html';
 
       //Set the hostname of the mail server
-      $mail->Host = 'box658.bluehost.com';
+      $mail->Host = 'XXXX';
 
       //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
       $mail->Port = 465;
@@ -87,26 +76,26 @@
       $mail->SMTPAuth = true;
 
       //Username to use for SMTP authentication - use full email address for gmail
-      $mail->Username = "im@pbj.me";
+      $mail->Username = "XXX";
 
       //Password to use for SMTP authentication
-      $mail->Password = "corner09";
+      $mail->Password = "XXXX";
 
       //Set who the message is to be sent from
       $mail->setFrom($email, $name);
       $mail->AddReplyTo($email,$name);
       //Set who the message is to be sent to
-      $mail->addAddress('im@pbj.me', 'Patrick Johnson');
+      $mail->addAddress('XXXX', 'XXXX');
 
       //Set the subject line
-      $mail->Subject = '[Job Application] Test Email from ' . $name;
+      $mail->Subject = '[JOB APPLICATION] Email from ' . $name . ' for the ' . $position . ' position';
 
       //Read an HTML message body from an external file, convert referenced images to embedded,
       //convert HTML into a basic plain-text alternative body
       $mail->Body = $message;
 
       //Replace the plain text body with one created manually
-      $mail->AltBody = 'This is a plain-text message body';
+      $mail->AltBody = $message;
 
       //Attach an image file
       $mail->AddAttachment($fileUpload, $fileName); //$_FILES['upload']['name']
@@ -130,12 +119,12 @@
 
       $data['success'] = true;
       $data['name'] = $name;
-      $data['message'] = "Success! If we feel you're a fit we'll reach out shortly.";
+      $data['message'] = "Success! Application has been sent.";
       $data['errors'] = false;
       $data['file'] = $_FILES;
       
   }
+  echo json_encode($data, JSON_PRETTY_PRINT);
 
-echo json_encode($data, JSON_PRETTY_PRINT);
 
 ?>

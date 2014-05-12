@@ -4,7 +4,7 @@
 	    	<div class="row">
 	    		<div class="col-md-3 col-xs-12">
 						<a class="footer-brand pic" href="<?php echo BASE_URL; ?>">
-						  <img src="<?php echo BASE_URL; ?>img/picofemto.svg" alt="">
+							<img src="<?php echo BASE_URL; ?>img/picofemto-logo.svg" >
 						</a>
 	    		</div>
 	    		<div class="col-md-3 col-xs-12 col-md-offset-1">
@@ -29,9 +29,9 @@
 	    					<li>
 	    						<a href="<?php echo BASE_URL; ?>products">Products</a>
 	    						<ul class="footer-menu-sub-nav">
-	    							<li><a href="<?php echo BASE_URL; ?>neurology">Neurology</a></li>
-	    							<li><a href="<?php echo BASE_URL; ?>imaging">Imaging</a></li>
-	    							<li><a href="<?php echo BASE_URL; ?>genomics">Genomics</a></li>
+	    							<li><a href="<?php echo BASE_URL; ?>products/neurology">Neurology</a></li>
+	    							<li><a href="<?php echo BASE_URL; ?>products/imaging">Imaging</a></li>
+	    							<li><a href="<?php echo BASE_URL; ?>products/genomics">Genomics</a></li>
 	    						</ul>
 	    					</li>
 	    					<li><a href="<?php echo BASE_URL; ?>contact">Contact Us</a></li>
@@ -42,18 +42,17 @@
 	    	<div class="row">
 	    		<div class="footer-company center">
 	    			<ul>
-	    				<li>2014 &copy; Picofemto</li>
-	    				<li><a href="<?php echo BASE_URL; ?>terms">Terms &amp; Conditions</a></li>
+	    				<li>&copy; <?php echo date("Y") ?> Picofemto</li>
 	    				<li><a href="<?php echo BASE_URL; ?>privacy">Privacy Policy</a></li>
 	    			</ul>
 	    		</div>
 	    	</div>
 	    </div>
 	  </footer>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="<?php echo BASE_URL; ?>js/bootstrap-prettyfile.js"></script>
+    <script src="<?php echo BASE_URL; ?>js/bootstrap-prettyfile.min.js"></script>
     <script src="<?php echo BASE_URL; ?>js/scripts.js"></script>
     <!-- GA -->
     <script>

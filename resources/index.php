@@ -14,9 +14,9 @@ include("../includes/nav.php");
 		  </div>
 		</div>
 	</section>
-	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
-	<section class="page-section questions">
-		<div class="container">
+	<div class="container">
+		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">
+		<section class="page-section questions">
 			<div class="row">
 				<div class="container">
 					<h1 class="section-header">5 Questions About What We’re Doing</h1>	
@@ -52,39 +52,32 @@ include("../includes/nav.php");
 					<p><span>A: </span>Personalized medicine is a transformative movement in the medical community that aims to deliver extremely customized medicine to individuals based on their background and characteristics of their disease.  Part of this process involves determining the genetic makeup of the individual and or diseased, that may have ramifications for their response to treatment.  By customizing healthcare through personalized medicine, better outcomes can be achieved.  At Picofemto, we recognize this future and want to be a leader in the analysis of genomic information, from a clinical perspective. </p>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="page-section">
-		<div class="container">
+		</section>
+		<section class="page-section">
 			<div class="row">
-				<img src="<?php echo BASE_URL;?>img/resources.svg" alt="Placeholder Image">
+				<img src="<?php echo BASE_URL;?>img/resources.svg" alt="Picofemto Resources">
 			</div>
-		</div>
-	</section>
-	<section class="page-section">
-		<div class="container">
+		</section>
+		<section class="page-section">
 			<div class="row">
-				<div class="container">
-					<h1 class="section-header">What We’re Reading</h1>
-					<ul class="pico-reading center">
-						<li><a href="http://techcrunch.com/2012/01/10/doctors-or-algorithms/">Doctors or Algorithms (Techcrunch)</a></li>
-						<li><a href="http://techcrunch.com/2013/09/11/vinod-khosla-in-the-next-10-years-data-science-will-do-more-for-medicine-than-all-biological-sciences-combined/">Vinod Khosla: In The Next 10 Years, Data Science Will Do More For Medicine Than All Biological (Techcrunch)</a></li>
-						<li><a href="http://www.theguardian.com/healthcare-network/healthcare-innovation-partner-zone/how-it-will-shape-future-healthcare">How IT will shape the future of healthcare (The Guardian)</a></li>
-						<li><a href="http://medcitynews.com/2013/07/5-inspirational-ted-talks-every-healthcare-professional-must-watch/">5 Inspirational TED Talks Every Healthcare Professional Must Watch (MedCity News)</a></li>
-					</ul>
-				</div>
+				<h1 class="section-header">What We’re Reading</h1>
+				<ul class="pico-reading center">
+					<li><a href="http://techcrunch.com/2012/01/10/doctors-or-algorithms/">Doctors or Algorithms (Techcrunch)</a></li>
+					<li><a href="http://techcrunch.com/2013/09/11/vinod-khosla-in-the-next-10-years-data-science-will-do-more-for-medicine-than-all-biological-sciences-combined/">Vinod Khosla: In The Next 10 Years, Data Science Will Do More For Medicine Than All Biological (Techcrunch)</a></li>
+					<li><a href="http://www.theguardian.com/healthcare-network/healthcare-innovation-partner-zone/how-it-will-shape-future-healthcare">How IT will shape the future of healthcare (The Guardian)</a></li>
+					<li><a href="http://medcitynews.com/2013/07/5-inspirational-ted-talks-every-healthcare-professional-must-watch/">5 Inspirational TED Talks Every Healthcare Professional Must Watch (MedCity News)</a></li>
+				</ul>
 			</div>
-		</div>
-	</section>
-	<section class="page-section">
-		<div class="container">
+		</section>
+		<section class="page-section">
 			<div class="row sign-up center">
 				<h1 class="font-24 center">Interested in learning more?</h1>
 				<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>contact">Contact Us</a>
 			</div>
-		</div>
-	</section>
-	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
+		</section>
+		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">
+	</div>
+	
 </div>
 
 <?php include("../includes/footer.php");?>

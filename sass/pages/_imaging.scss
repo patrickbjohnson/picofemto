@@ -1,15 +1,10 @@
 .pico-imaging {
-	background: #909090 url("../img/imaging@2x.jpg") no-repeat;
+	background-position: center;
+	background: #909090 url("../img/imaging.jpg") no-repeat;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/imaging.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/imaging.jpg', sizingMethod='scale')";
 	@include vendor-prefix(background-size, cover);
-	@extend %pico-background-sm;
-}
-
-
-#pico-imaging {
-
-
-	
-
+	@include bg(100%, 325px);
 }
 
 @media (max-width: $screen-xs-max) { 
@@ -21,3 +16,4 @@
 	.section-header.txt-l {text-align: center !important;}
 	.section-header.txt-r {text-align: center !important;}
 }
+

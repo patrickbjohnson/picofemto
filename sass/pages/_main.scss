@@ -1,17 +1,28 @@
-.pico-background-bg {
-	height: 800px;
-	margin-top: 100px;
-	-webkit-background-size: cover;
-	background-size: cover;
+.pico-home {
+	background-image: url("../img/home.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin-top: 135px;
+	@include vendor-prefix(background-size, cover);
+	@include vendor-prefix(transform, rotateZ(360deg));
+	@include bg(100%, 800px);
+	-ms-behavior: url("/backgroundsize.min.htc");
 }
+
+
+.main-nav.shrink + #page-main  {
+	margin-top: 50px;
+	.pico-background-bg {margin-top: 75px;}
+}
+
 
 
 .pico-home {
-	@include vendor-prefix(background-size, cover);
-	background-image: url("../img/home@2x.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	width: 100%;
 }
+
+
 
 #page-main {
 	.page-title {
@@ -19,21 +30,10 @@
 		text-align: left;
 		font-weight: 900;
 	}
-
-
-	// @media (max-width: $screen-xs-max) { 
-	// 	.page-team .section-header {
-	// 		font-size: em(38px) !important;	
-	// 	}
-	// }
-	
 	.team-members {
 		margin-top: 90px;
 		margin-bottom: 75px
 	}
-
-
-
 	.team-photo {
 		margin-bottom: 40px;
 	}
@@ -46,7 +46,6 @@
 		@extend .reg-400;
 		margin-bottom: 15px;
 		color: $pico-blue;
-
 	}
 
 	.page-products p,
@@ -54,21 +53,14 @@
 			@extend .reg-400;
 			font-size: $font-size-base;
 	}
-
 	.address {margin-bottom: 70px;}
-
 	.page-products img {
 		height: 175px;
 		margin-bottom: 25px;
 	}
-	
 	.google-map {margin-bottom: 0;}
-
 	.page-address {
 		margin: 0 auto 85px;
-
-
-
 		.address {
 			margin:0;
 
@@ -76,18 +68,35 @@
 		}
 	}
 
-
-
 	@media (max-width: $screen-xs-max) { 
+		.pico-home {
+			@include vendor-prefix(background-size, 100%);
+			max-height: 400px;
+			background-attachment: scroll;
+			.page-title {
+				margin-top: 100px;
+				font-size: em(36px);
+				line-height: 1.5;
+			}
+		}
 		.page-title {
-			font-size: em(36px) !important;	
+			font-size: em(40px) !important;	
 		}
 	 	.team-member {margin-bottom: 30px;}
 	 	.team-photo {margin-bottom: 10px;}
 	}
 
-
-
+	@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+		.pico-home {
+			height: 200px;
+			.page-title {
+				font-size: em(24px) !important; 
+				margin-top: 0;
+				line-height: 1.5;
+			}
+			a {display: none;}
+		}
+	}
 }
 
 

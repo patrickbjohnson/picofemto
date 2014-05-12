@@ -1,9 +1,11 @@
 .pico-resources {
-	background: #909090 url("../img/resources@2x.jpg") no-repeat;
+	background: #909090 url("../img/resources.jpg") no-repeat;
+	background-position: center;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/resources', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/resources', sizingMethod='scale')";
 	@include vendor-prefix(background-size, cover);
-	@extend %pico-background-sm;
+	@include bg(100%,325px);
 }
-
 #page-resources {
 	.section-header {margin-bottom: 75px;}
 	.questions {
@@ -25,12 +27,10 @@
 			padding: 20px 0;
 			
 		}
-		
 		li a {font-size: em(24px);}
 	}
 
 	img {
-		margin: 0 10px;
 		max-width: 300px;
 		display: block;
 		margin: auto;

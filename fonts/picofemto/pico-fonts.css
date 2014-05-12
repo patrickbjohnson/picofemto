@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'Picofemto';
-	src:url('Picofemto.eot?6k2xs4');
-	src:url('Picofemto.eot?#iefix6k2xs4') format('embedded-opentype'),
-		url('Picofemto.woff?6k2xs4') format('woff'),
-		url('Picofemto.ttf?6k2xs4') format('truetype'),
-		url('Picofemto.svg?6k2xs4#Picofemto') format('svg');
+	font-family: 'icomoon';
+	src:url('icomoon.eot?-rgnzcj');
+	src:url('icomoon.eot?#iefix-rgnzcj') format('embedded-opentype'),
+		url('icomoon.woff?-rgnzcj') format('woff'),
+		url('icomoon.ttf?-rgnzcj') format('truetype'),
+		url('icomoon.svg?-rgnzcj#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-.icon {
-	font-family: 'Picofemto';
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -24,13 +24,13 @@
 }
 
 .icon-growth:before {
-	content: "\e602";
-}
-.icon-person:before {
 	content: "\e600";
 }
-.icon-team:before {
+.icon-person:before {
 	content: "\e601";
+}
+.icon-team:before {
+	content: "\e602";
 }
 .icon-rocket:before {
 	content: "\e603";

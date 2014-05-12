@@ -1,9 +1,11 @@
 .pico-neurology {
-	background: #909090 url("../img/neurology@2x.jpg") no-repeat;
-	@include vendor-prefix(background-size, cover);
-	@extend %pico-background-sm;
+	background: #909090 url("../img/neurology.jpg") no-repeat;
+	background-position: center;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/neurology.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/neurology.jpg', sizingMethod='scale')";
+		@include vendor-prefix(background-size, cover);
+	@include bg(100%,325px);
 }
-
 #page-neurology {
 	.features {
 		.pico-feature {
@@ -12,8 +14,7 @@
 				font-size: em(24px);
 				font-weight: 300;
 				color: $white;
-			}
-
+				}
 			}
 		p {line-height: 1.5; }
 	}
@@ -30,7 +31,7 @@
 		}
 	}
 
-	@media (max-width: $screen-xs-max) { 
+	@media (max-width: $screen-xs-max) {
 		.pico-feature {margin-bottom: 50px;}
 		ul {font-size: em(18px);}
 	}

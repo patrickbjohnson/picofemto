@@ -1,11 +1,30 @@
 .pico-about {
-	background: #909090 url("../img/about@2x.jpg") no-repeat;
-	@extend %pico-background-sm;
+	background-image:url("../img/about.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	-ms-behavior: url("/backgroundsize.min.htc");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/about.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/about.jpg', sizingMethod='scale')";
 	@include vendor-prefix(background-size, cover);
-	// height: 325px;
+	@include bg(100%,325px);
 }
 
 #page-about {
+	.page-container {
+		position: relative;
+		height: 325px;
+		padding: 0;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+		.page-title {
+			position: relative;
+			z-index: 10;
+		}
+	}
 	
 	.pico-logo {
 		display: inline-block;

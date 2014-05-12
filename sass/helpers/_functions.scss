@@ -1,3 +1,8 @@
 @function em($px, $base: $font-size-base){
 	@return ($px / $base) * 1em;
 }
+
+@mixin bg($width, $height){
+	width: $width;
+	height: $height;
+}

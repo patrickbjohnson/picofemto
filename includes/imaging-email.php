@@ -9,20 +9,20 @@
       <div class="modal-body mc_embed_signup">
         <form id="mc-embedded-subscribe-form" action="http://picofemto.us8.list-manage.com/subscribe/post-json?u=bf366a1304b7dcf8272837b47&amp;id=d2bf62d0db&amp;c=?" method="post"  name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="mc-field-group form-group name-group">
                 <label for="mce-FNAME">First Name</label>
                 <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" class="form-control" placeholder="First Name" tabindex="1" required>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="mc-field-group">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="mc-field-group form-group name-group">
                 <label for="mce-LNAME">Last Name</label>
                 <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" class="form-control" placeholder="Last Name" tabindex="2" required>
               </div>
             </div>
             <div class="col-md-12">
-              <div class="mc-field-group">
+              <div class="mc-field-group form-group">
                 <label for="mce-EMAIL">Email Address </label>
                 <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="email@address.com" tabindex="2" required>
               </div>

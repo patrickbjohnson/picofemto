@@ -10,20 +10,24 @@ XX Set up 404 pages
 XX Need to properly set up the redirect to error pages
 XX Fix Nav SVG situation
 XX Nav Bar
+XX SVG Fallback Images
+XX Check cloud fallback
+XX UPDATED JACKS CODE -- Timeline event border section - responsive
+XX double check markup - make it consistent
+XX !!!!remove all double containers!!!!
+XX Updated SVG icons for timeline
+XX Backgrond images & header images in IE
+XX Background images are wayyy to big
+-- fixed on all but IE8.
+-- main page hero image is actually the proper size
+XX Image Compression
+
+XX run site through validator
+XX minify CSS / JS
+XX Updated copy on forms before pushing live
+
+Fix form - 500 error for upload form
 
 
-
-SVG Fallback Images
--- http://css-tricks.com/svg-fallbacks/
--- https://twitter.com/scottjehl/status/369190249437483008
--- http://lynn.ru/examples/svg/en.html
--- https://github.com/benhowdle89/svgeezy
--- http://www.broken-links.com/2010/06/14/using-svg-in-backgrounds-with-png-fallback/
--- http://toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script/
-
-Check cloud fallback
-Background images are wayyy to big
-Timeline event border section - responsive
-Image Compression
-
-
+php rewrite isn't working on th Azure server. 
+redo the image map

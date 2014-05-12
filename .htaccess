@@ -2,8 +2,9 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteCond %{REQUEST_FILENAME}\.php -f 
 RewriteRule ^(.*)$ $1.php
-ErrorDocument 400 /text100/bad-request.php
-ErrorDocument 401 /text100/authorization-required.php
-ErrorDocument 403 /text100/forbidden.php
-ErrorDocument 404 /text100/page-not-found.php
-ErrorDocument 500 /text100/internal-server-error.php
+AddType text/x-component .htc
+ErrorDocument 400 /text100/error/bad-request.php
+ErrorDocument 401 /text100/error/authorization-required.php
+ErrorDocument 403 /text100/error/forbidden.php
+ErrorDocument 404 /text100/error/page-not-found.php
+ErrorDocument 500 /text100/error/internal-server-error.php

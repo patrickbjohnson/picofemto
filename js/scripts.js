@@ -1,7 +1,14 @@
 $(document).ready(function(){
+  
+  $('.image-map').hide();
+  if(!Modernizr.svg) {
+    $('img[src*="svg"]').attr('src', function() {
+        return $(this).attr('src').replace('.svg', '.png');
+    });
+    $('.svg-container > svg').hide();
+    $('.svg-container > .image-map').show();
+  }
 
-  //
-  // Nav resize on scroll
   var shrinkHeader = 300;
   $(window).scroll(function() {
     var scroll = getScroll();
@@ -18,7 +25,6 @@ $(document).ready(function(){
     return window.pageYOffset;
   }
 
-  // Smooth Scroll for Privacy Page
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -33,19 +39,18 @@ $(document).ready(function(){
     }
   });
 
-  // Job Application
+  $( 'input[type="file"]' ).prettyFile({text:"Choose File"});
+
   $(".career-apply").on('click', 'a', function(e){
     var $this = $(this);
     var $pos = $this.data('position');
 
     $("#form-apply").find("input[name='position']").val($pos);
   });
-  $( 'input[type="file"]' ).prettyFile({text:"Choose File"});
   
   // Job Application Form
   $("#form-apply").submit(function(e){
     e.preventDefault();
-
     var fd = new FormData();
     var file_data = $('input[type="file"]')[0].files; // for multiple files
     for(var i = 0;i<file_data.length;i++){
@@ -55,6 +60,8 @@ $(document).ready(function(){
     $.each(other_data,function(key,input){
        fd.append(input.name,input.value);
     });
+
+    // this adds color to empty or filled fields
     $("input, textarea").each(function(){
          var $this = $(this);
          $required = $('input[required]');
@@ -69,7 +76,8 @@ $(document).ready(function(){
          }
        });
     $.ajax({
-       url: '../includes/form-apply.php',
+       type: $(this).attr('method'),
+       url: $(this).attr('action'), 
        data: fd,
        contentType: false,
        processData: false,
@@ -96,19 +104,21 @@ $(document).ready(function(){
           $("#file_upload, .file_upload").attr("placeholder", data.errors.file);
         }
         $(".message").html(data.message);
-      } else {
+      } 
+      else {
         $(".message").html(data.message);
         $("#form-apply")[0].reset();
         $("#name, #email, #message, .file_upload").parent().removeClass('has-success').val("");
       }
     }).fail(function(data){
-      console.log(data);
-    });// end ajax
-  });  
+      $(".message").html(data.message);
+    });
+  });   
 
 
-  //
-  // Contact Form
+
+
+
   $('#form-contact').submit(function(e){
     e.preventDefault();
     $("input, textarea").each(function(){
@@ -153,19 +163,15 @@ $(document).ready(function(){
        $(".message").html(data.msg);
 
       } else {
-        // Success message
        $(".message").html(data.msg);
        $("#form-contact")[0].reset();
        $("#name, #email, #subject, #message").parent().removeClass('has-success');
       }
     }).fail(function(data){
-      // error message
       $(".message").html(data.msg);
     });
   });
  
-
-  // Demo Request Form
   $('#form-demo').submit(function(e){
     e.preventDefault();
     $("input, textarea").each(function(){
@@ -210,19 +216,16 @@ $(document).ready(function(){
        $(".message").html(data.msg);
 
       } else {
-        // Success message
        $(".message").html(data.msg);
        $("#form-contact")[0].reset();
        $("#name, #email, #subject, #message").parent().removeClass('has-success');
       }
     }).fail(function(data){
-      // error message
       $(".message").html(data.msg);
     });
   });
 
 
-  // Mailchimp Signup
   $("#mc-embedded-subscribe-form").on('submit', function(e){
     e.preventDefault();
     var $form = $('#mc-embedded-subscribe-form');
@@ -266,7 +269,6 @@ $(document).ready(function(){
     });
   })
 
-  // Google Map Integration
   function googleMap() {
     var myLatlng = new google.maps.LatLng(40.752671, -73.973618);
     var mapOptions = {
@@ -286,7 +288,6 @@ $(document).ready(function(){
 
   }
 
-  // Call the Google Map to display on the site
   google.maps.event.addDomListener(window, 'load', googleMap);
 
 });

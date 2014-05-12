@@ -18,7 +18,7 @@ include("../includes/nav.php");
 		<div class="container center">
 			<a class="btn btn-secondary" href="<?php echo BASE_URL;?>">Return Home</a>
 		</div>
-		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
+		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">
 	</section>
 	
 

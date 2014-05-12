@@ -1,7 +1,12 @@
 .pico-technology {
-	background: #909090 url("../img/technology.jpg") no-repeat;
+	background-image:url("../img/technology.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	-ms-behavior: url("/backgroundsize.min.htc");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/technology.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/technology.jpg', sizingMethod='scale')";
 	@include vendor-prefix(background-size, cover);
-	@extend %pico-background-sm;
+	@include bg(100%,325px);
 }
 
 #page-technology {
@@ -29,60 +34,6 @@
 		}
 	}
 
-	.timeline {
-		height: 100%;
-		position:relative;
-
-		&:after {
-			content:"";
-	    position: absolute;
-	    z-index: -1;
-	    top: 0;
-	    bottom: 0;
-	    left: 50%;
-	    border-left: 2px solid $black;
-		}
-		
-		ul {
-			padding: 75px 0 0;
-			overflow: hidden;
-		}
-
-		.timeline-block-left,
-		.timeline-block-right {
-			clear: both;
-			&:before{
-				content: "";
-				position: absolute;
-				top: 80px;
-				width: 20px;
-				height: 20px;
-				background: $pico-orange;
-				border-radius: 50%;
-				z-index: 1;
-			}
-			&:after {
-				content: "";
-				position: absolute;
-				display: inline-block;
-				top: 90px;
-				border-top: 2px solid #010101;
-				width: 95px;
-			}
-		}
-
-
-		.timeline-block-left {
-			float: left;
-			&:before {right: -40px;}
-			&:after  {right: -134px;}
-		}
-		.timeline-block-right {
-			float: right;
-			&:before {left: -40px;}
-			&:after  {left: -134px;}
-		}
-	}
 	.timeline-block {
 		position: relative;
 		display: inline-block;
@@ -99,6 +50,7 @@
 		background: $pico-gray-dark;
 		border-radius: 50%;
 		line-height: 175px;
+		text-align: center;
 
 		.icon {
 			font-size: em(100px);
@@ -107,9 +59,180 @@
 		}
 	}
 
-
-
-	@media (max-width: $screen-xs-max) { 
-	.pico-benefits li {font-size: em(20px);}
+	.timeline-info {
+		width: 50%;
+		margin: auto;
+		p {
+			line-height: 1.5;
+			margin-top: 10px !important;
+		}
 	}
+
+	.timeline-block {
+		margin-top:2em;
+		background-image:url("dot.svg");
+		background-repeat:repeat-y;
+		background-position:center;
+		position:relative;
+		&:after {
+			content:"";
+	    position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    bottom: 0;
+	    left: 50%;
+	    border-left: 2px solid $black;
+		}
+	}
+
+	.timeline, .timeline-item {
+		display: block;
+		list-style: none;
+	}
+
+	.timeline {overflow: hidden;}
+
+	.timeline-item-block {
+		display: block;
+		margin: auto;
+		text-align: center;
+		&:after {
+			content: "";
+			border-top: 1px solid red;
+		}
+	}
+
+
+	.timeline-item-minor {
+		clear:both;
+		// position:relative;
+		
+
+		&.left {
+			float:left;
+			position: relative;
+			&:before,
+			&:after {
+				content: "";
+				position: absolute !important;
+				display: block;
+			}
+			&:before {
+				border-top: 1px solid $black;
+				float:none; 
+				clear:both; 
+				width: 15%;
+				top: 50%;
+				right: 15px;
+			}
+			&:after {
+				@include vendor-prefix(border-radius, 50%);
+				display:block; 
+				float:none; 
+				clear:both; 
+				height: 15px;
+				width: 15px;
+				background: $pico-orange;
+				top: 48%;
+				right: 15%;
+				z-index: 10;
+			}
+
+		}
+		&.right {
+			float:right;
+			position: relative;
+			&:before,
+			&:after {
+				content: "";
+				position: absolute !important;
+				display: block;
+			}
+			&:before { 
+				border-top: 1px solid $black;
+				float:none; 
+				clear:both; 
+				width: 15%;
+				top: 50%;
+			}
+			&:after {
+				@include vendor-prefix(border-radius, 50%);
+				display:block; 
+				float:none; 
+				clear:both; 
+				height: 15px;
+				width: 15px;
+				background: $pico-orange;
+				top: 48%;
+				left: 15%;
+				z-index: 10;
+			}
+		}
+	}
+	@media (max-width: $screen-xs-max) { 
+		.pico-technology {
+			// @include vendor-prefix(background-size, 100%);
+			// -webkit-background-size: 100% !important;
+			// height: auto;
+		}
+		.timeline-block:after {border-width: 1px;}
+		
+		.left  {
+			float: none;
+			&:before,
+			&:after {
+				content: "";
+				// display: none !important;
+			}
+		}
+		.right {
+			float: none;
+			&:before,
+			&:after {
+				content: "";
+				// display: none !important;
+			}
+		}
+	}
+
+	@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+		.pico-technology {
+			// height: auto;
+
+			.page-title {
+				font-size: em(36px) !important; 
+				margin-top: 40px;
+				line-height: 1.5;
+			}
+		}
+
+
+
+		.timeline-block:after {display: none;}
+		
+		.left  {
+			float: none;
+			&:before,
+			&:after {
+				content: "";
+				display: none !important;
+			}
+		}
+		.right {
+			float: none;
+			&:before,
+			&:after {
+				content: "";
+				display: none !important;
+			}
+		}
+	}
+
+	
+
+
+
+
+
+
 }

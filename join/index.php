@@ -6,16 +6,12 @@
 ?>
 
 <div id="page-join">
-	<section class="page-section page-headline">
-		<div class="container">
+	<div class="container">
+		<section class="page-section page-headline">
 			<h1 class="section-header">Want to help lead the healthcare revolution?</h1>
 			<p class="font-24 light">Check out our opportunities below. Along with working on genuinely meaningful products and enjoying the freedom to innovate, you’ll also enjoy these perks as an employee of Picofemto: Offices situated in the heart of Manhattan, New York City, a vibrant work environment and excellent benefits.</p>
-		</div>
-	</section>
-
-	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">
-
-	<div class="container">
+			<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">
+		</section>
 		<section class="page-section">
 			<div class="row">
 				<h1 class="section-header">Current Opportunities</h1>
@@ -86,7 +82,7 @@
 				</div>
 			</div>
 		</section>
-		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="">	
+		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">	
 	</div>
 </div>
 
