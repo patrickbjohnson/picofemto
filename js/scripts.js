@@ -39,86 +39,6 @@ $(document).ready(function(){
     }
   });
 
-  $( 'input[type="file"]' ).prettyFile({text:"Choose File"});
-
-  $(".career-apply").on('click', 'a', function(e){
-    var $this = $(this);
-    var $pos = $this.data('position');
-
-    $("#form-apply").find("input[name='position']").val($pos);
-  });
-  
-  // Job Application Form
-  $("#form-apply").submit(function(e){
-    e.preventDefault();
-    var fd = new FormData();
-    var file_data = $('input[type="file"]')[0].files; // for multiple files
-    for(var i = 0;i<file_data.length;i++){
-       fd.append("file_"+i, file_data[i]);
-    }
-    var other_data = $('#form-apply').serializeArray();
-    $.each(other_data,function(key,input){
-       fd.append(input.name,input.value);
-    });
-
-    // this adds color to empty or filled fields
-    $("input, textarea").each(function(){
-         var $this = $(this);
-         $required = $('input[required]');
-         $textarea = $('textarea');
-         $inputField = $this.val();
-         if ($required && $inputField == "") {
-           $this.parent('div').removeClass('has-success');
-           $this.parent('div').addClass('has-error');
-         } else {
-           $this.parent('div').removeClass('has-error');
-           $this.parent('div').addClass('has-success');
-         }
-       });
-    $.ajax({
-       type: $(this).attr('method'),
-       url: $(this).attr('action'), 
-       data: fd,
-       contentType: false,
-       processData: false,
-       type: 'POST',
-    }).done(function(data){
-      if (!(data.success)){
-        if (data.errors.name){
-          $("#name").parent().addClass('has-error');
-          $("#name").attr("placeholder", data.errors.name);
-        }
-
-        if (data.errors.email){
-          $("#email").parent().addClass('has-error');
-          $("#email").attr("placeholder", data.errors.email);
-        }
-
-        if (data.errors.message){
-          $("#message").parent().addClass('has-error');
-          $("#message").attr("placeholder", data.errors.message);
-        }
-
-        if (data.errors.file) {
-          $("#file_upload").parent().addClass('has-error');
-          $("#file_upload, .file_upload").attr("placeholder", data.errors.file);
-        }
-        $(".message").html(data.message);
-      } 
-      else {
-        $(".message").html(data.message);
-        $("#form-apply")[0].reset();
-        $("#name, #email, #message, .file_upload").parent().removeClass('has-success').val("");
-      }
-    }).fail(function(data){
-      $(".message").html(data.message);
-    });
-  });   
-
-
-
-
-
   $('#form-contact').submit(function(e){
     e.preventDefault();
     $("input, textarea").each(function(){
@@ -140,6 +60,7 @@ $(document).ready(function(){
       data: $(this).serialize(),
       dataType: 'json',
     }).done(function(data){
+      console.log(data);
      if (!(data.success)){
         if (data.errors.name){
           $("#name").parent().addClass('has-error');
@@ -163,11 +84,13 @@ $(document).ready(function(){
        $(".message").html(data.msg);
 
       } else {
+        console.log(data);
        $(".message").html(data.msg);
        $("#form-contact")[0].reset();
        $("#name, #email, #subject, #message").parent().removeClass('has-success');
       }
     }).fail(function(data){
+      console.log(data);
       $(".message").html(data.msg);
     });
   });

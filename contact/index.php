@@ -21,7 +21,7 @@
 		<section class="page-section">
 			<div class="row">
 			  <div class=" col-md-8 col-md-offset-2">
-					<form id="form-contact" method="POST" action="../includes/form-contact.php" role="form">
+					<form id="form-contact" method="POST" action="<?php echo BASE_URL; ?>includes/form-contact.php" role="form">
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="form-group name-group">

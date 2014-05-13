@@ -24,19 +24,19 @@ include("../includes/nav.php");
 				<div class="col-md-4 col-sm-4 center">
 					<img class="rounded" src="<?php echo BASE_URL;?>img/team/fady@2x.jpg" alt="Fady A. Rizk">
 					<h1 class="font-24">Fady A. Rizk</h1>
-					<h2 class="reg-400 font-16">Founder & President</h2>
+					<h2 class="reg-400 font-16">Founder &amp; President; Board Member</h2>
 					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/fady-rizk">Bio</a>
 				</div>
 				<div class="col-md-4 col-sm-4 center">
 					<img class="rounded" src="<?php echo BASE_URL;?>img/team/shri@2x.jpg" alt="Srikant Krishna">
 					<h1 class="font-24">Srikant Krishna</h1>
-					<h2 class="font-16">Founder & CEO</h2>
+					<h2 class="font-16">Founder &amp; CEO; Board Member</h2>
 					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/srikant-krishna">Bio</a>
 				</div>
 				<div class="col-md-4 col-sm-4 center">
 					<img class="rounded" src="<?php echo BASE_URL;?>img/team/andre@2x.jpg" alt="Andre Khoury, MD">
 					<h1 class="font-24">Andre Khoury, MD</h1>
-					<h2 class="reg-400 font-16">Founder & Chief Medical Officer</h2>
+					<h2 class="reg-400 font-16">Founder &amp; Chief Medical Officer</h2>
 					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/andre-khoury">Bio</a>
 				</div>
 				<!-- Row 1 -->
@@ -112,20 +112,15 @@ include("../includes/nav.php");
 				<h1 class="section-header">Board of Directors</h1>
 			</div>
 			<div class="row center">
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-12">
 					<h1 class="font-24">Pierre T. Khuri-Yacub</h1>
 					<h2 class="reg-400 font-16">Chairman of the Board</h2>
 					<a href="<?php echo BASE_URL; ?>team/pierre-khuri" class="btn btn-secondary">Bio</a>
 				</div>
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-4 col-sm-4 col-xs-12">
 					<h1 class="font-24">Dr. K I Varaprasad Reddy</h1>
 					<h2 class="reg-400 font-16">Board Member</h2>
 					<a href="<?php echo BASE_URL; ?>team/k-reddy" class="btn btn-secondary">Bio</a>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<h1 class="font-24">Rudy A. Mazzocchi </h1>
-					<h2 class="reg-400 font-16">Board Member</h2>
-					<a href="<?php echo BASE_URL; ?>team/rudy-mazzocchi" class="btn btn-secondary">Bio</a>
 				</div>
 			</div>
 			<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">

@@ -56,17 +56,17 @@ include("includes/nav.php");
             <div class="col-md-4 col-sm-4 center team-member">
               <img class="rounded team-photo" src="<?php echo BASE_URL; ?>img/team/fady@2x.jpg" alt="Fady A. Rizk">
               <h2 class="team-name">Fady A. Rizk</h2>
-              <h3 class="team-position">Founder, President &amp; Executive Chairman</h3>
+              <h3 class="team-position">Founder &amp; President; Board Member</h3>
             </div>
             <div class="col-md-4 col-sm-4 center team-member">
               <img class="rounded team-photo" src="<?php echo BASE_URL; ?>img/team/shri@2x.jpg" alt="Srikant Krishna">
               <h2 class="team-name">Srikant Krishna</h2>
-              <h3 class="team-position">Founder & CEO</h3>
+              <h3 class="team-position">Founder &amp; CEO; Board Member</h3>
             </div>
             <div class="col-md-4 col-sm-4 center team-member">
               <img class="rounded team-photo" src="<?php echo BASE_URL; ?>img/team/andre@2x.jpg" alt="Andre Khoury, MD">
               <h2 class="team-name">Andre Khoury, MD</h2>
-              <h3 class="team-position">Founder & Chief Medical Officer</h3>
+              <h3 class="team-position">Founder &amp; Chief Medical Officer</h3>
             </div>
           </div>
           <div class="row center">

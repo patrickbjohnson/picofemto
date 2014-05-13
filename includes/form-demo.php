@@ -44,18 +44,18 @@
 
     $mail->isSMTP();                                    // Enable SMTP authentication
     $mail->SMTPAuth = true;                             // Set mailer to use SMTP
-    $mail->Host = 'XXXXX';                // Specify main and backup server
+    $mail->Host = 'XXXX';                 // Specify main and backup server
     $mail->SMTPDebug = 0;
 
-    $mail->Username = 'XXXXX';                      // SMTP username
-    $mail->Password = 'XXXXX';                       // SMTP password
+    $mail->Username = 'XXXX';          // SMTP username
+    $mail->Password = 'XXXX';                   // SMTP password
     $mail->SMTPSecure = 'ssl';                          // Enable encryption, 'ssl' also accepted
     $mail->Port = 465;                        
 
     $mail->From = $email;
     $mail->FromName = $name;
     $mail->AddReplyTo($email,$name);
-    $mail->addAddress('XXXXX', 'XXXXXX');  // Add a recipient
+    $mail->addAddress('XXXX', 'XXXX');  // Add a recipient
 
     $mail->WordWrap = 50;                               // Set word wrap to 50 characters
     $mail->isHTML(true);                                // Set email format to HTML

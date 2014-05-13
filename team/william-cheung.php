@@ -7,7 +7,7 @@ include("../includes/nav.php");
 <div id="page-team-member">
 	<div class="pico-team-member center page-headline">
 	  <div class="container">
-	  	<img class="rounded" src="<?php echo BASE_URL;?>/img/team/william_c@2x.jpg" alt="William Cheung">
+	  	<img class="rounded" src="<?php echo BASE_URL;?>img/team/william_c@2x.jpg" alt="William Cheung">
 	    <h1 class="team-member-name">William Cheung</h1>
 	    <h2>Senior Software Engineer</h2>
 	  </div>

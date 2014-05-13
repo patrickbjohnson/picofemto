@@ -52,7 +52,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="<?php echo BASE_URL; ?>js/bootstrap-prettyfile.min.js"></script>
     <script src="<?php echo BASE_URL; ?>js/scripts.js"></script>
     <!-- GA -->
     <script>

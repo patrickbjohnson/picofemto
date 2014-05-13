@@ -9,7 +9,7 @@ include("../includes/nav.php");
 	  <div class="container">
 	  	<img class="rounded" src="<?php echo BASE_URL;?>img/team/shri@2x.jpg" alt="Srikant Krishna">
 	    <h1 class="team-member-name">Srikant Krishna</h1>
-	    <h2>Founder & CEO</h2>
+	    <h2>Founder &amp; CEO; Board Member</h2>
 	  </div>
 	</div>
 	<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">

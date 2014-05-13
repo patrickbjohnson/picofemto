@@ -2,7 +2,6 @@
 	include("../includes/config.php");
 	include("../includes/header.php");
 	include("../includes/nav.php");
-	include("../includes/career-modal.php");
 ?>
 
 <div id="page-join">
@@ -29,7 +28,7 @@
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-12 career-apply center">
-					<a class="btn btn-secondary" href="#" data-position="Junior Software Engineer" data-toggle="modal" data-target="#career-application">Apply</a>
+					<a class="btn btn-secondary" href="mailto:careers@picofemto.com?subject=Junior Software Engineer&body=I am excited to apply for this position. I have attached a copy of my resume">Apply</a>
 				</div>
 			</div>
 			<div class="row career-block col-md-12 col-xs-12">
@@ -45,7 +44,7 @@
 					</ul>
 				</div>
 				<div class="col-md-3 career-apply center">
-					<a class="btn btn-secondary" href="#" data-position="Software Engineer" data-toggle="modal" data-target="#career-application">Apply</a>
+					<a class="btn btn-secondary" href="mailto:careers@picofemto.com?subject=Software Engineer&body=I am excited to apply for this position. I have attached a copy of my resume">Apply</a>
 				</div>
 			</div>
 			<div class="row career-block col-md-12 col-xs-12">
@@ -61,7 +60,7 @@
 					</ul>
 				</div>
 				<div class="col-md-3 career-apply center">
-					<a class="btn btn-secondary" href="#" data-position="Senior Software Engineer" data-toggle="modal" data-target="#career-application">Apply</a>
+					<a class="btn btn-secondary" href="mailto:careers@picofemto.com?subject=Senior Software Engineer&body=I am excited to apply for this position. I have attached a copy of my resume">Apply</a>
 				</div>
 			</div>
 
@@ -78,7 +77,7 @@
 					</ul>
 				</div>
 				<div class="col-md-3 career-apply center">
-					<a class="btn btn-secondary" href="#" data-position="Digital/Image Signal Processing Engineer" data-toggle="modal" data-target="#career-application">Apply</a>
+					<a class="btn btn-secondary" href="mailto:careers@picofemto.com?subject=Digital/Image Signal Processing Engineer&body=I am excited to apply for this position. I have attached a copy of my resume">Apply</a>
 				</div>
 			</div>
 		</section>
