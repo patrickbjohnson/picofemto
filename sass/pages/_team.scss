@@ -1,7 +1,7 @@
 .pico-team {
-	background: #909090 url("../img/team.jpg") no-repeat;
+	background-image:url("../img/team.jpg");
 	background-position: center;
-	-ms-behavior: url("/backgroundsize.min.htc");
+	background-repeat: no-repeat;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/team.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/team.jpg', sizingMethod='scale')";
 	@include vendor-prefix(background-size, cover);

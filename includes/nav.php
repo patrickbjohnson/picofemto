@@ -10,7 +10,7 @@
       </button>
       <a class="navbar-brand pic" href="/">
       
-        <img src="<?php echo BASE_URL; ?>img/picofemto-logo.svg" onerror="this.src=<?php echo BASE_URL; ?>img/picofemto-logo.png"alt="">
+        <img src="<?php echo BASE_URL; ?>img/picofemto-logo.svg">
       </a>
     </div>
 

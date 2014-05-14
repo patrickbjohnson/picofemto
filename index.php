@@ -21,7 +21,7 @@ include("includes/nav.php");
         <img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">
         <div class="row mission-statement">
           <h1 class="section-header">Technology is a physician's best friend—it's available and ready to perform around the clock.</h1>
-          <p>The delivery of healthcare and evidence-based outcomes are becoming increasingly personalized, in which specific individual information, from physiological to genomic data, are used both in a diagnostic and therapeutic capacity.  Our first product, CliniscanSM EEG Decision Support  utilizes an open-ended architecture as we expect the number of analytics for each modality to grow by partnering with imaging groups, hospitals, universities, and research centers.  Our subsequent products will address complex biomedical modalities such as MRI, PET and CT.</p>
+          <p>The delivery of healthcare and evidence-based outcomes are becoming increasingly personalized, in which specific individual information, from physiological to genomic data, are used both in a diagnostic and therapeutic capacity.  Our first product, Cliniscan<sup>SM</sup> EEG Decision Support  utilizes an open-ended architecture as we expect the number of analytics for each modality to grow by partnering with imaging groups, hospitals, universities, and research centers.  Our subsequent products will address complex biomedical modalities such as MRI, PET and CT.</p>
         </div>
       </section>
     

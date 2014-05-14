@@ -58,9 +58,9 @@ $(document).ready(function(){
       type:$(this).attr('method'),
       url: $(this).attr('action'),
       data: $(this).serialize(),
-      dataType: 'json',
+      dataType: 'json'
     }).done(function(data){
-      console.log(data);
+      // console.log(data);
      if (!(data.success)){
         if (data.errors.name){
           $("#name").parent().addClass('has-error');
@@ -82,7 +82,6 @@ $(document).ready(function(){
           $("#message").attr("placeholder", data.errors.message);
         }
        $(".message").html(data.msg);
-
       } else {
         console.log(data);
        $(".message").html(data.msg);
@@ -114,7 +113,7 @@ $(document).ready(function(){
       type:$(this).attr('method'),
       url: $(this).attr('action'),
       data: $(this).serialize(),
-      dataType: 'json',
+      dataType: 'json'
     }).done(function(data){
      if (!(data.success)){
         if (data.errors.name){
@@ -176,7 +175,6 @@ $(document).ready(function(){
       contentType: "application/json; charset=utf-8",
       error       : function(err) { $('#mce-response').html('<span class="alert">Could not connect to server. Please try again later.</span>'); },
       success     : function(data) {
-       
         if (data.result != "success") {
           console.log(data);
           var message = data.msg;

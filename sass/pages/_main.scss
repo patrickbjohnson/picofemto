@@ -7,7 +7,6 @@
 	@include vendor-prefix(background-size, cover);
 	@include vendor-prefix(transform, rotateZ(360deg));
 	@include bg(100%, 800px);
-	-ms-behavior: url("/backgroundsize.min.htc");
 }
 
 

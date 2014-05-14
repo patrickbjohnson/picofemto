@@ -1,9 +1,7 @@
 <?php 
-
 include("../../includes/config.php");
 include("../../includes/header.php");
 include("../../includes/nav.php");
-
 ?>
 
 <div id="page-genomics">
@@ -12,9 +10,6 @@ include("../../includes/nav.php");
 	    <h1 class="page-title center">Genomics</h1>
 	  </div>
 	</div>
-
-	
-
 	<div class="container">
 		<img class="pico-divide" src="<?php echo BASE_URL;?>img/divider.svg" alt="Picofemto Page Divider">
 		<section class="page-section">

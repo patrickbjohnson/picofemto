@@ -1,10 +1,11 @@
 .pico-imaging {
+	background-image:url("../img/imaging.jpg");
 	background-position: center;
-	background: #909090 url("../img/imaging.jpg") no-repeat;
+	background-repeat: no-repeat;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/imaging.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/imaging.jpg', sizingMethod='scale')";
 	@include vendor-prefix(background-size, cover);
-	@include bg(100%, 325px);
+	@include bg(100%,325px);
 }
 
 @media (max-width: $screen-xs-max) { 

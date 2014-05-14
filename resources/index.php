@@ -25,7 +25,7 @@ include("../includes/nav.php");
 			<div class="row">
 				<div class="container">
 					<h2>Q: Why does Picofemto use algorithms?</h2>	
-					<p><span>A: </span>Both physicians and biomedical data have gotten increasingly sophisticated over the past decade.  Many specialties now regularly deal with complex real-time imaging and a growing array of techniques.  At Picofemto, we wanted to assist physicians deal with this ever-growing sophistication by offering them a set of algorithms designed to help them work with these large data.   Our algorithmic tools help process and visualize complex biomedical data.  Algorithms are efficient – they can process large datasets quickly, they are reliable – they are always available and from anywhere in the world, and they are consistent – they operate in the same way all the time.  By using algorithms to help analyze data, we want to help physicians save time.</p>
+					<p><span>A: </span>Both physicians and biomedical data have gotten increasingly sophisticated over the past decade.  Many specialties now regularly deal with complex real-time imaging and a growing array of techniques.  At Picofemto, we wanted to assist physicians deal with this ever-growing sophistication by offering them a set of algorithms designed to help them work with these large data.   Our algorithmic tools help process and visualize complex biomedical data.  Algorithms are efficient – they can process large datasets quickly, they are reliable – they are always available from anywhere in the world, and they are consistent – they operate in the same way all the time.  By using algorithms to help analyze data, we want to help physicians save time.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -63,7 +63,7 @@ include("../includes/nav.php");
 				<h1 class="section-header">What We’re Reading</h1>
 				<ul class="pico-reading center">
 					<li><a href="http://techcrunch.com/2012/01/10/doctors-or-algorithms/">Doctors or Algorithms (Techcrunch)</a></li>
-					<li><a href="http://techcrunch.com/2013/09/11/vinod-khosla-in-the-next-10-years-data-science-will-do-more-for-medicine-than-all-biological-sciences-combined/">Vinod Khosla: In The Next 10 Years, Data Science Will Do More For Medicine Than All Biological (Techcrunch)</a></li>
+					<li><a href="http://techcrunch.com/2013/09/11/vinod-khosla-in-the-next-10-years-data-science-will-do-more-for-medicine-than-all-biological-sciences-combined/">Vinod Khosla: In The Next 10 Years, Data Science Will Do More For Medicine Than All Biological Sciences Combined (Techcrunch)</a></li>
 					<li><a href="http://www.theguardian.com/healthcare-network/healthcare-innovation-partner-zone/how-it-will-shape-future-healthcare">How IT will shape the future of healthcare (The Guardian)</a></li>
 					<li><a href="http://medcitynews.com/2013/07/5-inspirational-ted-talks-every-healthcare-professional-must-watch/">5 Inspirational TED Talks Every Healthcare Professional Must Watch (MedCity News)</a></li>
 				</ul>

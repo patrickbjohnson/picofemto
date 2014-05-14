@@ -18,33 +18,39 @@
 		
 	}
 
+	.svg-container {
+		display: block;
+		height: 900px;
+		margin: auto;
 
-	.icon,
-	path { @include vendor-prefix(transition, all 300ms ease);}
-	
-	.icon {
-		@include vendor-prefix(transition, all 300ms ease);
-		@include vendor-prefix(transform-origin, center center);
-		@include vendor-prefix(transform, scale(1));
-		position:relative; 
-		z-index:10; 
+		svg {width: 100%;}
+		.icon,
+		path { @include vendor-prefix(transition, all 300ms ease);}
+		
+		.icon {
+			@include vendor-prefix(transition, all 300ms ease);
+			@include vendor-prefix(transform-origin, center center);
+			@include vendor-prefix(transform, scale(1));
+			position:relative; 
+			z-index:10; 
+			> path { 
+				fill: #5e5e5e; 
+				stroke-width:5px; 
+				stroke: #5e5e5e; 
+			}
 
-
-		> path { 
-			fill: #5e5e5e; 
-			stroke-width:5px; 
-			stroke: #5e5e5e; 
+			// &:hover {
+				// @include vendor-prefix(transform, scale(1.25));}
+			&:hover ~ path {opacity: 0.2 !important;}
+			&:hover > path { 
+				fill: $pico-orange !important; 
+				opacity: 1 !important; 
+				stroke: darken($pico-orange, 10%) ; 
+			}
+			&:hover > g, 
+			&:hover > g > path { pointer-events:none; } //otherwise hovers get interfered with
+			&:hover > g > path { fill: #fff !important; }
 		}
-
-		&:hover {@include vendor-prefix(transform, scale(1.25));}
-		&:hover ~ path {opacity: 0.2 !important;}
-		&:hover > path { 
-			fill: $pico-orange !important; 
-			opacity: 1 !important; 
-			stroke: darken($pico-orange, 10%) ; 
-		}
-		&:hover > g, 
-		&:hover > g > path { pointer-events:none; } //otherwise hovers get interfered with
-		&:hover > g > path { fill: #fff !important; }
 	}
+	
 }

@@ -2,7 +2,6 @@
 	background-image:url("../img/technology.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	-ms-behavior: url("/backgroundsize.min.htc");
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/technology.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/technology.jpg', sizingMethod='scale')";
 	@include vendor-prefix(background-size, cover);

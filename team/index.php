@@ -90,12 +90,12 @@ include("../includes/nav.php");
 					<h2 class="reg-400 font-16">Quantitative Developer</h2>
 					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/eric-sacks">Bio</a>
 				</div>
-				<div class="col-md-4 col-sm-4 center">
+				<!-- <div class="col-md-4 col-sm-4 center">
 					<img class="rounded" src="<?php echo BASE_URL;?>img/team/jose@2x.jpg" alt="Jose M. Perez Sanchez, PhD">
 					<h1 class="font-24">Jose M. Perez Sanchez, PhD</h1>
 					<h2 class="font-16">Scientific Advisor</h2>
 					<a class="btn btn-secondary" href="<?php echo BASE_URL; ?>team/jose-sanchez">Bio</a>
-				</div>
+				</div> -->
 				<div class="col-md-4 col-sm-4 center">
 					<img class="rounded" src="<?php echo BASE_URL;?>img/team.svg" alt="We're Hiring! Apply Now.">
 					<h1 class="font-24">You!</h1>

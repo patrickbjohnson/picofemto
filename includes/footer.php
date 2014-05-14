@@ -49,11 +49,13 @@
 	    	</div>
 	    </div>
 	  </footer>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>	  
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="<?php echo BASE_URL; ?>js/scripts.js"></script>
-    <!-- GA -->
+		<script src="<?php echo BASE_URL; ?>js/scripts.js"></script>
+    
+    <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -64,16 +66,7 @@
       ga('send', 'pageview');
 
     </script>
-    <!-- BugHerd code: Will be removed before production -->
-		<script type='text/javascript'>
-		(function (d, t) {
-		  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
-		  bh.type = 'text/javascript';
-		  bh.src = '//www.bugherd.com/sidebarv2.js?apikey=7mdpruatexpgtpyajfkvdq';
-		  s.parentNode.insertBefore(bh, s);
-		  })(document, 'script');
-		</script> 
-	  
+
 		
 	</body>
 </html>

@@ -25,7 +25,7 @@ include("../includes/nav.php");
 			<ul class="pico-benefits">
 				<li>A visual aid to Physicians.</li>
 				<li>Ability to pinpoint with accuracy the area of concern.</li>
-				<li>Reduce false positive and false negative rate.</li>
+				<li>Reduce false positive and negative rates.</li>
 				<li>Reduce the time for an analysis.</li>
 				<li>No need to duplicate procedures.</li>
 				<li>Analysis performed over the cloud.</li>

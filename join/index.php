@@ -69,7 +69,7 @@
 					<h1>Digital/Image Signal Processing Engineer</h1>
 					<ul>
 						<li>Ph.D or M.S. in an applied quantitative discipline (physics,electrical engineering, biomedical engineering, applied mathematics)</li>
-						<li>Exceptional Bachelor’s degree candidates will be considered experience or awards)</li>
+						<li>Exceptional Bachelor’s degree candidates will be considered based on experience or awards</li>
 						<li>Strong background in any one of the following areas:  applied mathematics, signal processing, waveform analysis, image processing probability models</li>
 						<li>Some knowledge of programming and software development is a plus</li>
 						<li>Demonstrable or published research is a plus</li>
