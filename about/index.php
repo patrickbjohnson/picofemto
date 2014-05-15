@@ -34,7 +34,7 @@ include("../includes/nav.php");
 			<div class="row center">
 				<img class="rounded" src="<?php echo BASE_URL; ?>img/einstein@2x.jpg" alt="Albert Einstein">
 				<h1 class="section-header">Our Inspiration</h1>
-				<p class="quote font-24 reg-400">“To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science.”</p>
+				<p class="quote font-24 reg-400">“To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science.” - Albert Einstein</p>
 			</div>
 		</section>
 		

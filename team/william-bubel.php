@@ -16,7 +16,7 @@ include("../includes/nav.php");
 	<div class="container">
 		<section class="page-team">
 			<div class="row">
-				<p>William is a Senior Software Engineer at Picofemto with a strong background in Web, Education, and Embedded development. He previously was with SinglePlatform as one of the first members of its team, developing their products to connect local businesses with online publishers. Prior to that he was with Wimba developing their suite of online collaboration tools connecting teachers and students for instant tutoring and lecturing. William holds a Bachelor’s Degree in Computer Science from Lehman College, the City University of New York.</p>
+				<p>Mr. Bubel is a Senior Software Engineer at Picofemto with a strong background in Web, Education, and Embedded development. He previously was with SinglePlatform as one of the first members of its team, developing their products to connect local businesses with online publishers. Prior to that he was with Wimba developing their suite of online collaboration tools connecting teachers and students for instant tutoring and lecturing. Mr. Bubel holds a Bachelor’s Degree in Computer Science from Lehman College, the City University of New York.</p>
 			</div>
 			<div class="row center">
 				<a href="<?php echo BASE_URL; ?>team" class="btn btn-secondary">Back to full team</a>

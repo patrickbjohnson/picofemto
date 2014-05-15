@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Picofemto creates easy-to-use, cloud-based software that helps medical professionals analyze raw primary medical data at the point of diagnosis or evaluation.">
   <meta name="author" content="Picofemto">
-  <link rel="shortcut icon" href="<?php echo BASE_URL; ?>assets/ico/favicon.ico">
+  <link rel="shortcut icon" href="<?php echo BASE_URL; ?>favicon.ico">
   <link rel="author" href="humans.txt" />
 
   <title>Picofemto</title>

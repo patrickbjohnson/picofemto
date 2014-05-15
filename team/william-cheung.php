@@ -16,7 +16,7 @@ include("../includes/nav.php");
 	<div class="container">
 		<section class="page-team">
 			<div class="row">
-				<p>William was drawn to Picofemto mainly because there are few companies attempting to push the limits of technology by applying algorithmic analysis against massive data sets to provide solutions, and even fewer are doing it in the medical/health space to directly benefit the lives of people. William's professional ambition is to fully transition into the bio-medical space to provide analytic support that benefit people and the medical industry. Previously Mr. Cheung was a Software Development Consultant at Elliott Management.  Mr. Cheung received his M.S/B.S. in Computer Science from NYU-Polytechnic University where he was funded in part by both - the Promise Scholarship and the Robotics & Intelligent Systems Lab.</p>
+				<p>Mr. Cheung was drawn to Picofemto mainly because there are few companies attempting to push the limits of technology by applying algorithmic analysis against massive data sets to provide solutions, and even fewer are doing it in the medical/health space to directly benefit the lives of people. William's professional ambition is to fully transition into the bio-medical space to provide analytic support that benefit people and the medical industry. Previously Mr. Cheung was a Software Development Consultant at Elliott Management.  Mr. Cheung received his M.S/B.S. in Computer Science from NYU-Polytechnic University where he was funded in part by both - the Promise Scholarship and the Robotics & Intelligent Systems Lab.</p>
 			</div>
 			<div class="row center">
 				<a href="<?php echo BASE_URL; ?>team" class="btn btn-secondary">Back to full team</a>

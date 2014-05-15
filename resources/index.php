@@ -25,7 +25,7 @@ include("../includes/nav.php");
 			<div class="row">
 				<div class="container">
 					<h2>Q: Why does Picofemto use algorithms?</h2>	
-					<p><span>A: </span>Both physicians and biomedical data have gotten increasingly sophisticated over the past decade.  Many specialties now regularly deal with complex real-time imaging and a growing array of techniques.  At Picofemto, we wanted to assist physicians deal with this ever-growing sophistication by offering them a set of algorithms designed to help them work with these large data.   Our algorithmic tools help process and visualize complex biomedical data.  Algorithms are efficient – they can process large datasets quickly, they are reliable – they are always available from anywhere in the world, and they are consistent – they operate in the same way all the time.  By using algorithms to help analyze data, we want to help physicians save time.</p>
+					<p><span>A: </span>Both physicians and biomedical data have gotten increasingly sophisticated over the past decade.  Many specialties now regularly deal with complex real-time imaging and a growing array of techniques.  At Picofemto, we want to assist physicians deal with this ever-growing sophistication by offering them a set of algorithms designed to help them work with these large data sets.   Our algorithmic tools help process and visualize complex biomedical data.  Algorithms are efficient – they can process large datasets quickly, they are reliable – they are always available from anywhere in the world, and they are consistent – they operate in the same way all the time.  By using algorithms to help analyze data, we want to help physicians save time.</p>
 				</div>
 			</div>
 			<div class="row">

@@ -16,7 +16,7 @@ include("../includes/nav.php");
 	<div class="container">
 		<section class="page-team">
 			<div class="row">
-				<p>Eric is a New York native who received his Bachelor's degree from Columbia University in Applied Physics.  Eric has also lived and worked in San Diego and Montreal, and has helped open two collectively run pizzerias in Brooklyn. When he is not working, Eric enjoys traveling, writing, live music, and the company of clever, non-malicious individuals.  He dreams of obtaining his PhD, publishing a novel/s, and leveraging science to tangibly benefit human life.</p>
+				<p>Mr. Sacks is a New York native who received his Bachelor's degree from Columbia University in Applied Physics. He has also lived and worked in San Diego and Montreal, and has helped open two collectively run pizzerias in Brooklyn. When he is not working, Mr. Sacks enjoys traveling, writing, live music, and the company of clever, non-malicious individuals.  He dreams of obtaining his PhD, publishing a novel/s, and leveraging science to tangibly benefit human life.</p>
 			</div>
 			<div class="row center">
 				<a href="<?php echo BASE_URL; ?>team" class="btn btn-secondary">Back to full team</a>
